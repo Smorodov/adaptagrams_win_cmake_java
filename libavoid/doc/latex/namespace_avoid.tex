@@ -1,0 +1,484 @@
+\hypertarget{namespace_avoid}{}\doxysection{Avoid Namespace Reference}
+\label{namespace_avoid}\index{Avoid@{Avoid}}
+
+
+libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} class represents a fixed point or \char`\"{}pin\char`\"{} on a shape that can be connected to. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Checkpoint}}
+\begin{DoxyCompactList}\small\item\em A checkpoint is a point that the route for a particular connector must visit. They may optionally be given an arrival/departure direction. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} class represents a connector object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} class represents different possible endpoints for connectors. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_point}{Point}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_point}{Point}} class defines a point in the plane. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_box}{Box}}
+\begin{DoxyCompactList}\small\item\em A bounding box, represented by the top-\/left and bottom-\/right corners. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_polygon_interface}{Polygon\+Interface}}
+\begin{DoxyCompactList}\small\item\em A common interface used by the \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} classes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_edge}{Edge}}
+\begin{DoxyCompactList}\small\item\em A line between two points. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}}
+\begin{DoxyCompactList}\small\item\em A dynamic \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}}, to which points can be easily added and removed. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_referencing_polygon}{Referencing\+Polygon}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} which just references its points from other Polygons. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_rectangle}{Rectangle}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_avoid_1_1_rectangle}{Rectangle}}, a simpler way to define the polygon for square or rectangular shapes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} class stores lists of objects created and deleted during hyperedge improvement. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} class is a convenience object that can be used to register hyperedges to be rerouted, improving the placement of their junctions and connector paths. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} class represents a fixed or free-\/floating point that connectors can be attached to. ~\newline
+ \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_router}{Router}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_router}{Router}} class represents a libavoid router instance. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} class represents a shape object. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_cluster_ref}{Cluster\+Ref}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_cluster_ref}{Cluster\+Ref}} class represents a cluster object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}\label{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}} 
+typedef std\+::list$<$ \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$ $>$ \mbox{\hyperlink{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}{Conn\+Ref\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}\label{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}} 
+typedef unsigned int \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}
+\begin{DoxyCompactList}\small\item\em One or more \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} options. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_a6fc132301ed3552d26d872199656459e}\label{namespace_avoid_a6fc132301ed3552d26d872199656459e}} 
+typedef \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{namespace_avoid_a6fc132301ed3552d26d872199656459e}{Vector}}
+\begin{DoxyCompactList}\small\item\em A vector, represented by the \mbox{\hyperlink{class_avoid_1_1_point}{Point}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}\label{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}} 
+typedef \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}}
+\begin{DoxyCompactList}\small\item\em A multi-\/segment line, represented with the \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}\label{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}} 
+typedef std\+::list$<$ \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} $>$ \mbox{\hyperlink{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}{Conn\+End\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}\label{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}} 
+typedef std\+::list$<$ \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$ $>$ \mbox{\hyperlink{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}{Junction\+Ref\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Conn\+Type}} \{  \}
+\begin{DoxyCompactList}\small\item\em Describes the type of routing that is performed for each connector. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Conn\+Dir\+Flag}} \{  \}
+\begin{DoxyCompactList}\small\item\em Flags that can be passed to the Conn\+End constructor to specify which sides of a shape this point should have visibility to if it is located within the shape\textquotesingle{}s area. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131d}{Conn\+End\+Type}} \{ \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da0a5b6d736ebc76deeea7e1be4e309c01}{Conn\+End\+Point}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da945c3a16730623718dc65bfaf45158b6}{Conn\+End\+Shape\+Pin}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da198159ff5701e24c4fe76c2c4f96f565}{Conn\+End\+Junction}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131dae1f4eb772f36973edf49bf8dd269bed6}{Conn\+End\+Empty}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types that describe the kind a connection that a Conn\+End represents. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}{Router\+Flag}} \{ \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4abd8248b5a3102d2b5b50c4010397de63}{Poly\+Line\+Routing}} = 1
+, \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4a4b104d4d6ef8bcf22994808b936e83ff}{Orthogonal\+Routing}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Flags that can be passed to the router during initialisation to specify options. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19ad518475ff7cdd46b69468ae09560c9f6}{segment\+Penalty}} = 0
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a9419cfef2c9150715e52de573580ce5e}{angle\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a1441b8b9a3aaa75e5b9116a54c1d654b}{crossing\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a310f9eb2c2d36b367ade5bd9284090c0}{cluster\+Crossing\+Penalty}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}{fixed\+Shared\+Path\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4b063b8410394390341c5d5866091202}{port\+Direction\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19adb1bf659e4e53b830554ff43ee5dd7f2}{shape\+Buffer\+Distance}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19aefdad4d50aa10139e27c4ea73f31b2a4}{ideal\+Nudging\+Distance}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4ade3cc526dda153d7a329c7f2a0cc92}{reverse\+Direction\+Penalty}}
+, {\bfseries last\+Routing\+Parameter\+Marker}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing parameters and penalties that can be used to tailor the style and improve the quality of the connector routes produced. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Routing\+Option}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05af7be85399d751dd52483038192cfaba2}{nudge\+Orthogonal\+Segments\+Connected\+To\+Shapes}} = 0
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}{improve\+Hyperedge\+Routes\+Moving\+Junctions}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ad4f62b81f47664a07a8e9157ea172b8d}{penalise\+Orthogonal\+Shared\+Paths\+At\+Conn\+Ends}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ab661599396825a766e97d19282e5f8dc}{nudge\+Orthogonal\+Touching\+Colinear\+Segments}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a358b48c2806c8919cae0cadb8b68fb14}{perform\+Unifying\+Nudging\+Preprocessing\+Step}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}{improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05abb9b97f0edc1dd472c1a38633a340c1f}{nudge\+Shared\+Paths\+With\+Common\+End\+Point}}
+, {\bfseries last\+Routing\+Option\+Marker}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing options that can be enabled. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900}{Transaction\+Phases}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a6e6c618550dfb4189e972c04eab0fd2f}{Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanX}} = 1
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ae58b279b1507eaf99725f48b166148ad}{Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanY}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a731dba9027bca13433b02685e68e3cb7}{Transaction\+Phase\+Route\+Search}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900aa67f6a9252fddb988a65b28ae44d8ba4}{Transaction\+Phase\+Crossing\+Detection}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900aca08c787ef7a1b8756536abe9f84b1a1}{Transaction\+Phase\+Reroute\+Search}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900af310cff5fa057d7866dae07ace1bc4e1}{Transaction\+Phase\+Orthogonal\+NudgingX}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a3e14bfb1bb6ccfee54bd91ff74100a22}{Transaction\+Phase\+Orthogonal\+NudgingY}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}{Transaction\+Phase\+Completed}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing phases reported by Router\+::should\+Continue\+Transaction\+With\+Progress(). \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}{Shape\+Transformation\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ae5b3784e2f61f1b71f5139c4c73b0946}{Transformation\+Type\+\_\+\+CW90}} = 0
+, \mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a5f59e610ca70f0f3cd1c8c99788edee6}{Transformation\+Type\+\_\+\+CW180}} = 1
+, \mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4aab993ca33eb7bd0e81245119e8eaa20f}{Transformation\+Type\+\_\+\+CW270}} = 2
+, \mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a278fae25edc3bfb51db416c81766337a}{Transformation\+Type\+\_\+\+FlipX}} = 3
+, \newline
+\mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ac58a690c6dbecc2b75a9820ed219eaca}{Transformation\+Type\+\_\+\+FlipY}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Describes the type of transformation that has been applied to a shape having its transform\+Connection\+Pin\+Positions() method called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library. 
+
+You should use libavoid via an instance of the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} class. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}} 
+\index{Avoid@{Avoid}!ConnDirFlag@{ConnDirFlag}}
+\index{ConnDirFlag@{ConnDirFlag}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{ConnDirFlag}{ConnDirFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}}}
+
+
+
+Flags that can be passed to the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} constructor to specify which sides of a shape this point should have visibility to if it is located within the shape\textquotesingle{}s area. 
+
+Like SVG, libavoid considers the Y-\/axis to point downwards, that is, like screen coordinates the coordinates increase from left-\/to-\/right and also from top-\/to-\/bottom. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnDirUp@{ConnDirUp}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnDirUp@{ConnDirUp}}}\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a3fb1f5696d46f850d2ecf9774904dabb}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a3fb1f5696d46f850d2ecf9774904dabb}} 
+Conn\+Dir\+Up&This option specifies the point should be given visibility to the top of the shape that it is located within. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnDirDown@{ConnDirDown}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnDirDown@{ConnDirDown}}}\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a8f90ddea43f4718626860b7c6bbc16ff}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a8f90ddea43f4718626860b7c6bbc16ff}} 
+Conn\+Dir\+Down&This option specifies the point should be given visibility to the bottom of the shape that it is located within. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnDirLeft@{ConnDirLeft}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnDirLeft@{ConnDirLeft}}}\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a9409fa563813f915864fe2028e707ac4}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a9409fa563813f915864fe2028e707ac4}} 
+Conn\+Dir\+Left&This option specifies the point should be given visibility to the left side of the shape that it is located within. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnDirRight@{ConnDirRight}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnDirRight@{ConnDirRight}}}\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a90c64bda1ce494635bc13dd7f6bbe0bc}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610a90c64bda1ce494635bc13dd7f6bbe0bc}} 
+Conn\+Dir\+Right&This option specifies the point should be given visibility to the right side of the shape that it is located within. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnDirAll@{ConnDirAll}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnDirAll@{ConnDirAll}}}\mbox{\Hypertarget{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610aa35659c58b5d18594722cafd452aabc0}\label{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610aa35659c58b5d18594722cafd452aabc0}} 
+Conn\+Dir\+All&This option, provided for convenience, specifies the point should be given visibility to all four sides of the shape that it is located within. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_abd32237d22b750befd61c34e54fe131d}\label{namespace_avoid_abd32237d22b750befd61c34e54fe131d}} 
+\index{Avoid@{Avoid}!ConnEndType@{ConnEndType}}
+\index{ConnEndType@{ConnEndType}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{ConnEndType}{ConnEndType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131d}{Avoid\+::\+Conn\+End\+Type}}}
+
+
+
+Types that describe the kind a connection that a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} represents. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnEndPoint@{ConnEndPoint}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnEndPoint@{ConnEndPoint}}}\mbox{\Hypertarget{namespace_avoid_abd32237d22b750befd61c34e54fe131da0a5b6d736ebc76deeea7e1be4e309c01}\label{namespace_avoid_abd32237d22b750befd61c34e54fe131da0a5b6d736ebc76deeea7e1be4e309c01}} 
+Conn\+End\+Point&The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} represents a free-\/floating point that may or may not have visibility in specific directions. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnEndShapePin@{ConnEndShapePin}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnEndShapePin@{ConnEndShapePin}}}\mbox{\Hypertarget{namespace_avoid_abd32237d22b750befd61c34e54fe131da945c3a16730623718dc65bfaf45158b6}\label{namespace_avoid_abd32237d22b750befd61c34e54fe131da945c3a16730623718dc65bfaf45158b6}} 
+Conn\+End\+Shape\+Pin&The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to a specific \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} on a shape. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnEndJunction@{ConnEndJunction}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnEndJunction@{ConnEndJunction}}}\mbox{\Hypertarget{namespace_avoid_abd32237d22b750befd61c34e54fe131da198159ff5701e24c4fe76c2c4f96f565}\label{namespace_avoid_abd32237d22b750befd61c34e54fe131da198159ff5701e24c4fe76c2c4f96f565}} 
+Conn\+End\+Junction&The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to a junction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnEndEmpty@{ConnEndEmpty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnEndEmpty@{ConnEndEmpty}}}\mbox{\Hypertarget{namespace_avoid_abd32237d22b750befd61c34e54fe131dae1f4eb772f36973edf49bf8dd269bed6}\label{namespace_avoid_abd32237d22b750befd61c34e54fe131dae1f4eb772f36973edf49bf8dd269bed6}} 
+Conn\+End\+Empty&The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} is empty and doesn\textquotesingle{}t have any information set. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}\label{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}} 
+\index{Avoid@{Avoid}!ConnType@{ConnType}}
+\index{ConnType@{ConnType}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{ConnType}{ConnType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Avoid\+::\+Conn\+Type}}}
+
+
+
+Describes the type of routing that is performed for each connector. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnType\_PolyLine@{ConnType\_PolyLine}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnType\_PolyLine@{ConnType\_PolyLine}}}\mbox{\Hypertarget{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2a288646a5f0c2bedf2b90affec653a91a}\label{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2a288646a5f0c2bedf2b90affec653a91a}} 
+Conn\+Type\+\_\+\+Poly\+Line&The connector path will be a shortest-\/path poly-\/line that routes around obstacles. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ConnType\_Orthogonal@{ConnType\_Orthogonal}!Avoid@{Avoid}}\index{Avoid@{Avoid}!ConnType\_Orthogonal@{ConnType\_Orthogonal}}}\mbox{\Hypertarget{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2a0d6f1658c0992c2600464748dd5a6fd5}\label{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2a0d6f1658c0992c2600464748dd5a6fd5}} 
+Conn\+Type\+\_\+\+Orthogonal&The connector path will be a shortest-\/path orthogonal poly-\/line (only vertical and horizontal line segments) that routes around obstacles. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}\label{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}} 
+\index{Avoid@{Avoid}!RouterFlag@{RouterFlag}}
+\index{RouterFlag@{RouterFlag}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{RouterFlag}{RouterFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}{Avoid\+::\+Router\+Flag}}}
+
+
+
+Flags that can be passed to the router during initialisation to specify options. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PolyLineRouting@{PolyLineRouting}!Avoid@{Avoid}}\index{Avoid@{Avoid}!PolyLineRouting@{PolyLineRouting}}}\mbox{\Hypertarget{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4abd8248b5a3102d2b5b50c4010397de63}\label{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4abd8248b5a3102d2b5b50c4010397de63}} 
+Poly\+Line\+Routing&This option specifies that the router should maintain the structures necessary to allow poly-\/line connector routing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OrthogonalRouting@{OrthogonalRouting}!Avoid@{Avoid}}\index{Avoid@{Avoid}!OrthogonalRouting@{OrthogonalRouting}}}\mbox{\Hypertarget{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4a4b104d4d6ef8bcf22994808b936e83ff}\label{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4a4b104d4d6ef8bcf22994808b936e83ff}} 
+Orthogonal\+Routing&This option specifies that the router should maintain the structures necessary to allow orthogonal connector routing. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}} 
+\index{Avoid@{Avoid}!RoutingOption@{RoutingOption}}
+\index{RoutingOption@{RoutingOption}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{RoutingOption}{RoutingOption}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Avoid\+::\+Routing\+Option}}}
+
+
+
+Types of routing options that can be enabled. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nudgeOrthogonalSegmentsConnectedToShapes@{nudgeOrthogonalSegmentsConnectedToShapes}!Avoid@{Avoid}}\index{Avoid@{Avoid}!nudgeOrthogonalSegmentsConnectedToShapes@{nudgeOrthogonalSegmentsConnectedToShapes}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05af7be85399d751dd52483038192cfaba2}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05af7be85399d751dd52483038192cfaba2}} 
+nudge\+Orthogonal\+Segments\+Connected\+To\+Shapes&This option causes the final segments of connectors, which are attached to shapes, to be nudged apart. Usually these segments are fixed, since they are considered to be attached to ports.
+
+Defaults to false.
+
+This option also causes routes running through the same checkpoint to be nudged apart.
+
+This option has no effect if \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05abb9b97f0edc1dd472c1a38633a340c1f}{nudge\+Shared\+Paths\+With\+Common\+End\+Point}} is set to false,
+
+\begin{DoxyNote}{Note}
+This will allow routes to be nudged up to the bounds of shapes. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{improveHyperedgeRoutesMovingJunctions@{improveHyperedgeRoutesMovingJunctions}!Avoid@{Avoid}}\index{Avoid@{Avoid}!improveHyperedgeRoutesMovingJunctions@{improveHyperedgeRoutesMovingJunctions}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}} 
+improve\+Hyperedge\+Routes\+Moving\+Junctions&This option causes hyperedge routes to be locally improved fixing obviously bad paths. As part of this process libavoid will effectively move junctions, setting new ideal positions which can be accessed via \mbox{\hyperlink{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}{Junction\+Ref\+::recommended\+Position()}} for each junction.
+
+Defaults to true.
+
+This will not add or remove junctions, so will keep the hyperedge topology the same. Better routes can be achieved by enabling the \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}{improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions}} option.
+
+If initial sensible positions for junctions in hyperedges are not known you can register those hyperedges with the \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} class for complete rerouting.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}{improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions}} 
+
+\mbox{\hyperlink{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}{Router\+::hyperedge\+Rerouter()}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{penaliseOrthogonalSharedPathsAtConnEnds@{penaliseOrthogonalSharedPathsAtConnEnds}!Avoid@{Avoid}}\index{Avoid@{Avoid}!penaliseOrthogonalSharedPathsAtConnEnds@{penaliseOrthogonalSharedPathsAtConnEnds}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ad4f62b81f47664a07a8e9157ea172b8d}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ad4f62b81f47664a07a8e9157ea172b8d}} 
+penalise\+Orthogonal\+Shared\+Paths\+At\+Conn\+Ends&This option penalises and attempts to reroute orthogonal shared connector paths terminating at a common junction or shape connection pin. When multiple connector paths enter or leave the same side of a junction (or shape pin), the router will attempt to reroute these to different sides of the junction or different shape pins.
+
+Defaults to false.
+
+This option depends on the \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}{fixed\+Shared\+Path\+Penalty}} penalty having been set.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}{fixed\+Shared\+Path\+Penalty}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+This option is still experimental! It is not recommended for normal use. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nudgeOrthogonalTouchingColinearSegments@{nudgeOrthogonalTouchingColinearSegments}!Avoid@{Avoid}}\index{Avoid@{Avoid}!nudgeOrthogonalTouchingColinearSegments@{nudgeOrthogonalTouchingColinearSegments}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ab661599396825a766e97d19282e5f8dc}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ab661599396825a766e97d19282e5f8dc}} 
+nudge\+Orthogonal\+Touching\+Colinear\+Segments&This option can be used to control whether collinear line segments that touch just at their ends will be nudged apart. The overlap will usually be resolved in the other dimension, so this is not usually required.
+
+Defaults to false. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{performUnifyingNudgingPreprocessingStep@{performUnifyingNudgingPreprocessingStep}!Avoid@{Avoid}}\index{Avoid@{Avoid}!performUnifyingNudgingPreprocessingStep@{performUnifyingNudgingPreprocessingStep}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a358b48c2806c8919cae0cadb8b68fb14}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a358b48c2806c8919cae0cadb8b68fb14}} 
+perform\+Unifying\+Nudging\+Preprocessing\+Step&This option can be used to control whether the router performs a preprocessing step before orthogonal nudging where is tries to unify segments and centre them in free space. This generally results in better quality ordering and nudging.
+
+Defaults to true.
+
+You may wish to turn this off for large examples where it can be very slow and will make little difference. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{improveHyperedgeRoutesMovingAddingAndDeletingJunctions@{improveHyperedgeRoutesMovingAddingAndDeletingJunctions}!Avoid@{Avoid}}\index{Avoid@{Avoid}!improveHyperedgeRoutesMovingAddingAndDeletingJunctions@{improveHyperedgeRoutesMovingAddingAndDeletingJunctions}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}} 
+improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions&This option causes hyperedge routes to be locally improved fixing obviously bad paths.
+
+It can cause junctions and connectors to be added or removed from hyperedges. To get details of these changes for each connector you can call \mbox{\hyperlink{class_avoid_1_1_router_a20a8a79a5726d9a487864381630a9a90}{Router\+::new\+And\+Deleted\+Object\+Lists\+From\+Hyperedge\+Improvement()}}.
+
+As part of this process libavoid will effectively move junctions by setting new ideal positions for each remaining or added junction, which can be read from \mbox{\hyperlink{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}{Junction\+Ref\+::recommended\+Position()}} for each junction.
+
+Defaults to false.
+
+If set, this option overrides the \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}{improve\+Hyperedge\+Routes\+Moving\+Junctions}} option.
+
+If initial sensible positions for junctions in hyperedges are not known you can register those hyperedges with the \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} class for complete rerouting.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}{improve\+Hyperedge\+Routes\+Moving\+Junctions}} 
+
+\mbox{\hyperlink{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}{Router\+::hyperedge\+Rerouter()}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nudgeSharedPathsWithCommonEndPoint@{nudgeSharedPathsWithCommonEndPoint}!Avoid@{Avoid}}\index{Avoid@{Avoid}!nudgeSharedPathsWithCommonEndPoint@{nudgeSharedPathsWithCommonEndPoint}}}\mbox{\Hypertarget{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05abb9b97f0edc1dd472c1a38633a340c1f}\label{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05abb9b97f0edc1dd472c1a38633a340c1f}} 
+nudge\+Shared\+Paths\+With\+Common\+End\+Point&This option determines whether intermediate segments of connectors that are attached to common endpoints will be nudged apart. Usually these segments get nudged apart, but you may want to turn this off if you would prefer that entire shared paths terminating at a common end point should overlap.
+
+Defaults to true. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}} 
+\index{Avoid@{Avoid}!RoutingParameter@{RoutingParameter}}
+\index{RoutingParameter@{RoutingParameter}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{RoutingParameter}{RoutingParameter}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Avoid\+::\+Routing\+Parameter}}}
+
+
+
+Types of routing parameters and penalties that can be used to tailor the style and improve the quality of the connector routes produced. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{segmentPenalty@{segmentPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!segmentPenalty@{segmentPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19ad518475ff7cdd46b69468ae09560c9f6}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19ad518475ff7cdd46b69468ae09560c9f6}} 
+segment\+Penalty&This penalty is applied for each segment in the connector path beyond the first. This should always normally be set when doing orthogonal routing to prevent step-\/like connector paths. \begin{DoxyNote}{Note}
+This penalty must be set (i.\+e., be greater than zero) in order for orthogonal connector nudging to be performed, since this requires reasonable initial routes. ~\newline
+ 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{anglePenalty@{anglePenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!anglePenalty@{anglePenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a9419cfef2c9150715e52de573580ce5e}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a9419cfef2c9150715e52de573580ce5e}} 
+angle\+Penalty&This penalty is applied in its full amount to tight acute bends in the connector path. A smaller portion of the penalty is applied for slight bends, i.\+e., where the bend is close to 180 degrees. This is useful for polyline routing where there is some evidence that tighter corners are worse for readability, but that slight bends might not be so bad, especially when smoothed by curves. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{crossingPenalty@{crossingPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!crossingPenalty@{crossingPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a1441b8b9a3aaa75e5b9116a54c1d654b}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a1441b8b9a3aaa75e5b9116a54c1d654b}} 
+crossing\+Penalty&This penalty is applied whenever a connector path crosses another connector path. It takes shared paths into consideration and the penalty is only applied if there is an actual crossing. \begin{DoxyNote}{Note}
+This penalty is still experimental! It is not recommended for normal use. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{clusterCrossingPenalty@{clusterCrossingPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!clusterCrossingPenalty@{clusterCrossingPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a310f9eb2c2d36b367ade5bd9284090c0}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a310f9eb2c2d36b367ade5bd9284090c0}} 
+cluster\+Crossing\+Penalty&This penalty is applied whenever a connector path crosses a cluster boundary. \begin{DoxyNote}{Note}
+This penalty is still experimental! It is not recommended for normal use. 
+
+This penalty is very slow. You can override the method \mbox{\hyperlink{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}{Router\+::should\+Continue\+Transaction\+With\+Progress()}} to check progress and possibly cancel overly slow transactions. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fixedSharedPathPenalty@{fixedSharedPathPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!fixedSharedPathPenalty@{fixedSharedPathPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}} 
+fixed\+Shared\+Path\+Penalty&This penalty is applied whenever a connector path shares some segments with an immovable portion of an existing connector route (such as the first or last segment of a connector). \begin{DoxyNote}{Note}
+This penalty is still experimental! It is not recommended for normal use. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{portDirectionPenalty@{portDirectionPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!portDirectionPenalty@{portDirectionPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4b063b8410394390341c5d5866091202}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4b063b8410394390341c5d5866091202}} 
+port\+Direction\+Penalty&This penalty is applied to port selection choice when the other end of the connector being routed does not appear in any of the 90 degree visibility cones centered on the visibility directions for the port. \begin{DoxyNote}{Note}
+This penalty is still experimental! It is not recommended for normal use. 
+
+This penalty is very slow. You can override the method \mbox{\hyperlink{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}{Router\+::should\+Continue\+Transaction\+With\+Progress()}} to check progress and possibly cancel overly slow transactions. 
+\end{DoxyNote}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{shapeBufferDistance@{shapeBufferDistance}!Avoid@{Avoid}}\index{Avoid@{Avoid}!shapeBufferDistance@{shapeBufferDistance}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19adb1bf659e4e53b830554ff43ee5dd7f2}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19adb1bf659e4e53b830554ff43ee5dd7f2}} 
+shape\+Buffer\+Distance&This parameter defines the spacing distance that will be added to the sides of each shape when determining obstacle sizes for routing. This controls how closely connectors pass shapes, and can be used to prevent connectors overlapping with shape boundaries. By default, this distance is set to a value of 0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{idealNudgingDistance@{idealNudgingDistance}!Avoid@{Avoid}}\index{Avoid@{Avoid}!idealNudgingDistance@{idealNudgingDistance}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19aefdad4d50aa10139e27c4ea73f31b2a4}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19aefdad4d50aa10139e27c4ea73f31b2a4}} 
+ideal\+Nudging\+Distance&This parameter defines the spacing distance that will be used for nudging apart overlapping corners and line segments of connectors. By default, this distance is set to a value of 4. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{reverseDirectionPenalty@{reverseDirectionPenalty}!Avoid@{Avoid}}\index{Avoid@{Avoid}!reverseDirectionPenalty@{reverseDirectionPenalty}}}\mbox{\Hypertarget{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4ade3cc526dda153d7a329c7f2a0cc92}\label{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4ade3cc526dda153d7a329c7f2a0cc92}} 
+reverse\+Direction\+Penalty&This penalty is applied whenever a connector path travels in the direction opposite of the destination from the source endpoint. By default this penalty is set to zero. This shouldn\textquotesingle{}t be needed in most cases but can be useful if you use penalties such as \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a1441b8b9a3aaa75e5b9116a54c1d654b}{crossing\+Penalty}} which cause connectors to loop around obstacles. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}} 
+\index{Avoid@{Avoid}!ShapeTransformationType@{ShapeTransformationType}}
+\index{ShapeTransformationType@{ShapeTransformationType}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{ShapeTransformationType}{ShapeTransformationType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}{Avoid\+::\+Shape\+Transformation\+Type}}}
+
+
+
+Describes the type of transformation that has been applied to a shape having its transform\+Connection\+Pin\+Positions() method called. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformationType\_CW90@{TransformationType\_CW90}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransformationType\_CW90@{TransformationType\_CW90}}}\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ae5b3784e2f61f1b71f5139c4c73b0946}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ae5b3784e2f61f1b71f5139c4c73b0946}} 
+Transformation\+Type\+\_\+\+CW90&The shape has been rotated clockwise by 90 degrees. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformationType\_CW180@{TransformationType\_CW180}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransformationType\_CW180@{TransformationType\_CW180}}}\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a5f59e610ca70f0f3cd1c8c99788edee6}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a5f59e610ca70f0f3cd1c8c99788edee6}} 
+Transformation\+Type\+\_\+\+CW180&The shape has been rotated clockwise by 180 degrees. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformationType\_CW270@{TransformationType\_CW270}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransformationType\_CW270@{TransformationType\_CW270}}}\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4aab993ca33eb7bd0e81245119e8eaa20f}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4aab993ca33eb7bd0e81245119e8eaa20f}} 
+Transformation\+Type\+\_\+\+CW270&The shape has been rotated clockwise by 270 degrees. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformationType\_FlipX@{TransformationType\_FlipX}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransformationType\_FlipX@{TransformationType\_FlipX}}}\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a278fae25edc3bfb51db416c81766337a}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4a278fae25edc3bfb51db416c81766337a}} 
+Transformation\+Type\+\_\+\+FlipX&The shape has been flipped horizontally in the X-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransformationType\_FlipY@{TransformationType\_FlipY}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransformationType\_FlipY@{TransformationType\_FlipY}}}\mbox{\Hypertarget{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ac58a690c6dbecc2b75a9820ed219eaca}\label{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4ac58a690c6dbecc2b75a9820ed219eaca}} 
+Transformation\+Type\+\_\+\+FlipY&The shape has been flipped vertically in the Y-\/dimension. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900}} 
+\index{Avoid@{Avoid}!TransactionPhases@{TransactionPhases}}
+\index{TransactionPhases@{TransactionPhases}!Avoid@{Avoid}}
+\doxysubsubsection{\texorpdfstring{TransactionPhases}{TransactionPhases}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900}{Avoid\+::\+Transaction\+Phases}}}
+
+
+
+Types of routing phases reported by \mbox{\hyperlink{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}{Router\+::should\+Continue\+Transaction\+With\+Progress()}}. 
+
+This phases will occur in the order given here, but each phase may take varying amounts of time. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseOrthogonalVisibilityGraphScanX@{TransactionPhaseOrthogonalVisibilityGraphScanX}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseOrthogonalVisibilityGraphScanX@{TransactionPhaseOrthogonalVisibilityGraphScanX}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900a6e6c618550dfb4189e972c04eab0fd2f}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900a6e6c618550dfb4189e972c04eab0fd2f}} 
+Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanX&The orthogonal visibility graph is built by conducting a scan in each dimension. This is the x-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseOrthogonalVisibilityGraphScanY@{TransactionPhaseOrthogonalVisibilityGraphScanY}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseOrthogonalVisibilityGraphScanY@{TransactionPhaseOrthogonalVisibilityGraphScanY}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900ae58b279b1507eaf99725f48b166148ad}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900ae58b279b1507eaf99725f48b166148ad}} 
+Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanY&The orthogonal visibility graph is built by conducting a scan in each dimension. This is the y-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseRouteSearch@{TransactionPhaseRouteSearch}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseRouteSearch@{TransactionPhaseRouteSearch}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900a731dba9027bca13433b02685e68e3cb7}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900a731dba9027bca13433b02685e68e3cb7}} 
+Transaction\+Phase\+Route\+Search&Initial routes are searched for in the visibility graph. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseCrossingDetection@{TransactionPhaseCrossingDetection}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseCrossingDetection@{TransactionPhaseCrossingDetection}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900aa67f6a9252fddb988a65b28ae44d8ba4}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900aa67f6a9252fddb988a65b28ae44d8ba4}} 
+Transaction\+Phase\+Crossing\+Detection&With crossing penalties enabled, crossing detection is performed to find all crossings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseRerouteSearch@{TransactionPhaseRerouteSearch}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseRerouteSearch@{TransactionPhaseRerouteSearch}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900aca08c787ef7a1b8756536abe9f84b1a1}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900aca08c787ef7a1b8756536abe9f84b1a1}} 
+Transaction\+Phase\+Reroute\+Search&Crossing connectors are rerouted to search for better routes. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseOrthogonalNudgingX@{TransactionPhaseOrthogonalNudgingX}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseOrthogonalNudgingX@{TransactionPhaseOrthogonalNudgingX}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900af310cff5fa057d7866dae07ace1bc4e1}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900af310cff5fa057d7866dae07ace1bc4e1}} 
+Transaction\+Phase\+Orthogonal\+NudgingX&Orthogonal edge segments are nudged apart in the x-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseOrthogonalNudgingY@{TransactionPhaseOrthogonalNudgingY}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseOrthogonalNudgingY@{TransactionPhaseOrthogonalNudgingY}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900a3e14bfb1bb6ccfee54bd91ff74100a22}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900a3e14bfb1bb6ccfee54bd91ff74100a22}} 
+Transaction\+Phase\+Orthogonal\+NudgingY&Orthogonal edge segments are nudged apart in the y-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransactionPhaseCompleted@{TransactionPhaseCompleted}!Avoid@{Avoid}}\index{Avoid@{Avoid}!TransactionPhaseCompleted@{TransactionPhaseCompleted}}}\mbox{\Hypertarget{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}\label{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}} 
+Transaction\+Phase\+Completed&Not a real phase, but represents the router is finished (or has aborted) the transaction and you may interact with is again. \\
+\hline
+
+\end{DoxyEnumFields}

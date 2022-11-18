@@ -1,0 +1,541 @@
+\hypertarget{class_avoid_1_1_router}{}\doxysection{Avoid\+::Router Class Reference}
+\label{class_avoid_1_1_router}\index{Avoid::Router@{Avoid::Router}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_router}{Router}} class represents a libavoid router instance.  
+
+
+
+
+{\ttfamily \#include $<$router.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_router_aae0b300221fbff0d5539ef42e99d8714}{Router}} (const unsigned int flags)
+\begin{DoxyCompactList}\small\item\em Constructor for router instance. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_avoid_1_1_router_a415aa6409ec5d573bcdb90b1ce73e020}{$\sim$\+Router}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for router instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{set\+Transaction\+Use}} (const bool transactions)
+\begin{DoxyCompactList}\small\item\em Allows setting of the behaviour of the router in regard to transactions. This controls whether transactions are used to queue changes and process them efficiently at once or they are instead processed immediately. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_router_aecd68dedfd16678f236b4f3bc12d17ab}{transaction\+Use}} (void) const
+\begin{DoxyCompactList}\small\item\em Reports whether the router groups actions into transactions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction}} (void)
+\begin{DoxyCompactList}\small\item\em Finishes the current transaction and processes all the queued object changes efficiently. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}{delete\+Shape}} (\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$shape)
+\begin{DoxyCompactList}\small\item\em Delete a shape from the router scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{move\+Shape}} (\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$shape, const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&new\+Poly, const bool first\+\_\+move=false)
+\begin{DoxyCompactList}\small\item\em Move or resize an existing shape within the router scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_ac171735c187b3e0ea8f03fda4424fd4f}{move\+Shape}} (\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$shape, const double x\+Diff, const double y\+Diff)
+\begin{DoxyCompactList}\small\item\em Move an existing shape within the router scene by a relative distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a5b044531d3dc81fa76819e55917924b0}{delete\+Junction}} (\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$junction)
+\begin{DoxyCompactList}\small\item\em Remove a junction from the router scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}{delete\+Connector}} (\mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$connector)
+\begin{DoxyCompactList}\small\item\em Remove a connector from the router scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a08021cac275575c7795e2005e5eadb9a}{move\+Junction}} (\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$junction, const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&new\+Position)
+\begin{DoxyCompactList}\small\item\em Move an existing junction within the router scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a94e5639b590902b5e734a1068fdc663c}{move\+Junction}} (\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$junction, const double x\+Diff, const double y\+Diff)
+\begin{DoxyCompactList}\small\item\em Move an existing junction within the router scene by a relative distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a596cecf98ff1b40a8ee5c703e175ff62}{set\+Routing\+Parameter}} (const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}} parameter, const double value=choose\+Sensible\+Param\+Value)
+\begin{DoxyCompactList}\small\item\em Sets values for routing parameters, including routing penalties. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_avoid_1_1_router_ab08a56fa47c415c0450e20bbb438f420}{routing\+Parameter}} (const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}} parameter) const
+\begin{DoxyCompactList}\small\item\em Returns the current value for a particular routing parameter of a given type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a09f057f6d101f010588c9022893c9ac1}{set\+Routing\+Option}} (const \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Routing\+Option}} option, const bool value)
+\begin{DoxyCompactList}\small\item\em Turn specific routing options on or off. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_router_a24ee63586c12d0a3518dd5caebcb92d2}{routing\+Option}} (const \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Routing\+Option}} option) const
+\begin{DoxyCompactList}\small\item\em Returns the current state for a specific routing option. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_acbda0590ff3234faad409e2f39e1c9ec}{set\+Routing\+Penalty}} (const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}} pen\+Type, const double pen\+Val=choose\+Sensible\+Param\+Value)
+\begin{DoxyCompactList}\small\item\em Sets or removes penalty values that are applied during connector routing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}{hyperedge\+Rerouter}} (void)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the hyperedge rerouter for the router. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a458aae2d6447e0958e4916a8c29bbb47}{output\+Instance\+To\+SVG}} (std\+::string filename=std\+::string())
+\begin{DoxyCompactList}\small\item\em Generates an SVG file containing debug output and code that can be used to regenerate the instance. \end{DoxyCompactList}\item 
+virtual unsigned int \mbox{\hyperlink{class_avoid_1_1_router_a202c28fcb04f7af2183fe6849b4ce2f3}{new\+Object\+Id}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the object ID used for automatically generated objects, such as during hyperedge routing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_router_a8f36729c98e13e57d2c56c0d1facf86c}{object\+Id\+Is\+Unused}} (const unsigned int id) const
+\begin{DoxyCompactList}\small\item\em Returns whether or not the given ID is already used. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}{should\+Continue\+Transaction\+With\+Progress}} (unsigned int elapsed\+Time, unsigned int phase\+Number, unsigned int total\+Phases, double proportion)
+\begin{DoxyCompactList}\small\item\em A method called at regular intervals during transaction processing to report progress and ask if the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} should continue the transaction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} \mbox{\hyperlink{class_avoid_1_1_router_a20a8a79a5726d9a487864381630a9a90}{new\+And\+Deleted\+Object\+Lists\+From\+Hyperedge\+Improvement}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} detailing the lists of junctions and connectors created and deleted during hyperedge improvement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_router_a2d18149edbd47373a63c799c1c71bfa4}{set\+Topology\+Addon}} (Topology\+Addon\+Interface $\ast$topology\+Addon)
+\begin{DoxyCompactList}\small\item\em Set an addon for doing orthogonal topology improvement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_router}{Router}} class represents a libavoid router instance. 
+
+Usually you would keep a separate \mbox{\hyperlink{class_avoid_1_1_router}{Router}} instance for each diagram or layout you have open in your application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_router_aae0b300221fbff0d5539ef42e99d8714}\label{class_avoid_1_1_router_aae0b300221fbff0d5539ef42e99d8714}} 
+\index{Avoid::Router@{Avoid::Router}!Router@{Router}}
+\index{Router@{Router}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{Router()}{Router()}}
+{\footnotesize\ttfamily Avoid\+::\+Router\+::\+Router (\begin{DoxyParamCaption}\item[{const unsigned int}]{flags }\end{DoxyParamCaption})}
+
+
+
+Constructor for router instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em flags} & One or more \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}{Avoid\+::\+Router\+Flag}} options to control the behaviour of the router. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a415aa6409ec5d573bcdb90b1ce73e020}\label{class_avoid_1_1_router_a415aa6409ec5d573bcdb90b1ce73e020}} 
+\index{Avoid::Router@{Avoid::Router}!````~Router@{$\sim$Router}}
+\index{````~Router@{$\sim$Router}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{$\sim$Router()}{~Router()}}
+{\footnotesize\ttfamily Avoid\+::\+Router\+::$\sim$\+Router (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for router instance. 
+
+\begin{DoxyNote}{Note}
+Destroying a router instance will delete all remaining shapes and connectors, thereby invalidating any existing pointers to them. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}\label{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}} 
+\index{Avoid::Router@{Avoid::Router}!deleteConnector@{deleteConnector}}
+\index{deleteConnector@{deleteConnector}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{deleteConnector()}{deleteConnector()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::delete\+Connector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$}]{connector }\end{DoxyParamCaption})}
+
+
+
+Remove a connector from the router scene. 
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+You should not use the connector reference again after this call. The router will handle freeing of the connector\textquotesingle{}s memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em connector} & Pointer reference to the connector being removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a5b044531d3dc81fa76819e55917924b0}\label{class_avoid_1_1_router_a5b044531d3dc81fa76819e55917924b0}} 
+\index{Avoid::Router@{Avoid::Router}!deleteJunction@{deleteJunction}}
+\index{deleteJunction@{deleteJunction}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{deleteJunction()}{deleteJunction()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::delete\+Junction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$}]{junction }\end{DoxyParamCaption})}
+
+
+
+Remove a junction from the router scene. 
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+You should not use the junction reference again after this call. The router will handle freeing of the junction\textquotesingle{}s memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em junction} & Pointer reference to the junction being removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}\label{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}} 
+\index{Avoid::Router@{Avoid::Router}!deleteShape@{deleteShape}}
+\index{deleteShape@{deleteShape}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{deleteShape()}{deleteShape()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::delete\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$}]{shape }\end{DoxyParamCaption})}
+
+
+
+Delete a shape from the router scene. 
+
+Connectors that could have a better (usually shorter) path after the removal of this shape will be marked as needing to be rerouted.
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+You should not use the shape reference again after this call. The router will handle freeing of the shape\textquotesingle{}s memory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em shape} & Pointer reference to the shape being removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}\label{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}} 
+\index{Avoid::Router@{Avoid::Router}!hyperedgeRerouter@{hyperedgeRerouter}}
+\index{hyperedgeRerouter@{hyperedgeRerouter}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{hyperedgeRerouter()}{hyperedgeRerouter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} $\ast$ Avoid\+::\+Router\+::hyperedge\+Rerouter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the hyperedge rerouter for the router. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} object that can be used to register hyperedges for rerouting. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_a94e5639b590902b5e734a1068fdc663c}\label{class_avoid_1_1_router_a94e5639b590902b5e734a1068fdc663c}} 
+\index{Avoid::Router@{Avoid::Router}!moveJunction@{moveJunction}}
+\index{moveJunction@{moveJunction}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{moveJunction()}{moveJunction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::move\+Junction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$}]{junction,  }\item[{const double}]{x\+Diff,  }\item[{const double}]{y\+Diff }\end{DoxyParamCaption})}
+
+
+
+Move an existing junction within the router scene by a relative distance. 
+
+Connectors that are attached to this junction will be rerouted as a result of the move.
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em junction} & Pointer reference to the junction being moved. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Diff} & The distance to move the junction in the x dimension. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+Diff} & The distance to move the junction in the y dimension. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a08021cac275575c7795e2005e5eadb9a}\label{class_avoid_1_1_router_a08021cac275575c7795e2005e5eadb9a}} 
+\index{Avoid::Router@{Avoid::Router}!moveJunction@{moveJunction}}
+\index{moveJunction@{moveJunction}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{moveJunction()}{moveJunction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::move\+Junction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$}]{junction,  }\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{new\+Position }\end{DoxyParamCaption})}
+
+
+
+Move an existing junction within the router scene. 
+
+Connectors that are attached to this junction will be rerouted as a result of the move.
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em junction} & Pointer reference to the junction being moved. \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+Position} & The new position for the junction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_ac171735c187b3e0ea8f03fda4424fd4f}\label{class_avoid_1_1_router_ac171735c187b3e0ea8f03fda4424fd4f}} 
+\index{Avoid::Router@{Avoid::Router}!moveShape@{moveShape}}
+\index{moveShape@{moveShape}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{moveShape()}{moveShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::move\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$}]{shape,  }\item[{const double}]{x\+Diff,  }\item[{const double}]{y\+Diff }\end{DoxyParamCaption})}
+
+
+
+Move an existing shape within the router scene by a relative distance. 
+
+Connectors that intersect the shape\textquotesingle{}s new position, or that could have a better (usually shorter) path after the change, will be marked as needing to be rerouted.
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em shape} & Pointer reference to the shape being moved. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Diff} & The distance to move the shape in the x dimension. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+Diff} & The distance to move the shape in the y dimension. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}\label{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}} 
+\index{Avoid::Router@{Avoid::Router}!moveShape@{moveShape}}
+\index{moveShape@{moveShape}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{moveShape()}{moveShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::move\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$}]{shape,  }\item[{const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&}]{new\+Poly,  }\item[{const bool}]{first\+\_\+move = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Move or resize an existing shape within the router scene. 
+
+A new polygon for the shape can be given to effectively move or resize the shape with the scene. Connectors that intersect the new shape polygon, or that could have a better (usually shorter) path after the change, will be marked as needing to be rerouted.
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em shape} & Pointer reference to the shape being moved/resized. \\
+\hline
+\mbox{\texttt{ in}}  & {\em new\+Poly} & The new polygon boundary for the shape. \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+move} & This option is used for some advanced (currently undocumented) behaviour and it should be ignored for the moment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a20a8a79a5726d9a487864381630a9a90}\label{class_avoid_1_1_router_a20a8a79a5726d9a487864381630a9a90}} 
+\index{Avoid::Router@{Avoid::Router}!newAndDeletedObjectListsFromHyperedgeImprovement@{newAndDeletedObjectListsFromHyperedgeImprovement}}
+\index{newAndDeletedObjectListsFromHyperedgeImprovement@{newAndDeletedObjectListsFromHyperedgeImprovement}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{newAndDeletedObjectListsFromHyperedgeImprovement()}{newAndDeletedObjectListsFromHyperedgeImprovement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} Avoid\+::\+Router\+::new\+And\+Deleted\+Object\+Lists\+From\+Hyperedge\+Improvement (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} detailing the lists of junctions and connectors created and deleted during hyperedge improvement. 
+
+This method will only return information once the router has processed the transaction. You should read and act on this information before \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction()}} is called again.
+
+After calling this you should no longer refer to any of the objects in the \char`\"{}deleted\char`\"{} lists --- the router will delete these and free their memory at its convenience.
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} containing lists of junctions and connectors created and deleted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_a202c28fcb04f7af2183fe6849b4ce2f3}\label{class_avoid_1_1_router_a202c28fcb04f7af2183fe6849b4ce2f3}} 
+\index{Avoid::Router@{Avoid::Router}!newObjectId@{newObjectId}}
+\index{newObjectId@{newObjectId}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{newObjectId()}{newObjectId()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Router\+::new\+Object\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the object ID used for automatically generated objects, such as during hyperedge routing. 
+
+Reimplement this in a subclass to set specific IDs for new objects.
+
+\begin{DoxyNote}{Note}
+Your implementation should return a value that does not fail \mbox{\hyperlink{class_avoid_1_1_router_a8f36729c98e13e57d2c56c0d1facf86c}{object\+Id\+Is\+Unused()}}.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The ID for a new object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_a8f36729c98e13e57d2c56c0d1facf86c}\label{class_avoid_1_1_router_a8f36729c98e13e57d2c56c0d1facf86c}} 
+\index{Avoid::Router@{Avoid::Router}!objectIdIsUnused@{objectIdIsUnused}}
+\index{objectIdIsUnused@{objectIdIsUnused}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{objectIdIsUnused()}{objectIdIsUnused()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Router\+::object\+Id\+Is\+Unused (\begin{DoxyParamCaption}\item[{const unsigned int}]{id }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether or not the given ID is already used. 
+
+You should only need this if you reimplement \mbox{\hyperlink{class_avoid_1_1_router_a202c28fcb04f7af2183fe6849b4ce2f3}{new\+Object\+Id()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em id} & An ID to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean denoting that the given ID is unused. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_a458aae2d6447e0958e4916a8c29bbb47}\label{class_avoid_1_1_router_a458aae2d6447e0958e4916a8c29bbb47}} 
+\index{Avoid::Router@{Avoid::Router}!outputInstanceToSVG@{outputInstanceToSVG}}
+\index{outputInstanceToSVG@{outputInstanceToSVG}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{outputInstanceToSVG()}{outputInstanceToSVG()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::output\+Instance\+To\+SVG (\begin{DoxyParamCaption}\item[{std\+::string}]{filename = {\ttfamily std\+:\+:string()} }\end{DoxyParamCaption})}
+
+
+
+Generates an SVG file containing debug output and code that can be used to regenerate the instance. 
+
+If transactions are being used, then this method should be called after \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction()}} has been called, so that it includes any changes being queued by the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filename} & A string indicating the filename (without extension) for the output file. Defaults to \char`\"{}libavoid-\/debug.\+svg\char`\"{} if no filename is given. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}\label{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}} 
+\index{Avoid::Router@{Avoid::Router}!processTransaction@{processTransaction}}
+\index{processTransaction@{processTransaction}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{processTransaction()}{processTransaction()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Router\+::process\+Transaction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Finishes the current transaction and processes all the queued object changes efficiently. 
+
+This method will efficiently process all moves, additions and deletions that have occurred since \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction()}} was last called.
+
+If \mbox{\hyperlink{class_avoid_1_1_router_aecd68dedfd16678f236b4f3bc12d17ab}{transaction\+Use()}} is false, then all actions will have been processed immediately and this method will do nothing.
+
+\begin{DoxyReturn}{Returns}
+A boolean value describing whether there were any actions to process.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{set\+Transaction\+Use}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_router_a24ee63586c12d0a3518dd5caebcb92d2}\label{class_avoid_1_1_router_a24ee63586c12d0a3518dd5caebcb92d2}} 
+\index{Avoid::Router@{Avoid::Router}!routingOption@{routingOption}}
+\index{routingOption@{routingOption}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{routingOption()}{routingOption()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Router\+::routing\+Option (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Routing\+Option}}}]{option }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current state for a specific routing option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em option} & The type of routing option, a Routing\+Option. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean representing the option state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_ab08a56fa47c415c0450e20bbb438f420}\label{class_avoid_1_1_router_ab08a56fa47c415c0450e20bbb438f420}} 
+\index{Avoid::Router@{Avoid::Router}!routingParameter@{routingParameter}}
+\index{routingParameter@{routingParameter}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{routingParameter()}{routingParameter()}}
+{\footnotesize\ttfamily double Avoid\+::\+Router\+::routing\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}}}]{parameter }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current value for a particular routing parameter of a given type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parameter} & The type of parameter, a Routing\+Parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the specified routing parameter. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_a09f057f6d101f010588c9022893c9ac1}\label{class_avoid_1_1_router_a09f057f6d101f010588c9022893c9ac1}} 
+\index{Avoid::Router@{Avoid::Router}!setRoutingOption@{setRoutingOption}}
+\index{setRoutingOption@{setRoutingOption}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{setRoutingOption()}{setRoutingOption()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::set\+Routing\+Option (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Routing\+Option}}}]{option,  }\item[{const bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Turn specific routing options on or off. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em option} & The type of routing option, a Routing\+Option. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & A boolean representing the option state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a596cecf98ff1b40a8ee5c703e175ff62}\label{class_avoid_1_1_router_a596cecf98ff1b40a8ee5c703e175ff62}} 
+\index{Avoid::Router@{Avoid::Router}!setRoutingParameter@{setRoutingParameter}}
+\index{setRoutingParameter@{setRoutingParameter}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{setRoutingParameter()}{setRoutingParameter()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::set\+Routing\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}}}]{parameter,  }\item[{const double}]{value = {\ttfamily chooseSensibleParamValue} }\end{DoxyParamCaption})}
+
+
+
+Sets values for routing parameters, including routing penalties. 
+
+libavoid uses a set of parameters to allow the user more control over routing style and quality. These different parameters are described and explained by the Routing\+Parameter enum. All parameters have sensible defaults.
+
+Regarding routing penalties, libavoid will by default produce shortest path routes between the source and destination points for each connector. There are several penalties that can be applied during this stage to penalise certain conditions and thus improve the aesthetics of the routes generated. ~\newline
+
+
+If a value of zero or Avoid\+::zero\+Param\+Value is given then the particular parameter value or penalty will be removed. If no parameter value argument (or a negative value) is specified when calling this method, then a sensible penalty value will be automatically chosen.
+
+This method does not re-\/trigger processing of connectors. The new parameter value will be used the next time rerouting is performed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em parameter} & The type of penalty, a Routing\+Parameter. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & The value to be set for that parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_acbda0590ff3234faad409e2f39e1c9ec}\label{class_avoid_1_1_router_acbda0590ff3234faad409e2f39e1c9ec}} 
+\index{Avoid::Router@{Avoid::Router}!setRoutingPenalty@{setRoutingPenalty}}
+\index{setRoutingPenalty@{setRoutingPenalty}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{setRoutingPenalty()}{setRoutingPenalty()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::set\+Routing\+Penalty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Routing\+Parameter}}}]{pen\+Type,  }\item[{const double}]{pen\+Val = {\ttfamily chooseSensibleParamValue} }\end{DoxyParamCaption})}
+
+
+
+Sets or removes penalty values that are applied during connector routing. 
+
+\begin{DoxyNote}{Note}
+This is a convenience wrapper for the \mbox{\hyperlink{class_avoid_1_1_router_a596cecf98ff1b40a8ee5c703e175ff62}{set\+Routing\+Parameter()}} 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pen\+Type} & The type of penalty, a Routing\+Parameter. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pen\+Val} & The value to be applied for each occurrence of the penalty case. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a2d18149edbd47373a63c799c1c71bfa4}\label{class_avoid_1_1_router_a2d18149edbd47373a63c799c1c71bfa4}} 
+\index{Avoid::Router@{Avoid::Router}!setTopologyAddon@{setTopologyAddon}}
+\index{setTopologyAddon@{setTopologyAddon}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{setTopologyAddon()}{setTopologyAddon()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::set\+Topology\+Addon (\begin{DoxyParamCaption}\item[{Topology\+Addon\+Interface $\ast$}]{topology\+Addon }\end{DoxyParamCaption})}
+
+
+
+Set an addon for doing orthogonal topology improvement. 
+
+It is expected that you would use the topology\+::\+Avoid\+Topology\+Addon() from libtopology rather than write your own. This is done so that libavoid does not have to depend on libtopology. \mbox{\Hypertarget{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}\label{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}} 
+\index{Avoid::Router@{Avoid::Router}!setTransactionUse@{setTransactionUse}}
+\index{setTransactionUse@{setTransactionUse}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{setTransactionUse()}{setTransactionUse()}}
+{\footnotesize\ttfamily void Avoid\+::\+Router\+::set\+Transaction\+Use (\begin{DoxyParamCaption}\item[{const bool}]{transactions }\end{DoxyParamCaption})}
+
+
+
+Allows setting of the behaviour of the router in regard to transactions. This controls whether transactions are used to queue changes and process them efficiently at once or they are instead processed immediately. 
+
+It is more efficient to perform actions like shape movement, addition or deletion as batch tasks, and reroute the necessary connectors just once after these actions have been performed. For this reason, libavoid allows you to group such actions into \char`\"{}transactions\char`\"{} that are processed efficiently when the \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction()}} method is called.
+
+By default, the router will process all actions as transactions. If \mbox{\hyperlink{class_avoid_1_1_router_aecd68dedfd16678f236b4f3bc12d17ab}{transaction\+Use()}} is set to false, then all actions will get processed immediately, and cause immediate routing callbacks to all affected connectors after each action.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em transactions} & A boolean value specifying whether to use transactions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}\label{class_avoid_1_1_router_a2ebc288933c13b8b8794e11e915a889f}} 
+\index{Avoid::Router@{Avoid::Router}!shouldContinueTransactionWithProgress@{shouldContinueTransactionWithProgress}}
+\index{shouldContinueTransactionWithProgress@{shouldContinueTransactionWithProgress}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{shouldContinueTransactionWithProgress()}{shouldContinueTransactionWithProgress()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Router\+::should\+Continue\+Transaction\+With\+Progress (\begin{DoxyParamCaption}\item[{unsigned int}]{elapsed\+Time,  }\item[{unsigned int}]{phase\+Number,  }\item[{unsigned int}]{total\+Phases,  }\item[{double}]{proportion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method called at regular intervals during transaction processing to report progress and ask if the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} should continue the transaction. 
+
+You can subclass the \mbox{\hyperlink{class_avoid_1_1_router}{Avoid\+::\+Router}} class to implement your own behaviour, such as to show a progress bar or cancel the transaction at the user\textquotesingle{}s request.
+
+Note that you can get a sense of progress by looking at the phase\+Number divided by the total\+Phases and the progress in the current phase, but be aware that phases and the intervals and proportions at which this method is called will vary, sometime unpredictably.
+
+You can return false to request that the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} abort the current transaction. Be aware that it may not abort in some phases. For others it may need to clean up some state before it is safe for you to interact with it again. Hence you should wait for a final call to this method with the phase \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}{Avoid\+::\+Transaction\+Phase\+Completed}} before continuing.
+
+\begin{DoxyNote}{Note}
+Your implementation of this method should be very fast as it will be called many times. Also, you should not change or interact with the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} instance at all during these calls. Wait till you have received a call with the \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}{Avoid\+::\+Transaction\+Phase\+Completed}} phase.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed\+Time} & The number of msec spent on the transaction since it began. \\
+\hline
+{\em phase\+Number} & A Router\+::\+Transaction\+Phases representing the current phase of the transaction. \\
+\hline
+{\em total\+Phases} & The total number of phases to be performed during the transaction. \\
+\hline
+{\em proportion} & A double representing the progress in the current phase. Value will be between 0--1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the router should continue the transaction. This is true in the default (empty) implementation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_router_aecd68dedfd16678f236b4f3bc12d17ab}\label{class_avoid_1_1_router_aecd68dedfd16678f236b4f3bc12d17ab}} 
+\index{Avoid::Router@{Avoid::Router}!transactionUse@{transactionUse}}
+\index{transactionUse@{transactionUse}!Avoid::Router@{Avoid::Router}}
+\doxysubsubsection{\texorpdfstring{transactionUse()}{transactionUse()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Router\+::transaction\+Use (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Reports whether the router groups actions into transactions. 
+
+\begin{DoxyReturn}{Returns}
+A boolean value describing whether transactions are in use.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{set\+Transaction\+Use}} 
+
+\mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{process\+Transaction}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{router_8h}{router.\+h}}\item 
+router.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,555 @@
+\begin{theindex}
+
+  \item {$\sim$ConnRef}
+    \subitem {Avoid::ConnRef}, \hyperpage{33}
+  \item {$\sim$JunctionRef}
+    \subitem {Avoid::JunctionRef}, \hyperpage{45}
+  \item {$\sim$Router}
+    \subitem {Avoid::Router}, \hyperpage{68}
+  \item {$\sim$ShapeRef}
+    \subitem {Avoid::ShapeRef}, \hyperpage{82}
+
+  \indexspace
+
+  \item {anglePenalty}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {at}
+    \subitem {Avoid::Polygon}, \hyperpage{53}
+    \subitem {Avoid::PolygonInterface}, \hyperpage{58}
+    \subitem {Avoid::Rectangle}, \hyperpage{61}
+    \subitem {Avoid::ReferencingPolygon}, \hyperpage{65}
+  \item {Avoid}, \hyperpage{13}
+    \subitem {anglePenalty}, \hyperpage{19}
+    \subitem {clusterCrossingPenalty}, \hyperpage{19}
+    \subitem {ConnDirAll}, \hyperpage{15}
+    \subitem {ConnDirDown}, \hyperpage{15}
+    \subitem {ConnDirFlag}, \hyperpage{15}
+    \subitem {ConnDirLeft}, \hyperpage{15}
+    \subitem {ConnDirRight}, \hyperpage{15}
+    \subitem {ConnDirUp}, \hyperpage{15}
+    \subitem {ConnEndEmpty}, \hyperpage{16}
+    \subitem {ConnEndJunction}, \hyperpage{16}
+    \subitem {ConnEndPoint}, \hyperpage{16}
+    \subitem {ConnEndShapePin}, \hyperpage{16}
+    \subitem {ConnEndType}, \hyperpage{15}
+    \subitem {ConnType}, \hyperpage{16}
+    \subitem {ConnType\_Orthogonal}, \hyperpage{16}
+    \subitem {ConnType\_PolyLine}, \hyperpage{16}
+    \subitem {crossingPenalty}, \hyperpage{19}
+    \subitem {fixedSharedPathPenalty}, \hyperpage{19}
+    \subitem {idealNudgingDistance}, \hyperpage{19}
+    \subitem {improveHyperedgeRoutesMovingAddingAndDeletingJunctions}, 
+		\hyperpage{18}
+    \subitem {improveHyperedgeRoutesMovingJunctions}, \hyperpage{17}
+    \subitem {nudgeOrthogonalSegmentsConnectedToShapes}, \hyperpage{17}
+    \subitem {nudgeOrthogonalTouchingColinearSegments}, \hyperpage{18}
+    \subitem {nudgeSharedPathsWithCommonEndPoint}, \hyperpage{18}
+    \subitem {OrthogonalRouting}, \hyperpage{16}
+    \subitem {penaliseOrthogonalSharedPathsAtConnEnds}, \hyperpage{17}
+    \subitem {performUnifyingNudgingPreprocessingStep}, \hyperpage{18}
+    \subitem {PolyLineRouting}, \hyperpage{16}
+    \subitem {portDirectionPenalty}, \hyperpage{19}
+    \subitem {reverseDirectionPenalty}, \hyperpage{20}
+    \subitem {RouterFlag}, \hyperpage{16}
+    \subitem {RoutingOption}, \hyperpage{16}
+    \subitem {RoutingParameter}, \hyperpage{18}
+    \subitem {segmentPenalty}, \hyperpage{19}
+    \subitem {shapeBufferDistance}, \hyperpage{19}
+    \subitem {ShapeTransformationType}, \hyperpage{20}
+    \subitem {TransactionPhaseCompleted}, \hyperpage{20}
+    \subitem {TransactionPhaseCrossingDetection}, \hyperpage{20}
+    \subitem {TransactionPhaseOrthogonalNudgingX}, \hyperpage{20}
+    \subitem {TransactionPhaseOrthogonalNudgingY}, \hyperpage{20}
+    \subitem {TransactionPhaseOrthogonalVisibilityGraphScanX}, 
+		\hyperpage{20}
+    \subitem {TransactionPhaseOrthogonalVisibilityGraphScanY}, 
+		\hyperpage{20}
+    \subitem {TransactionPhaseRerouteSearch}, \hyperpage{20}
+    \subitem {TransactionPhaseRouteSearch}, \hyperpage{20}
+    \subitem {TransactionPhases}, \hyperpage{20}
+    \subitem {TransformationType\_CW180}, \hyperpage{20}
+    \subitem {TransformationType\_CW270}, \hyperpage{20}
+    \subitem {TransformationType\_CW90}, \hyperpage{20}
+    \subitem {TransformationType\_FlipX}, \hyperpage{20}
+    \subitem {TransformationType\_FlipY}, \hyperpage{20}
+  \item {Avoid::Box}, \hyperpage{21}
+  \item {Avoid::Checkpoint}, \hyperpage{21}
+    \subitem {Checkpoint}, \hyperpage{22}
+  \item {Avoid::ClusterRef}, \hyperpage{23}
+    \subitem {ClusterRef}, \hyperpage{23}
+    \subitem {id}, \hyperpage{24}
+    \subitem {polygon}, \hyperpage{24}
+    \subitem {rectangularPolygon}, \hyperpage{25}
+    \subitem {router}, \hyperpage{25}
+    \subitem {setNewPoly}, \hyperpage{25}
+  \item {Avoid::ConnEnd}, \hyperpage{26}
+    \subitem {ConnEnd}, \hyperpage{27}, \hyperpage{29}
+    \subitem {directions}, \hyperpage{29}
+    \subitem {junction}, \hyperpage{29}
+    \subitem {pinClassId}, \hyperpage{29}
+    \subitem {position}, \hyperpage{30}
+    \subitem {shape}, \hyperpage{30}
+    \subitem {type}, \hyperpage{30}
+  \item {Avoid::ConnRef}, \hyperpage{31}
+    \subitem {$\sim$ConnRef}, \hyperpage{33}
+    \subitem {clearFixedRoute}, \hyperpage{33}
+    \subitem {ConnRef}, \hyperpage{32}
+    \subitem {displayRoute}, \hyperpage{33}
+    \subitem {endpointConnEnds}, \hyperpage{34}
+    \subitem {hasFixedRoute}, \hyperpage{34}
+    \subitem {id}, \hyperpage{34}
+    \subitem {needsRepaint}, \hyperpage{35}
+    \subitem {route}, \hyperpage{35}
+    \subitem {router}, \hyperpage{35}
+    \subitem {routingCheckpoints}, \hyperpage{36}
+    \subitem {routingType}, \hyperpage{36}
+    \subitem {setCallback}, \hyperpage{36}
+    \subitem {setDestEndpoint}, \hyperpage{37}
+    \subitem {setEndpoints}, \hyperpage{37}
+    \subitem {setFixedExistingRoute}, \hyperpage{37}
+    \subitem {setFixedRoute}, \hyperpage{38}
+    \subitem {setRoutingCheckpoints}, \hyperpage{38}
+    \subitem {setRoutingType}, \hyperpage{39}
+    \subitem {setSourceEndpoint}, \hyperpage{39}
+    \subitem {splitAtSegment}, \hyperpage{39}
+  \item {Avoid::Edge}, \hyperpage{40}
+  \item {Avoid::HyperedgeNewAndDeletedObjectLists}, \hyperpage{40}
+  \item {Avoid::HyperedgeRerouter}, \hyperpage{41}
+    \subitem {HyperedgeRerouter}, \hyperpage{42}
+    \subitem {newAndDeletedObjectLists}, \hyperpage{42}
+    \subitem {registerHyperedgeForRerouting}, \hyperpage{42, 43}
+  \item {Avoid::JunctionRef}, \hyperpage{43}
+    \subitem {$\sim$JunctionRef}, \hyperpage{45}
+    \subitem {id}, \hyperpage{45}
+    \subitem {JunctionRef}, \hyperpage{44}
+    \subitem {polygon}, \hyperpage{46}
+    \subitem {position}, \hyperpage{46}
+    \subitem {positionFixed}, \hyperpage{46}
+    \subitem {recommendedPosition}, \hyperpage{46}
+    \subitem {removeJunctionAndMergeConnectors}, \hyperpage{47}
+    \subitem {router}, \hyperpage{47}
+    \subitem {setPositionFixed}, \hyperpage{47}
+  \item {Avoid::Point}, \hyperpage{48}
+    \subitem {equals}, \hyperpage{49}
+    \subitem {operator!=}, \hyperpage{49}
+    \subitem {operator$<$}, \hyperpage{50}
+    \subitem {operator==}, \hyperpage{50}
+    \subitem {operator[]}, \hyperpage{51}
+    \subitem {Point}, \hyperpage{49}
+  \item {Avoid::Polygon}, \hyperpage{51}
+    \subitem {at}, \hyperpage{53}
+    \subitem {boundingRectPolygon}, \hyperpage{54}
+    \subitem {curvedPolyline}, \hyperpage{54}
+    \subitem {offsetBoundingBox}, \hyperpage{54}
+    \subitem {Polygon}, \hyperpage{53}
+    \subitem {setPoint}, \hyperpage{55}
+    \subitem {simplify}, \hyperpage{55}
+    \subitem {translate}, \hyperpage{55}
+    \subitem {ts}, \hyperpage{57}
+  \item {Avoid::PolygonInterface}, \hyperpage{57}
+    \subitem {at}, \hyperpage{58}
+    \subitem {boundingRectPolygon}, \hyperpage{58}
+    \subitem {offsetBoundingBox}, \hyperpage{59}
+  \item {Avoid::Rectangle}, \hyperpage{59}
+    \subitem {at}, \hyperpage{61}
+    \subitem {boundingRectPolygon}, \hyperpage{61}
+    \subitem {curvedPolyline}, \hyperpage{62}
+    \subitem {offsetBoundingBox}, \hyperpage{62}
+    \subitem {Rectangle}, \hyperpage{60, 61}
+    \subitem {setPoint}, \hyperpage{63}
+    \subitem {simplify}, \hyperpage{63}
+    \subitem {translate}, \hyperpage{63}
+    \subitem {ts}, \hyperpage{64}
+  \item {Avoid::ReferencingPolygon}, \hyperpage{64}
+    \subitem {at}, \hyperpage{65}
+    \subitem {boundingRectPolygon}, \hyperpage{65}
+    \subitem {offsetBoundingBox}, \hyperpage{66}
+  \item {Avoid::Router}, \hyperpage{66}
+    \subitem {$\sim$Router}, \hyperpage{68}
+    \subitem {deleteConnector}, \hyperpage{68}
+    \subitem {deleteJunction}, \hyperpage{69}
+    \subitem {deleteShape}, \hyperpage{69}
+    \subitem {hyperedgeRerouter}, \hyperpage{69}
+    \subitem {moveJunction}, \hyperpage{70}
+    \subitem {moveShape}, \hyperpage{70, 71}
+    \subitem {newAndDeletedObjectListsFromHyperedgeImprovement}, 
+		\hyperpage{71}
+    \subitem {newObjectId}, \hyperpage{72}
+    \subitem {objectIdIsUnused}, \hyperpage{72}
+    \subitem {outputInstanceToSVG}, \hyperpage{73}
+    \subitem {processTransaction}, \hyperpage{73}
+    \subitem {Router}, \hyperpage{68}
+    \subitem {routingOption}, \hyperpage{73}
+    \subitem {routingParameter}, \hyperpage{74}
+    \subitem {setRoutingOption}, \hyperpage{74}
+    \subitem {setRoutingParameter}, \hyperpage{74}
+    \subitem {setRoutingPenalty}, \hyperpage{75}
+    \subitem {setTopologyAddon}, \hyperpage{75}
+    \subitem {setTransactionUse}, \hyperpage{75}
+    \subitem {shouldContinueTransactionWithProgress}, \hyperpage{76}
+    \subitem {transactionUse}, \hyperpage{77}
+  \item {Avoid::ShapeConnectionPin}, \hyperpage{77}
+    \subitem {directions}, \hyperpage{80}
+    \subitem {isExclusive}, \hyperpage{80}
+    \subitem {position}, \hyperpage{80}
+    \subitem {setConnectionCost}, \hyperpage{80}
+    \subitem {setExclusive}, \hyperpage{81}
+    \subitem {ShapeConnectionPin}, \hyperpage{78, 79}
+  \item {Avoid::ShapeRef}, \hyperpage{81}
+    \subitem {$\sim$ShapeRef}, \hyperpage{82}
+    \subitem {id}, \hyperpage{83}
+    \subitem {polygon}, \hyperpage{83}
+    \subitem {router}, \hyperpage{83}
+    \subitem {ShapeRef}, \hyperpage{82}
+    \subitem {transformConnectionPinPositions}, \hyperpage{83}
+
+  \indexspace
+
+  \item {boundingRectPolygon}
+    \subitem {Avoid::Polygon}, \hyperpage{54}
+    \subitem {Avoid::PolygonInterface}, \hyperpage{58}
+    \subitem {Avoid::Rectangle}, \hyperpage{61}
+    \subitem {Avoid::ReferencingPolygon}, \hyperpage{65}
+
+  \indexspace
+
+  \item {Checkpoint}
+    \subitem {Avoid::Checkpoint}, \hyperpage{22}
+  \item {clearFixedRoute}
+    \subitem {Avoid::ConnRef}, \hyperpage{33}
+  \item {clusterCrossingPenalty}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {ClusterRef}
+    \subitem {Avoid::ClusterRef}, \hyperpage{23}
+  \item {ConnDirAll}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnDirDown}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnDirFlag}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnDirLeft}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnDirRight}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnDirUp}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {connectionpin.h}, \hyperpage{85}
+  \item {connector.h}, \hyperpage{86}
+  \item {ConnEnd}
+    \subitem {Avoid::ConnEnd}, \hyperpage{27}, \hyperpage{29}
+  \item {connend.h}, \hyperpage{86}
+  \item {ConnEndEmpty}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnEndJunction}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnEndPoint}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnEndShapePin}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnEndType}
+    \subitem {Avoid}, \hyperpage{15}
+  \item {ConnRef}
+    \subitem {Avoid::ConnRef}, \hyperpage{32}
+  \item {ConnType}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnType\_Orthogonal}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {ConnType\_PolyLine}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {crossingPenalty}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {curvedPolyline}
+    \subitem {Avoid::Polygon}, \hyperpage{54}
+    \subitem {Avoid::Rectangle}, \hyperpage{62}
+
+  \indexspace
+
+  \item {deleteConnector}
+    \subitem {Avoid::Router}, \hyperpage{68}
+  \item {deleteJunction}
+    \subitem {Avoid::Router}, \hyperpage{69}
+  \item {deleteShape}
+    \subitem {Avoid::Router}, \hyperpage{69}
+  \item {directions}
+    \subitem {Avoid::ConnEnd}, \hyperpage{29}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{80}
+  \item {displayRoute}
+    \subitem {Avoid::ConnRef}, \hyperpage{33}
+
+  \indexspace
+
+  \item {endpointConnEnds}
+    \subitem {Avoid::ConnRef}, \hyperpage{34}
+  \item {equals}
+    \subitem {Avoid::Point}, \hyperpage{49}
+
+  \indexspace
+
+  \item {fixedSharedPathPenalty}
+    \subitem {Avoid}, \hyperpage{19}
+
+  \indexspace
+
+  \item {geomtypes.h}, \hyperpage{87}
+
+  \indexspace
+
+  \item {hasFixedRoute}
+    \subitem {Avoid::ConnRef}, \hyperpage{34}
+  \item {hyperedge.h}, \hyperpage{88}
+  \item {HyperedgeRerouter}
+    \subitem {Avoid::HyperedgeRerouter}, \hyperpage{42}
+  \item {hyperedgeRerouter}
+    \subitem {Avoid::Router}, \hyperpage{69}
+
+  \indexspace
+
+  \item {id}
+    \subitem {Avoid::ClusterRef}, \hyperpage{24}
+    \subitem {Avoid::ConnRef}, \hyperpage{34}
+    \subitem {Avoid::JunctionRef}, \hyperpage{45}
+    \subitem {Avoid::ShapeRef}, \hyperpage{83}
+  \item {idealNudgingDistance}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {improveHyperedgeRoutesMovingAddingAndDeletingJunctions}
+    \subitem {Avoid}, \hyperpage{18}
+  \item {improveHyperedgeRoutesMovingJunctions}
+    \subitem {Avoid}, \hyperpage{17}
+  \item {isExclusive}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{80}
+
+  \indexspace
+
+  \item {junction}
+    \subitem {Avoid::ConnEnd}, \hyperpage{29}
+  \item {junction.h}, \hyperpage{89}
+  \item {JunctionRef}
+    \subitem {Avoid::JunctionRef}, \hyperpage{44}
+
+  \indexspace
+
+  \item {libavoid.h}, \hyperpage{89}
+
+  \indexspace
+
+  \item {moveJunction}
+    \subitem {Avoid::Router}, \hyperpage{70}
+  \item {moveShape}
+    \subitem {Avoid::Router}, \hyperpage{70, 71}
+
+  \indexspace
+
+  \item {needsRepaint}
+    \subitem {Avoid::ConnRef}, \hyperpage{35}
+  \item {newAndDeletedObjectLists}
+    \subitem {Avoid::HyperedgeRerouter}, \hyperpage{42}
+  \item {newAndDeletedObjectListsFromHyperedgeImprovement}
+    \subitem {Avoid::Router}, \hyperpage{71}
+  \item {newObjectId}
+    \subitem {Avoid::Router}, \hyperpage{72}
+  \item {nudgeOrthogonalSegmentsConnectedToShapes}
+    \subitem {Avoid}, \hyperpage{17}
+  \item {nudgeOrthogonalTouchingColinearSegments}
+    \subitem {Avoid}, \hyperpage{18}
+  \item {nudgeSharedPathsWithCommonEndPoint}
+    \subitem {Avoid}, \hyperpage{18}
+
+  \indexspace
+
+  \item {objectIdIsUnused}
+    \subitem {Avoid::Router}, \hyperpage{72}
+  \item {obstacle.h}, \hyperpage{90}
+  \item {offsetBoundingBox}
+    \subitem {Avoid::Polygon}, \hyperpage{54}
+    \subitem {Avoid::PolygonInterface}, \hyperpage{59}
+    \subitem {Avoid::Rectangle}, \hyperpage{62}
+    \subitem {Avoid::ReferencingPolygon}, \hyperpage{66}
+  \item {operator!=}
+    \subitem {Avoid::Point}, \hyperpage{49}
+  \item {operator$<$}
+    \subitem {Avoid::Point}, \hyperpage{50}
+  \item {operator==}
+    \subitem {Avoid::Point}, \hyperpage{50}
+  \item {operator[]}
+    \subitem {Avoid::Point}, \hyperpage{51}
+  \item {OrthogonalRouting}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {outputInstanceToSVG}
+    \subitem {Avoid::Router}, \hyperpage{73}
+
+  \indexspace
+
+  \item {penaliseOrthogonalSharedPathsAtConnEnds}
+    \subitem {Avoid}, \hyperpage{17}
+  \item {performUnifyingNudgingPreprocessingStep}
+    \subitem {Avoid}, \hyperpage{18}
+  \item {pinClassId}
+    \subitem {Avoid::ConnEnd}, \hyperpage{29}
+  \item {Point}
+    \subitem {Avoid::Point}, \hyperpage{49}
+  \item {Polygon}
+    \subitem {Avoid::Polygon}, \hyperpage{53}
+  \item {polygon}
+    \subitem {Avoid::ClusterRef}, \hyperpage{24}
+    \subitem {Avoid::JunctionRef}, \hyperpage{46}
+    \subitem {Avoid::ShapeRef}, \hyperpage{83}
+  \item {PolyLineRouting}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {portDirectionPenalty}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {position}
+    \subitem {Avoid::ConnEnd}, \hyperpage{30}
+    \subitem {Avoid::JunctionRef}, \hyperpage{46}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{80}
+  \item {positionFixed}
+    \subitem {Avoid::JunctionRef}, \hyperpage{46}
+  \item {processTransaction}
+    \subitem {Avoid::Router}, \hyperpage{73}
+
+  \indexspace
+
+  \item {recommendedPosition}
+    \subitem {Avoid::JunctionRef}, \hyperpage{46}
+  \item {Rectangle}
+    \subitem {Avoid::Rectangle}, \hyperpage{60, 61}
+  \item {rectangularPolygon}
+    \subitem {Avoid::ClusterRef}, \hyperpage{25}
+  \item {registerHyperedgeForRerouting}
+    \subitem {Avoid::HyperedgeRerouter}, \hyperpage{42, 43}
+  \item {removeJunctionAndMergeConnectors}
+    \subitem {Avoid::JunctionRef}, \hyperpage{47}
+  \item {reverseDirectionPenalty}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {route}
+    \subitem {Avoid::ConnRef}, \hyperpage{35}
+  \item {Router}
+    \subitem {Avoid::Router}, \hyperpage{68}
+  \item {router}
+    \subitem {Avoid::ClusterRef}, \hyperpage{25}
+    \subitem {Avoid::ConnRef}, \hyperpage{35}
+    \subitem {Avoid::JunctionRef}, \hyperpage{47}
+    \subitem {Avoid::ShapeRef}, \hyperpage{83}
+  \item {router.h}, \hyperpage{90}
+  \item {RouterFlag}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {routingCheckpoints}
+    \subitem {Avoid::ConnRef}, \hyperpage{36}
+  \item {RoutingOption}
+    \subitem {Avoid}, \hyperpage{16}
+  \item {routingOption}
+    \subitem {Avoid::Router}, \hyperpage{73}
+  \item {RoutingParameter}
+    \subitem {Avoid}, \hyperpage{18}
+  \item {routingParameter}
+    \subitem {Avoid::Router}, \hyperpage{74}
+  \item {routingType}
+    \subitem {Avoid::ConnRef}, \hyperpage{36}
+
+  \indexspace
+
+  \item {segmentPenalty}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {setCallback}
+    \subitem {Avoid::ConnRef}, \hyperpage{36}
+  \item {setConnectionCost}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{80}
+  \item {setDestEndpoint}
+    \subitem {Avoid::ConnRef}, \hyperpage{37}
+  \item {setEndpoints}
+    \subitem {Avoid::ConnRef}, \hyperpage{37}
+  \item {setExclusive}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{81}
+  \item {setFixedExistingRoute}
+    \subitem {Avoid::ConnRef}, \hyperpage{37}
+  \item {setFixedRoute}
+    \subitem {Avoid::ConnRef}, \hyperpage{38}
+  \item {setNewPoly}
+    \subitem {Avoid::ClusterRef}, \hyperpage{25}
+  \item {setPoint}
+    \subitem {Avoid::Polygon}, \hyperpage{55}
+    \subitem {Avoid::Rectangle}, \hyperpage{63}
+  \item {setPositionFixed}
+    \subitem {Avoid::JunctionRef}, \hyperpage{47}
+  \item {setRoutingCheckpoints}
+    \subitem {Avoid::ConnRef}, \hyperpage{38}
+  \item {setRoutingOption}
+    \subitem {Avoid::Router}, \hyperpage{74}
+  \item {setRoutingParameter}
+    \subitem {Avoid::Router}, \hyperpage{74}
+  \item {setRoutingPenalty}
+    \subitem {Avoid::Router}, \hyperpage{75}
+  \item {setRoutingType}
+    \subitem {Avoid::ConnRef}, \hyperpage{39}
+  \item {setSourceEndpoint}
+    \subitem {Avoid::ConnRef}, \hyperpage{39}
+  \item {setTopologyAddon}
+    \subitem {Avoid::Router}, \hyperpage{75}
+  \item {setTransactionUse}
+    \subitem {Avoid::Router}, \hyperpage{75}
+  \item {shape}
+    \subitem {Avoid::ConnEnd}, \hyperpage{30}
+  \item {shape.h}, \hyperpage{91}
+  \item {shapeBufferDistance}
+    \subitem {Avoid}, \hyperpage{19}
+  \item {ShapeConnectionPin}
+    \subitem {Avoid::ShapeConnectionPin}, \hyperpage{78, 79}
+  \item {ShapeRef}
+    \subitem {Avoid::ShapeRef}, \hyperpage{82}
+  \item {ShapeTransformationType}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {shouldContinueTransactionWithProgress}
+    \subitem {Avoid::Router}, \hyperpage{76}
+  \item {simplify}
+    \subitem {Avoid::Polygon}, \hyperpage{55}
+    \subitem {Avoid::Rectangle}, \hyperpage{63}
+  \item {splitAtSegment}
+    \subitem {Avoid::ConnRef}, \hyperpage{39}
+
+  \indexspace
+
+  \item {TransactionPhaseCompleted}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseCrossingDetection}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseOrthogonalNudgingX}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseOrthogonalNudgingY}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseOrthogonalVisibilityGraphScanX}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseOrthogonalVisibilityGraphScanY}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseRerouteSearch}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhaseRouteSearch}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransactionPhases}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {transactionUse}
+    \subitem {Avoid::Router}, \hyperpage{77}
+  \item {TransformationType\_CW180}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransformationType\_CW270}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransformationType\_CW90}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransformationType\_FlipX}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {TransformationType\_FlipY}
+    \subitem {Avoid}, \hyperpage{20}
+  \item {transformConnectionPinPositions}
+    \subitem {Avoid::ShapeRef}, \hyperpage{83}
+  \item {translate}
+    \subitem {Avoid::Polygon}, \hyperpage{55}
+    \subitem {Avoid::Rectangle}, \hyperpage{63}
+  \item {ts}
+    \subitem {Avoid::Polygon}, \hyperpage{57}
+    \subitem {Avoid::Rectangle}, \hyperpage{64}
+  \item {type}
+    \subitem {Avoid::ConnEnd}, \hyperpage{30}
+
+  \indexspace
+
+  \item {viscluster.h}, \hyperpage{92}
+
+\end{theindex}

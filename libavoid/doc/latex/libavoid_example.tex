@@ -1,0 +1,162 @@
+libavoid is a C++ library. Its code is all within the \mbox{\hyperlink{namespace_avoid}{Avoid}} namespace.
+
+First, you must create an instance of the router. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_router}{Avoid::Router}} *router = \textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_router}{Avoid::Router}}(\mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4abd8248b5a3102d2b5b50c4010397de63}{Avoid::PolyLineRouting}}); }
+
+\end{DoxyCode}
+
+
+To add a shape (obstacle) to the router, you first create a \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid\+::\+Shape\+Ref}} by giving the bounding box of the obstacle. This adds the shape to the router (and cause rerouting of connectors it intersects). It also passes ownership of the shape\+Ref object to the router instance, though it is still fine for you to keep a reference to it. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Create the ShapeRef:}}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_rectangle}{Avoid::Rectangle}} rectangle(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(20.0, 35.0), \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(40.0, 12.0));}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid::ShapeRef}} *shapeRef = \textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid::ShapeRef}}(router, rectangle); }
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_polygon}{Avoid::Polygon}} shapePoly(3);}
+\DoxyCodeLine{shapePoly.ps[0] = \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(1.0, 1.0);}
+\DoxyCodeLine{shapePoly.ps[1] = \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(2.5, 1.5);}
+\DoxyCodeLine{shapePoly.ps[2] = \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(1.5, 2.5);}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid::ShapeRef}} *shapeRef = \textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid::ShapeRef}}(router, shapePoly); }
+
+\end{DoxyCode}
+
+
+The relevant prototypes (all in the \mbox{\hyperlink{namespace_avoid}{Avoid}} namespace) are as follows. If a shape ID is specified, it should be non-\/zero and unique among all shapes and connectors. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_rectangle}{Avoid::Rectangle}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}\& topLeft, \textcolor{keyword}{const} \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}\& bottomRight);}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_rectangle}{Avoid::Rectangle}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}\& centre, \textcolor{keyword}{const} \textcolor{keywordtype}{double} width, \textcolor{keyword}{const} \textcolor{keywordtype}{double} height);}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Avoid::ShapeRef}}(\mbox{\hyperlink{class_avoid_1_1_router}{Avoid::Router}} *router, \textcolor{keyword}{const} \mbox{\hyperlink{class_avoid_1_1_polygon}{Avoid::Polygon}}\& polygon, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = 0); }
+
+\end{DoxyCode}
+
+
+To move or resize a shape already in the router, you do the following\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{moveShape}}(shapeRef, newPolygon); }
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double} xmove = 20, ymove = 15;}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{moveShape}}(shapeRef, xmove, ymove); }
+
+\end{DoxyCode}
+
+
+In its default mode the router will queue multiple shape movements and perform the changes to the visibility graph in an optimised order. Thus you make several calls to \mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{Avoid\+::\+Router\+::move\+Shape()}} for different shapes and then tell the router to process the moves. This tend to be useful in interactive applications where the user may move multiple shapes at once. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{moveShape}}(shapeRef1, newPolygon1);}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{moveShape}}(shapeRef2, newPolygon2);}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{processTransaction}}();}
+
+\end{DoxyCode}
+
+
+To delete a shape from the router (and reroute connectors that then have a better path) you do the following. ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}{deleteShape}}(shapeRef); }
+
+\end{DoxyCode}
+ This will cause the router to free the memory for the shape\+Ref. You should discard your reference to the shape\+Ref after this call.
+
+To add a new connector to the router, you do the following\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} srcPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(1.2, 0.5));}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} dstPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(3.0, 4.0));}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_ref}{Avoid::ConnRef}} *connRef = \textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Avoid::ConnRef}}(router, srcPt, dstPt); }
+
+\end{DoxyCode}
+ This passes ownership of the conn\+Ref object to the router instance, though it is still fine for you to keep a reference to it.
+
+To remove a connector from the router\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{router-\/>\mbox{\hyperlink{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}{deleteConnector}}(connRef); }
+
+\end{DoxyCode}
+ This will cause the router to free the memory for the conn\+Ref. You should discard your reference to the conn\+Ref after this call.
+
+You can set a function to be called when the connector needs to be redrawn. When called, this function will be passed the pointer given as a second argument to \mbox{\hyperlink{class_avoid_1_1_conn_ref_a9d1a26643759adbb84f350285ce42d64}{Avoid\+::\+Conn\+Ref\+::set\+Callback()}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} connCallback(\textcolor{keywordtype}{void} *ptr)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Avoid::ConnRef}} *connRef = (\mbox{\hyperlink{class_avoid_1_1_conn_ref}{Avoid::ConnRef}} *) ptr;}
+\DoxyCodeLine{    printf(\textcolor{stringliteral}{"{}Connector \%u needs rerouting!\(\backslash\)n"{}}, connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}{id}}());}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a9d1a26643759adbb84f350285ce42d64}{setCallback}}(connCallback, connRef); }
+
+\end{DoxyCode}
+
+
+The callback will be triggered by movement, addition and deletion of shapes, as well as by adjustment of the connector endpoints, or by processing a transaction that includes any of these events. You can check if a connector path has changed, and hence the object requires repainting (say because a better path is available due to a shape being deleted)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a6bf1308dc90317be00acf1fc01c1d276}{needsRepaint}}()) ... }
+
+\end{DoxyCode}
+
+
+If you want to trigger the callback for a connector after moving its endpoints (or when it is first created you can do this via\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{connRef-\/>processTransaction(); }
+
+\end{DoxyCode}
+
+
+You can then get the new path as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \mbox{\hyperlink{class_avoid_1_1_polygon}{Avoid::PolyLine}} route = connRef-\/>dispayRoute();}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i \&lt; route.\mbox{\hyperlink{class_avoid_1_1_polygon_a2f9e9c8c78407eefbde944e663d9711e}{size}}(); ++i) }
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}} point = route.\mbox{\hyperlink{class_avoid_1_1_polygon_ab2772d0cf1d0aad817a9814e20fce5ab}{at}}(i);}
+\DoxyCodeLine{    printf(\textcolor{stringliteral}{"{}\%f, \%f\(\backslash\)n"{}}, point.\mbox{\hyperlink{class_avoid_1_1_point_ae5f6929ae6c39393e4409485461c3fe3}{x}}, point.\mbox{\hyperlink{class_avoid_1_1_point_a518b9e1306fb14416e457ed23b9b8cee}{y}});}
+\DoxyCodeLine{\} }
+
+\end{DoxyCode}
+
+
+Obviously the alternative to using the callback mechanism is to iterate through all connectors and check their needs\+Repaint() value after having called process\+Transaction().
+
+You can update the endpoints of a connector with\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} newSrcPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(6, 3));}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} newDstPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(12, 67));}
+\DoxyCodeLine{connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_ae66e8c90dc191951fc0f64acc4c06d7c}{setEndpoints}}(newSrcPt, newDstPt); }
+
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} newSrcPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(6, 3));}
+\DoxyCodeLine{connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a45ab41f9847a610ba17a326cd05cb266}{setSourceEndpoint}}(newSrcPt);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} newDstPt(\mbox{\hyperlink{class_avoid_1_1_point}{Avoid::Point}}(6, 3));}
+\DoxyCodeLine{connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a7b216c9aa42811f1f2786adbda84f02e}{setDestEndpoint}}(newDstPt); }
+
+\end{DoxyCode}
+
+
+You can also create connection pins on shapes and attach connectors directly to these. Then when you move or resize the shapes, the connector endpoints attached to them will be automatically rerouted.
+
+You can create a connection pin as follows\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} CENTRE = 1;}
+\DoxyCodeLine{\textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Avoid::ShapeConnectionPin}}(shapeRef, CENTRE, Avoid::ATTACH\_POS\_CENTRE, Avoid::ATTACH\_POS\_CENTRE); }
+
+\end{DoxyCode}
+ This one connects to the centre of the shape, but the position can be specified anywhere within the shape as a proportion of the shape\textquotesingle{}s width and height. ~\newline
+
+
+You can then attach a connector to the connection pin be doing the following\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid::ConnEnd}} newSrcPt(shapeRef, CENTRE);}
+\DoxyCodeLine{connRef-\/>\mbox{\hyperlink{class_avoid_1_1_conn_ref_a45ab41f9847a610ba17a326cd05cb266}{setSourceEndpoint}}(newSrcPt); }
+
+\end{DoxyCode}
+
+
+See also a short example\+: example.\+cpp in the libavoid/tests directory 

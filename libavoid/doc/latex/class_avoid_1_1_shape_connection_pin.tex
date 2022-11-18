@@ -1,0 +1,198 @@
+\hypertarget{class_avoid_1_1_shape_connection_pin}{}\doxysection{Avoid\+::Shape\+Connection\+Pin Class Reference}
+\label{class_avoid_1_1_shape_connection_pin}\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} class represents a fixed point or \char`\"{}pin\char`\"{} on a shape that can be connected to.  
+
+
+
+
+{\ttfamily \#include $<$connectionpin.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_ae267734eb3641c366595b488d21e4784}{Shape\+Connection\+Pin}} (\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$shape, const unsigned int class\+Id, const double x\+Offset, const double y\+Offset, const bool proportional, const double inside\+Offset, const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} vis\+Dirs)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} at a specified absolute or proportional position relative to the parent shape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_afa2e31949ff244bf4cacd996097867dd}{Shape\+Connection\+Pin}} (\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$junction, const unsigned int class\+Id, const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} vis\+Dirs=Conn\+Dir\+None)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} on a \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_ae5323cbf7f0005a4fb9e3327c42353d1}{set\+Connection\+Cost}} (const double cost)
+\begin{DoxyCompactList}\small\item\em Sets a cost used when selecting whether connectors should be be attached to this connection pin. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_a68fb685af93fee972b116334b0d314fa}{position}} (const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&new\+Poly=\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}}()) const
+\begin{DoxyCompactList}\small\item\em Returns the position of this connection pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_a3338c7b8187a973e12fa57d3156e8b96}{directions}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the directions in which this connection pin has visibility. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_aacb578182fb564e199f681447914a124}{set\+Exclusive}} (const bool exclusive)
+\begin{DoxyCompactList}\small\item\em Sets whether the pin is exclusive, i.\+e., only one connector can attach to it. This defaults to true for connection pins with visibility in a specific directions and false for pins with visibility in all directions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_adac2cb72fa0d78dd8cb77b292519bd6c}{is\+Exclusive}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns whether the connection pin is exclusive, i.\+e., only one connector can attach to it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} class represents a fixed point or \char`\"{}pin\char`\"{} on a shape that can be connected to. 
+
+A pin has a position that is specified relative to its parent shape. ~\newline
+ When the shape is moved or resized, the pin will be automatically moved accordingly. Connectors attached to the pin will be rerouted.
+
+Pins have a visibility direction and numeric ID used to identify them. This ID, known as their class\+Id, may be shared by multiple pins on the same shape. You can use class\+Ids when you want libavoid to choose from multiple potential choices (e.\+g., to specify multiple types of pins such as \char`\"{}input\char`\"{} or \char`\"{}output\char`\"{} pins on circuit elements).
+
+If you would like connectors that attach to a single specific position on a shape, then just give each pin a unique class\+Id (for that shape) and tell the connector to attach to that particular pin.
+
+Pins may optionally be given a connection cost, via \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_ae5323cbf7f0005a4fb9e3327c42353d1}{set\+Connection\+Cost()}}. In the case of multiple pins with the same class\+Id, this causes the lower-\/cost pins to be chosen first, rather than libavoid choosing the best pin with that class\+Id based solely on connector path cost.
+
+Pins can be exclusive, which means subsequent connectors routed to the same class\+Id will choose a different pin. Pins with a specified direction are exclusive by default, those with visibility in all directions are non-\/exclusive by default. This behaviour can be changed by calling the \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin_aacb578182fb564e199f681447914a124}{Shape\+Connection\+Pin\+::set\+Exclusive()}} method. Exclusive pins may only have a single connector attached to them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_ae267734eb3641c366595b488d21e4784}\label{class_avoid_1_1_shape_connection_pin_ae267734eb3641c366595b488d21e4784}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!ShapeConnectionPin@{ShapeConnectionPin}}
+\index{ShapeConnectionPin@{ShapeConnectionPin}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{ShapeConnectionPin()}{ShapeConnectionPin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Shape\+Connection\+Pin\+::\+Shape\+Connection\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$}]{shape,  }\item[{const unsigned int}]{class\+Id,  }\item[{const double}]{x\+Offset,  }\item[{const double}]{y\+Offset,  }\item[{const bool}]{proportional,  }\item[{const double}]{inside\+Offset,  }\item[{const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}}]{vis\+Dirs }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} at a specified absolute or proportional position relative to the parent shape. 
+
+Ownership of this \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} is passed to the parent shape.
+
+The connection point position offsets can be specified as absolute or proportional. If absolute, the x\+Offset and y\+Offset values are absolute offsets relative to the lower X and Y shape rectangle border positions. If proportional, the x\+Offset and y\+Offset values represent proportions of the shape\textquotesingle{}s total width and height using a floating point value between 0 and 1. ~\newline
+
+
+Note that if you need the connection pin to appear at an exact position this may not be possible via proportional positions due to numerical inaccuracy in floating point multiplications. In this case you should use absolute offsets instead.
+
+There are some predefined values for specifying the x\+Offset and y\+Offset arguments for proportional offsets\+:
+\begin{DoxyItemize}
+\item ATTACH\+\_\+\+POS\+\_\+\+TOP = 0
+\item ATTACH\+\_\+\+POS\+\_\+\+LEFT = 0
+\item ATTACH\+\_\+\+POS\+\_\+\+CENTRE = 0.\+5
+\item ATTACH\+\_\+\+POS\+\_\+\+BOTTOM = 1
+\item ATTACH\+\_\+\+POS\+\_\+\+RIGHT = 1 And two more for specifying absolute offsets\+:
+\item ATTACH\+\_\+\+POS\+\_\+\+MIN\+\_\+\+OFFSET = offset of zero
+\item ATTACH\+\_\+\+POS\+\_\+\+MAX\+\_\+\+OFFSET = offset of shape width/height
+\end{DoxyItemize}
+
+Importantly, shape connection pins will be moved automatically when the parent shape is moved or resized. Attachment for connectors will be chosen based on the class\+Id specified to \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} and these connectors will be subsequently rerouted.
+
+If no value is given for the vis\+Dirs argument, then visibility is automatically determined based on the position of the connection point. Points on the shape boundary will have visibility from the shape out of that edge while points in the interior will have visibility in all directions. Note\+: Pins with visibility in a specific direction are exclusive by default, whereas those with visibility in all directions are non-\/exclusive by default.
+
+The inside\+Offset argument can be used to set a distance to automatically offset the point within the shape. This is useful for orthogonal routing, where you usually want the connection point to lie inside the shape rather than exactly on its boundary. This offset will only be applied for connection pins specified with a position exactly on the shape boundary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em shape} & A pointer to the containing parent shape\textquotesingle{}s \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em class\+Id} & A non-\/zero integer used to identify this pin and other equivalent connection point, and used to specify attachment via the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} class. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+Offset} & The X offset for the connection pin from the shape\textquotesingle{}s lower X border position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+Offset} & The Y offset for the connection pin from the shape\textquotesingle{}s lower Y border position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em proportional} & A boolean specifying whether the X and Y offsets are proportional or not. \\
+\hline
+\mbox{\texttt{ in}}  & {\em inside\+Offset} & A distance to offset the connection point inside the shape if it lies on the boundary. Use 0.\+0 for no offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em vis\+Dirs} & One or more \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} options specifying the directions that this connection point has visibility. ~\newline
+ Use Conn\+Dir\+None to have visibility be directional if a pin is on the shape edge or in all directions otherwise. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_afa2e31949ff244bf4cacd996097867dd}\label{class_avoid_1_1_shape_connection_pin_afa2e31949ff244bf4cacd996097867dd}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!ShapeConnectionPin@{ShapeConnectionPin}}
+\index{ShapeConnectionPin@{ShapeConnectionPin}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{ShapeConnectionPin()}{ShapeConnectionPin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Shape\+Connection\+Pin\+::\+Shape\+Connection\+Pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$}]{junction,  }\item[{const unsigned int}]{class\+Id,  }\item[{const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}}]{vis\+Dirs = {\ttfamily ConnDirNone} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} on a \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}}. 
+
+Ownership of this \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} is passed to the parent junction.
+
+This will usually be automatically called by the \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} constructor to give the Junction four Shape\+Connection\+Pins, facing up, down, left and right.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em junction} & A pointer to the containing parent junction\textquotesingle{}s \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em class\+Id} & An integer used to mark the class or group of this connection point, used for specifying attachment to \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em vis\+Dirs} & One or more \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} options specifying the directions that this connection point has visibility. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_a3338c7b8187a973e12fa57d3156e8b96}\label{class_avoid_1_1_shape_connection_pin_a3338c7b8187a973e12fa57d3156e8b96}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!directions@{directions}}
+\index{directions@{directions}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{directions()}{directions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} Avoid\+::\+Shape\+Connection\+Pin\+::directions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the directions in which this connection pin has visibility. 
+
+\begin{DoxyReturn}{Returns}
+The visibility directions for this connection pin. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_adac2cb72fa0d78dd8cb77b292519bd6c}\label{class_avoid_1_1_shape_connection_pin_adac2cb72fa0d78dd8cb77b292519bd6c}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!isExclusive@{isExclusive}}
+\index{isExclusive@{isExclusive}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{isExclusive()}{isExclusive()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Shape\+Connection\+Pin\+::is\+Exclusive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether the connection pin is exclusive, i.\+e., only one connector can attach to it. 
+
+\begin{DoxyReturn}{Returns}
+A boolean denoting whether this pin is exclusive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_a68fb685af93fee972b116334b0d314fa}\label{class_avoid_1_1_shape_connection_pin_a68fb685af93fee972b116334b0d314fa}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!position@{position}}
+\index{position@{position}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} Avoid\+::\+Shape\+Connection\+Pin\+::position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&}]{new\+Poly = {\ttfamily \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}}()} }\end{DoxyParamCaption}) const}
+
+
+
+Returns the position of this connection pin. 
+
+\begin{DoxyReturn}{Returns}
+The position of this connection pin. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_ae5323cbf7f0005a4fb9e3327c42353d1}\label{class_avoid_1_1_shape_connection_pin_ae5323cbf7f0005a4fb9e3327c42353d1}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!setConnectionCost@{setConnectionCost}}
+\index{setConnectionCost@{setConnectionCost}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{setConnectionCost()}{setConnectionCost()}}
+{\footnotesize\ttfamily void Avoid\+::\+Shape\+Connection\+Pin\+::set\+Connection\+Cost (\begin{DoxyParamCaption}\item[{const double}]{cost }\end{DoxyParamCaption})}
+
+
+
+Sets a cost used when selecting whether connectors should be be attached to this connection pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cost} & A routing cost applied to a route when selecting this connection pin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_shape_connection_pin_aacb578182fb564e199f681447914a124}\label{class_avoid_1_1_shape_connection_pin_aacb578182fb564e199f681447914a124}} 
+\index{Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}!setExclusive@{setExclusive}}
+\index{setExclusive@{setExclusive}!Avoid::ShapeConnectionPin@{Avoid::ShapeConnectionPin}}
+\doxysubsubsection{\texorpdfstring{setExclusive()}{setExclusive()}}
+{\footnotesize\ttfamily void Avoid\+::\+Shape\+Connection\+Pin\+::set\+Exclusive (\begin{DoxyParamCaption}\item[{const bool}]{exclusive }\end{DoxyParamCaption})}
+
+
+
+Sets whether the pin is exclusive, i.\+e., only one connector can attach to it. This defaults to true for connection pins with visibility in a specific directions and false for pins with visibility in all directions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em exclusive} & A bool representing whether this pin should be exclusive. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connectionpin_8h}{connectionpin.\+h}}\item 
+connectionpin.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,218 @@
+\hypertarget{class_avoid_1_1_conn_end}{}\doxysection{Avoid\+::Conn\+End Class Reference}
+\label{class_avoid_1_1_conn_end}\index{Avoid::ConnEnd@{Avoid::ConnEnd}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} class represents different possible endpoints for connectors.  
+
+
+
+
+{\ttfamily \#include $<$connend.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_end_a34fc8a596d153376a371a807441a9829}{Conn\+End}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} from a free-\/floating point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_end_a6bdc672ab0210c9cc0d260f2486d0f07}{Conn\+End}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&point, const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} vis\+Dirs)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} from a free-\/floating point as well as a set of flags specifying visibility for this point if it is located inside a shape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_end_aa25dcdcd56be1375a8d9892e5aa34f23}{Conn\+End}} (\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$shape\+Ref, const unsigned int connection\+Pin\+Class\+ID)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to one of a particular set of connection pins on a shape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_end_a16c91b3ba7f7fe6a334fb0c94a2e9ba9}{Conn\+End}} (\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$junction\+Ref)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to one of the connection pins on a junction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131d}{Conn\+End\+Type}} \mbox{\hyperlink{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}{type}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the kind of connection this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} represents. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{class_avoid_1_1_conn_end_a351619dda450b525bedec4667edee9d7}{position}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the position of this connector endpoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} \mbox{\hyperlink{class_avoid_1_1_conn_end_aac1ad36f7eba41dde14bee7b555996e1}{directions}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the directions in which this connector endpoint should be given visibility. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_conn_end_a28da7ebc713ec2f354348d25f71a086f}{shape}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the shape this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_conn_end_a4127303e6fa5d5f5672bafaed6d44e24}{junction}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the junction this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_avoid_1_1_conn_end_a31f741b5d8a86e0a8c4803475c674e8b}{pin\+Class\+Id}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the pin class ID for a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to a shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} class represents different possible endpoints for connectors. 
+
+Conn\+Ends may be free-\/floating points, points attached to junctions (between multiple connectors), or points attached to shapes (either to the centre of the shape or to particular pin positions on the shape). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a34fc8a596d153376a371a807441a9829}\label{class_avoid_1_1_conn_end_a34fc8a596d153376a371a807441a9829}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!ConnEnd@{ConnEnd}}
+\index{ConnEnd@{ConnEnd}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{ConnEnd()}{ConnEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+End\+::\+Conn\+End (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{point }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} from a free-\/floating point. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em point} & The position of the connector endpoint. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a6bdc672ab0210c9cc0d260f2486d0f07}\label{class_avoid_1_1_conn_end_a6bdc672ab0210c9cc0d260f2486d0f07}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!ConnEnd@{ConnEnd}}
+\index{ConnEnd@{ConnEnd}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{ConnEnd()}{ConnEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+End\+::\+Conn\+End (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{point,  }\item[{const \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}}]{vis\+Dirs }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} from a free-\/floating point as well as a set of flags specifying visibility for this point if it is located inside a shape. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em point} & The position of the connector endpoint. \\
+\hline
+\mbox{\texttt{ in}}  & {\em vis\+Dirs} & One or more \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} options specifying the directions that this point should be given visibility if it is inside a shape. Currently has no effect if outside of shapes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_aa25dcdcd56be1375a8d9892e5aa34f23}\label{class_avoid_1_1_conn_end_aa25dcdcd56be1375a8d9892e5aa34f23}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!ConnEnd@{ConnEnd}}
+\index{ConnEnd@{ConnEnd}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{ConnEnd()}{ConnEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+End\+::\+Conn\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$}]{shape\+Ref,  }\item[{const unsigned int}]{connection\+Pin\+Class\+ID }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to one of a particular set of connection pins on a shape. 
+
+This is the recommended method for connecting to shapes that may later be moved or resized and for which you don\textquotesingle{}t want to track and specify the connector endpoints yourself. See the \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} documentation for more information.
+
+If you to just connect to the centre of a shape you should just create a centre connection pin 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} CENTRE = 1;}
+\DoxyCodeLine{\textcolor{keyword}{new} \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Avoid::ShapeConnectionPin}}(shapeRef, CENTRE, Avoid::ATTACH\_POS\_CENTRE, Avoid::ATTACH\_POS\_CENTRE);}
+
+\end{DoxyCode}
+ and attach to that with 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_avoid_1_1_conn_end_a34fc8a596d153376a371a807441a9829}{ConnEnd}}(shapeRef, CENTRE);}
+
+\end{DoxyCode}
+
+
+If a pin with the specified pin class ID doesn\textquotesingle{}t exist then you will get a warning and a straight-\/line path between the source and destination endpoints of the connector will be returned during routing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em shape\+Ref} & A pointer to the containing shape\textquotesingle{}s \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em connection\+Pin\+Class\+ID} & A non-\/zero integer denoting the class ID for the set of pins to connect to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a16c91b3ba7f7fe6a334fb0c94a2e9ba9}\label{class_avoid_1_1_conn_end_a16c91b3ba7f7fe6a334fb0c94a2e9ba9}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!ConnEnd@{ConnEnd}}
+\index{ConnEnd@{ConnEnd}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{ConnEnd()}{ConnEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+End\+::\+Conn\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$}]{junction\+Ref }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to one of the connection pins on a junction. 
+
+This is the recommended method for connecting to junctions that may later be moved. See the \mbox{\hyperlink{class_avoid_1_1_shape_connection_pin}{Shape\+Connection\+Pin}} documentation for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em junction\+Ref} & A pointer to the containing junction\textquotesingle{}s junction\+Ref. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_aac1ad36f7eba41dde14bee7b555996e1}\label{class_avoid_1_1_conn_end_aac1ad36f7eba41dde14bee7b555996e1}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!directions@{directions}}
+\index{directions@{directions}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{directions()}{directions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} Avoid\+::\+Conn\+End\+::directions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the directions in which this connector endpoint should be given visibility. 
+
+\begin{DoxyReturn}{Returns}
+The visibility directions for this connector endpoint. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a4127303e6fa5d5f5672bafaed6d44e24}\label{class_avoid_1_1_conn_end_a4127303e6fa5d5f5672bafaed6d44e24}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!junction@{junction}}
+\index{junction@{junction}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{junction()}{junction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$ Avoid\+::\+Conn\+End\+::junction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the junction this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. 
+
+Will be valid only if \mbox{\hyperlink{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}{type()}} == Conn\+End\+Junction.
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} pointer that the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a31f741b5d8a86e0a8c4803475c674e8b}\label{class_avoid_1_1_conn_end_a31f741b5d8a86e0a8c4803475c674e8b}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!pinClassId@{pinClassId}}
+\index{pinClassId@{pinClassId}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{pinClassId()}{pinClassId()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Conn\+End\+::pin\+Class\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the pin class ID for a \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attached to a shape. 
+
+Will be valid only if \mbox{\hyperlink{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}{type()}} == Conn\+End\+Shape\+Pin.
+
+\begin{DoxyReturn}{Returns}
+An unsigned int representing the pin class ID for the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a351619dda450b525bedec4667edee9d7}\label{class_avoid_1_1_conn_end_a351619dda450b525bedec4667edee9d7}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!position@{position}}
+\index{position@{position}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} Avoid\+::\+Conn\+End\+::position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the position of this connector endpoint. 
+
+\begin{DoxyReturn}{Returns}
+The position of this connector endpoint. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a28da7ebc713ec2f354348d25f71a086f}\label{class_avoid_1_1_conn_end_a28da7ebc713ec2f354348d25f71a086f}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!shape@{shape}}
+\index{shape@{shape}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} $\ast$ Avoid\+::\+Conn\+End\+::shape (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the shape this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. 
+
+Will be valid only if \mbox{\hyperlink{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}{type()}} == Conn\+End\+Shape\+Pin.
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} pointer that the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} attaches to, or nullptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}\label{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}} 
+\index{Avoid::ConnEnd@{Avoid::ConnEnd}!type@{type}}
+\index{type@{type}!Avoid::ConnEnd@{Avoid::ConnEnd}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131d}{Conn\+End\+Type}} Avoid\+::\+Conn\+End\+::type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the kind of connection this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} represents. 
+
+\begin{DoxyReturn}{Returns}
+The Conn\+End\+Type represented by this \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connend_8h}{connend.\+h}}\item 
+connend.\+cpp\end{DoxyCompactItemize}

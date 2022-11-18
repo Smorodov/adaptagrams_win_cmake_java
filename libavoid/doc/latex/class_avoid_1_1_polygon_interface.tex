@@ -1,0 +1,108 @@
+\hypertarget{class_avoid_1_1_polygon_interface}{}\doxysection{Avoid\+::Polygon\+Interface Class Reference}
+\label{class_avoid_1_1_polygon_interface}\index{Avoid::PolygonInterface@{Avoid::PolygonInterface}}
+
+
+A common interface used by the \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} classes.  
+
+
+
+
+{\ttfamily \#include $<$geomtypes.\+h$>$}
+
+Inheritance diagram for Avoid\+::Polygon\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_avoid_1_1_polygon_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_acb003abd9ab024cc00bce8854e9a177e}\label{class_avoid_1_1_polygon_interface_acb003abd9ab024cc00bce8854e9a177e}} 
+\mbox{\hyperlink{class_avoid_1_1_polygon_interface_acb003abd9ab024cc00bce8854e9a177e}{Polygon\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_ac7978682bfcc6ef56447504641ee4416}\label{class_avoid_1_1_polygon_interface_ac7978682bfcc6ef56447504641ee4416}} 
+virtual \mbox{\hyperlink{class_avoid_1_1_polygon_interface_ac7978682bfcc6ef56447504641ee4416}{$\sim$\+Polygon\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_a00f0e5f288907690b7aead223a0de6bf}\label{class_avoid_1_1_polygon_interface_a00f0e5f288907690b7aead223a0de6bf}} 
+virtual void \mbox{\hyperlink{class_avoid_1_1_polygon_interface_a00f0e5f288907690b7aead223a0de6bf}{clear}} (void)=0
+\begin{DoxyCompactList}\small\item\em Resets this to the empty polygon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_adc785029fb72bab0861715ab01c3ba03}\label{class_avoid_1_1_polygon_interface_adc785029fb72bab0861715ab01c3ba03}} 
+virtual bool \mbox{\hyperlink{class_avoid_1_1_polygon_interface_adc785029fb72bab0861715ab01c3ba03}{empty}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns true if this polygon is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_ac9ce0706613e5870e5e7136d147673f6}\label{class_avoid_1_1_polygon_interface_ac9ce0706613e5870e5e7136d147673f6}} 
+virtual size\+\_\+t \mbox{\hyperlink{class_avoid_1_1_polygon_interface_ac9ce0706613e5870e5e7136d147673f6}{size}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the number of points in this polygon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_adc07c94b3501f5c85753c7b4de7bac9f}\label{class_avoid_1_1_polygon_interface_adc07c94b3501f5c85753c7b4de7bac9f}} 
+virtual int \mbox{\hyperlink{class_avoid_1_1_polygon_interface_adc07c94b3501f5c85753c7b4de7bac9f}{id}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Returns the ID value associated with this polygon. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \& \mbox{\hyperlink{class_avoid_1_1_polygon_interface_ad85cc8c5e376b8b01ca37e9684b4de71}{at}} (size\+\_\+t index) const =0
+\begin{DoxyCompactList}\small\item\em Returns a specific point in the polygon. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \mbox{\hyperlink{class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}{bounding\+Rect\+Polygon}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the bounding rectangle for this polygon. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_box}{Box}} \mbox{\hyperlink{class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}{offset\+Bounding\+Box}} (double offset) const
+\begin{DoxyCompactList}\small\item\em Returns the bounding rectangle that contains this polygon with optionally some buffer space around it for routing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A common interface used by the \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_ad85cc8c5e376b8b01ca37e9684b4de71}\label{class_avoid_1_1_polygon_interface_ad85cc8c5e376b8b01ca37e9684b4de71}} 
+\index{Avoid::PolygonInterface@{Avoid::PolygonInterface}!at@{at}}
+\index{at@{at}!Avoid::PolygonInterface@{Avoid::PolygonInterface}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_avoid_1_1_point}{Point}}\& Avoid\+::\+Polygon\+Interface\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a specific point in the polygon. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & The array index of the point to be returned. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_avoid_1_1_referencing_polygon_a168bb0af7ba4147861f6b326d088da71}{Avoid\+::\+Referencing\+Polygon}}, and \mbox{\hyperlink{class_avoid_1_1_polygon_ab2772d0cf1d0aad817a9814e20fce5ab}{Avoid\+::\+Polygon}}.
+
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}\label{class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}} 
+\index{Avoid::PolygonInterface@{Avoid::PolygonInterface}!boundingRectPolygon@{boundingRectPolygon}}
+\index{boundingRectPolygon@{boundingRectPolygon}!Avoid::PolygonInterface@{Avoid::PolygonInterface}}
+\doxysubsubsection{\texorpdfstring{boundingRectPolygon()}{boundingRectPolygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} Avoid\+::\+Polygon\+Interface\+::bounding\+Rect\+Polygon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the bounding rectangle for this polygon. 
+
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{class_avoid_1_1_rectangle}{Rectangle}} representing the bounding box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}\label{class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}} 
+\index{Avoid::PolygonInterface@{Avoid::PolygonInterface}!offsetBoundingBox@{offsetBoundingBox}}
+\index{offsetBoundingBox@{offsetBoundingBox}!Avoid::PolygonInterface@{Avoid::PolygonInterface}}
+\doxysubsubsection{\texorpdfstring{offsetBoundingBox()}{offsetBoundingBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_box}{Box}} Avoid\+::\+Polygon\+Interface\+::offset\+Bounding\+Box (\begin{DoxyParamCaption}\item[{double}]{offset }\end{DoxyParamCaption}) const}
+
+
+
+Returns the bounding rectangle that contains this polygon with optionally some buffer space around it for routing. 
+
+If a buffer distance of zero is given, then this method returns the bounding rectangle for the shape\textquotesingle{}s polygon.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Extra distance to pad each side of the rect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bounding box for the polygon. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{geomtypes_8h}{geomtypes.\+h}}\item 
+geomtypes.\+cpp\end{DoxyCompactItemize}

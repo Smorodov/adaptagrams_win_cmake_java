@@ -1,0 +1,232 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}libavoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: Object-\/avoiding orthogonal and polyline connector routing library}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}libavoid --- Documented code example}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Namespace Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Namespace List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Hierarchical Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Class Hierarchy}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Index}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Class List}{9}{section.5.1}%
+\contentsline {chapter}{\numberline {6}File Index}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}File List}{11}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Namespace Documentation}{13}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Avoid Namespace Reference}{13}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{15}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Enumeration Type Documentation}{15}{subsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.1}ConnDirFlag}{15}{subsubsection.7.1.2.1}%
+\contentsline {subsubsection}{\numberline {7.1.2.2}ConnEndType}{16}{subsubsection.7.1.2.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.3}ConnType}{16}{subsubsection.7.1.2.3}%
+\contentsline {subsubsection}{\numberline {7.1.2.4}RouterFlag}{16}{subsubsection.7.1.2.4}%
+\contentsline {subsubsection}{\numberline {7.1.2.5}RoutingOption}{16}{subsubsection.7.1.2.5}%
+\contentsline {subsubsection}{\numberline {7.1.2.6}RoutingParameter}{18}{subsubsection.7.1.2.6}%
+\contentsline {subsubsection}{\numberline {7.1.2.7}ShapeTransformationType}{20}{subsubsection.7.1.2.7}%
+\contentsline {subsubsection}{\numberline {7.1.2.8}TransactionPhases}{20}{subsubsection.7.1.2.8}%
+\contentsline {chapter}{\numberline {8}Class Documentation}{21}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Box Class Reference}{21}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{21}{subsection.8.1.1}%
+\contentsline {section}{\numberline {8.2}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Checkpoint Class Reference}{21}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Detailed Description}{22}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Constructor \& Destructor Documentation}{22}{subsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.2.1}Checkpoint()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{22}{subsubsection.8.2.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2.2}Checkpoint()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{22}{subsubsection.8.2.2.2}%
+\contentsline {section}{\numberline {8.3}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cluster\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Class Reference}{23}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Detailed Description}{23}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Constructor \& Destructor Documentation}{23}{subsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.1}ClusterRef()}{24}{subsubsection.8.3.2.1}%
+\contentsline {subsection}{\numberline {8.3.3}Member Function Documentation}{24}{subsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.1}id()}{24}{subsubsection.8.3.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.3.2}polygon()}{25}{subsubsection.8.3.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3.3}rectangularPolygon()}{25}{subsubsection.8.3.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.4}router()}{25}{subsubsection.8.3.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.3.5}setNewPoly()}{25}{subsubsection.8.3.3.5}%
+\contentsline {section}{\numberline {8.4}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Conn\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End Class Reference}{26}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Detailed Description}{26}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Constructor \& Destructor Documentation}{27}{subsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.2.1}ConnEnd()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{27}{subsubsection.8.4.2.1}%
+\contentsline {subsubsection}{\numberline {8.4.2.2}ConnEnd()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{27}{subsubsection.8.4.2.2}%
+\contentsline {subsubsection}{\numberline {8.4.2.3}ConnEnd()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{27}{subsubsection.8.4.2.3}%
+\contentsline {subsubsection}{\numberline {8.4.2.4}ConnEnd()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{29}{subsubsection.8.4.2.4}%
+\contentsline {subsection}{\numberline {8.4.3}Member Function Documentation}{29}{subsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.1}directions()}{29}{subsubsection.8.4.3.1}%
+\contentsline {subsubsection}{\numberline {8.4.3.2}junction()}{29}{subsubsection.8.4.3.2}%
+\contentsline {subsubsection}{\numberline {8.4.3.3}pinClassId()}{30}{subsubsection.8.4.3.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.4}position()}{30}{subsubsection.8.4.3.4}%
+\contentsline {subsubsection}{\numberline {8.4.3.5}shape()}{30}{subsubsection.8.4.3.5}%
+\contentsline {subsubsection}{\numberline {8.4.3.6}type()}{30}{subsubsection.8.4.3.6}%
+\contentsline {section}{\numberline {8.5}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Conn\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Class Reference}{31}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Detailed Description}{32}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Constructor \& Destructor Documentation}{32}{subsection.8.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.2.1}ConnRef()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{32}{subsubsection.8.5.2.1}%
+\contentsline {subsubsection}{\numberline {8.5.2.2}ConnRef()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{32}{subsubsection.8.5.2.2}%
+\contentsline {subsubsection}{\numberline {8.5.2.3}$\sim $ConnRef()}{33}{subsubsection.8.5.2.3}%
+\contentsline {subsection}{\numberline {8.5.3}Member Function Documentation}{33}{subsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.3.1}clearFixedRoute()}{33}{subsubsection.8.5.3.1}%
+\contentsline {subsubsection}{\numberline {8.5.3.2}displayRoute()}{34}{subsubsection.8.5.3.2}%
+\contentsline {subsubsection}{\numberline {8.5.3.3}endpointConnEnds()}{34}{subsubsection.8.5.3.3}%
+\contentsline {subsubsection}{\numberline {8.5.3.4}hasFixedRoute()}{34}{subsubsection.8.5.3.4}%
+\contentsline {subsubsection}{\numberline {8.5.3.5}id()}{35}{subsubsection.8.5.3.5}%
+\contentsline {subsubsection}{\numberline {8.5.3.6}needsRepaint()}{35}{subsubsection.8.5.3.6}%
+\contentsline {subsubsection}{\numberline {8.5.3.7}route()}{35}{subsubsection.8.5.3.7}%
+\contentsline {subsubsection}{\numberline {8.5.3.8}router()}{36}{subsubsection.8.5.3.8}%
+\contentsline {subsubsection}{\numberline {8.5.3.9}routingCheckpoints()}{36}{subsubsection.8.5.3.9}%
+\contentsline {subsubsection}{\numberline {8.5.3.10}routingType()}{36}{subsubsection.8.5.3.10}%
+\contentsline {subsubsection}{\numberline {8.5.3.11}setCallback()}{36}{subsubsection.8.5.3.11}%
+\contentsline {subsubsection}{\numberline {8.5.3.12}setDestEndpoint()}{37}{subsubsection.8.5.3.12}%
+\contentsline {subsubsection}{\numberline {8.5.3.13}setEndpoints()}{37}{subsubsection.8.5.3.13}%
+\contentsline {subsubsection}{\numberline {8.5.3.14}setFixedExistingRoute()}{37}{subsubsection.8.5.3.14}%
+\contentsline {subsubsection}{\numberline {8.5.3.15}setFixedRoute()}{38}{subsubsection.8.5.3.15}%
+\contentsline {subsubsection}{\numberline {8.5.3.16}setRoutingCheckpoints()}{38}{subsubsection.8.5.3.16}%
+\contentsline {subsubsection}{\numberline {8.5.3.17}setRoutingType()}{39}{subsubsection.8.5.3.17}%
+\contentsline {subsubsection}{\numberline {8.5.3.18}setSourceEndpoint()}{39}{subsubsection.8.5.3.18}%
+\contentsline {subsubsection}{\numberline {8.5.3.19}splitAtSegment()}{39}{subsubsection.8.5.3.19}%
+\contentsline {section}{\numberline {8.6}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Edge Class Reference}{40}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Detailed Description}{40}{subsection.8.6.1}%
+\contentsline {section}{\numberline {8.7}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Hyperedge\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}And\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Deleted\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lists Struct Reference}{40}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}Detailed Description}{41}{subsection.8.7.1}%
+\contentsline {section}{\numberline {8.8}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Hyperedge\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rerouter Class Reference}{41}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}Detailed Description}{41}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.2}Constructor \& Destructor Documentation}{42}{subsection.8.8.2}%
+\contentsline {subsubsection}{\numberline {8.8.2.1}HyperedgeRerouter()}{42}{subsubsection.8.8.2.1}%
+\contentsline {subsection}{\numberline {8.8.3}Member Function Documentation}{42}{subsection.8.8.3}%
+\contentsline {subsubsection}{\numberline {8.8.3.1}newAndDeletedObjectLists()}{42}{subsubsection.8.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.8.3.2}registerHyperedgeForRerouting()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{42}{subsubsection.8.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.8.3.3}registerHyperedgeForRerouting()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{43}{subsubsection.8.8.3.3}%
+\contentsline {section}{\numberline {8.9}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Junction\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Class Reference}{43}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Detailed Description}{44}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Constructor \& Destructor Documentation}{44}{subsection.8.9.2}%
+\contentsline {subsubsection}{\numberline {8.9.2.1}JunctionRef()}{44}{subsubsection.8.9.2.1}%
+\contentsline {subsubsection}{\numberline {8.9.2.2}$\sim $JunctionRef()}{45}{subsubsection.8.9.2.2}%
+\contentsline {subsection}{\numberline {8.9.3}Member Function Documentation}{45}{subsection.8.9.3}%
+\contentsline {subsubsection}{\numberline {8.9.3.1}id()}{46}{subsubsection.8.9.3.1}%
+\contentsline {subsubsection}{\numberline {8.9.3.2}polygon()}{46}{subsubsection.8.9.3.2}%
+\contentsline {subsubsection}{\numberline {8.9.3.3}position()}{46}{subsubsection.8.9.3.3}%
+\contentsline {subsubsection}{\numberline {8.9.3.4}positionFixed()}{46}{subsubsection.8.9.3.4}%
+\contentsline {subsubsection}{\numberline {8.9.3.5}recommendedPosition()}{47}{subsubsection.8.9.3.5}%
+\contentsline {subsubsection}{\numberline {8.9.3.6}removeJunctionAndMergeConnectors()}{47}{subsubsection.8.9.3.6}%
+\contentsline {subsubsection}{\numberline {8.9.3.7}router()}{47}{subsubsection.8.9.3.7}%
+\contentsline {subsubsection}{\numberline {8.9.3.8}setPositionFixed()}{47}{subsubsection.8.9.3.8}%
+\contentsline {section}{\numberline {8.10}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Point Class Reference}{48}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}Detailed Description}{48}{subsection.8.10.1}%
+\contentsline {subsection}{\numberline {8.10.2}Constructor \& Destructor Documentation}{49}{subsection.8.10.2}%
+\contentsline {subsubsection}{\numberline {8.10.2.1}Point()}{49}{subsubsection.8.10.2.1}%
+\contentsline {subsection}{\numberline {8.10.3}Member Function Documentation}{49}{subsection.8.10.3}%
+\contentsline {subsubsection}{\numberline {8.10.3.1}equals()}{49}{subsubsection.8.10.3.1}%
+\contentsline {subsubsection}{\numberline {8.10.3.2}operator"!=()}{50}{subsubsection.8.10.3.2}%
+\contentsline {subsubsection}{\numberline {8.10.3.3}operator$<$()}{50}{subsubsection.8.10.3.3}%
+\contentsline {subsubsection}{\numberline {8.10.3.4}operator==()}{50}{subsubsection.8.10.3.4}%
+\contentsline {subsubsection}{\numberline {8.10.3.5}operator[]()}{51}{subsubsection.8.10.3.5}%
+\contentsline {section}{\numberline {8.11}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Polygon Class Reference}{51}{section.8.11}%
+\contentsline {subsection}{\numberline {8.11.1}Detailed Description}{52}{subsection.8.11.1}%
+\contentsline {subsection}{\numberline {8.11.2}Constructor \& Destructor Documentation}{53}{subsection.8.11.2}%
+\contentsline {subsubsection}{\numberline {8.11.2.1}Polygon()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{53}{subsubsection.8.11.2.1}%
+\contentsline {subsubsection}{\numberline {8.11.2.2}Polygon()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{53}{subsubsection.8.11.2.2}%
+\contentsline {subsection}{\numberline {8.11.3}Member Function Documentation}{53}{subsection.8.11.3}%
+\contentsline {subsubsection}{\numberline {8.11.3.1}at()}{53}{subsubsection.8.11.3.1}%
+\contentsline {subsubsection}{\numberline {8.11.3.2}boundingRectPolygon()}{54}{subsubsection.8.11.3.2}%
+\contentsline {subsubsection}{\numberline {8.11.3.3}curvedPolyline()}{54}{subsubsection.8.11.3.3}%
+\contentsline {subsubsection}{\numberline {8.11.3.4}offsetBoundingBox()}{55}{subsubsection.8.11.3.4}%
+\contentsline {subsubsection}{\numberline {8.11.3.5}setPoint()}{55}{subsubsection.8.11.3.5}%
+\contentsline {subsubsection}{\numberline {8.11.3.6}simplify()}{55}{subsubsection.8.11.3.6}%
+\contentsline {subsubsection}{\numberline {8.11.3.7}translate()}{56}{subsubsection.8.11.3.7}%
+\contentsline {subsection}{\numberline {8.11.4}Member Data Documentation}{57}{subsection.8.11.4}%
+\contentsline {subsubsection}{\numberline {8.11.4.1}ts}{57}{subsubsection.8.11.4.1}%
+\contentsline {section}{\numberline {8.12}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Polygon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Class Reference}{57}{section.8.12}%
+\contentsline {subsection}{\numberline {8.12.1}Detailed Description}{58}{subsection.8.12.1}%
+\contentsline {subsection}{\numberline {8.12.2}Member Function Documentation}{58}{subsection.8.12.2}%
+\contentsline {subsubsection}{\numberline {8.12.2.1}at()}{58}{subsubsection.8.12.2.1}%
+\contentsline {subsubsection}{\numberline {8.12.2.2}boundingRectPolygon()}{58}{subsubsection.8.12.2.2}%
+\contentsline {subsubsection}{\numberline {8.12.2.3}offsetBoundingBox()}{59}{subsubsection.8.12.2.3}%
+\contentsline {section}{\numberline {8.13}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Rectangle Class Reference}{59}{section.8.13}%
+\contentsline {subsection}{\numberline {8.13.1}Detailed Description}{60}{subsection.8.13.1}%
+\contentsline {subsection}{\numberline {8.13.2}Constructor \& Destructor Documentation}{60}{subsection.8.13.2}%
+\contentsline {subsubsection}{\numberline {8.13.2.1}Rectangle()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{60}{subsubsection.8.13.2.1}%
+\contentsline {subsubsection}{\numberline {8.13.2.2}Rectangle()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.8.13.2.2}%
+\contentsline {subsection}{\numberline {8.13.3}Member Function Documentation}{61}{subsection.8.13.3}%
+\contentsline {subsubsection}{\numberline {8.13.3.1}at()}{61}{subsubsection.8.13.3.1}%
+\contentsline {subsubsection}{\numberline {8.13.3.2}boundingRectPolygon()}{61}{subsubsection.8.13.3.2}%
+\contentsline {subsubsection}{\numberline {8.13.3.3}curvedPolyline()}{62}{subsubsection.8.13.3.3}%
+\contentsline {subsubsection}{\numberline {8.13.3.4}offsetBoundingBox()}{62}{subsubsection.8.13.3.4}%
+\contentsline {subsubsection}{\numberline {8.13.3.5}setPoint()}{63}{subsubsection.8.13.3.5}%
+\contentsline {subsubsection}{\numberline {8.13.3.6}simplify()}{63}{subsubsection.8.13.3.6}%
+\contentsline {subsubsection}{\numberline {8.13.3.7}translate()}{63}{subsubsection.8.13.3.7}%
+\contentsline {subsection}{\numberline {8.13.4}Member Data Documentation}{64}{subsection.8.13.4}%
+\contentsline {subsubsection}{\numberline {8.13.4.1}ts}{64}{subsubsection.8.13.4.1}%
+\contentsline {section}{\numberline {8.14}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Referencing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Polygon Class Reference}{64}{section.8.14}%
+\contentsline {subsection}{\numberline {8.14.1}Detailed Description}{65}{subsection.8.14.1}%
+\contentsline {subsection}{\numberline {8.14.2}Member Function Documentation}{65}{subsection.8.14.2}%
+\contentsline {subsubsection}{\numberline {8.14.2.1}at()}{65}{subsubsection.8.14.2.1}%
+\contentsline {subsubsection}{\numberline {8.14.2.2}boundingRectPolygon()}{65}{subsubsection.8.14.2.2}%
+\contentsline {subsubsection}{\numberline {8.14.2.3}offsetBoundingBox()}{66}{subsubsection.8.14.2.3}%
+\contentsline {section}{\numberline {8.15}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Router Class Reference}{66}{section.8.15}%
+\contentsline {subsection}{\numberline {8.15.1}Detailed Description}{67}{subsection.8.15.1}%
+\contentsline {subsection}{\numberline {8.15.2}Constructor \& Destructor Documentation}{68}{subsection.8.15.2}%
+\contentsline {subsubsection}{\numberline {8.15.2.1}Router()}{68}{subsubsection.8.15.2.1}%
+\contentsline {subsubsection}{\numberline {8.15.2.2}$\sim $Router()}{68}{subsubsection.8.15.2.2}%
+\contentsline {subsection}{\numberline {8.15.3}Member Function Documentation}{68}{subsection.8.15.3}%
+\contentsline {subsubsection}{\numberline {8.15.3.1}deleteConnector()}{68}{subsubsection.8.15.3.1}%
+\contentsline {subsubsection}{\numberline {8.15.3.2}deleteJunction()}{69}{subsubsection.8.15.3.2}%
+\contentsline {subsubsection}{\numberline {8.15.3.3}deleteShape()}{69}{subsubsection.8.15.3.3}%
+\contentsline {subsubsection}{\numberline {8.15.3.4}hyperedgeRerouter()}{69}{subsubsection.8.15.3.4}%
+\contentsline {subsubsection}{\numberline {8.15.3.5}moveJunction()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{70}{subsubsection.8.15.3.5}%
+\contentsline {subsubsection}{\numberline {8.15.3.6}moveJunction()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{70}{subsubsection.8.15.3.6}%
+\contentsline {subsubsection}{\numberline {8.15.3.7}moveShape()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{70}{subsubsection.8.15.3.7}%
+\contentsline {subsubsection}{\numberline {8.15.3.8}moveShape()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{71}{subsubsection.8.15.3.8}%
+\contentsline {subsubsection}{\numberline {8.15.3.9}newAndDeletedObjectListsFromHyperedgeImprovement()}{71}{subsubsection.8.15.3.9}%
+\contentsline {subsubsection}{\numberline {8.15.3.10}newObjectId()}{72}{subsubsection.8.15.3.10}%
+\contentsline {subsubsection}{\numberline {8.15.3.11}objectIdIsUnused()}{72}{subsubsection.8.15.3.11}%
+\contentsline {subsubsection}{\numberline {8.15.3.12}outputInstanceToSVG()}{73}{subsubsection.8.15.3.12}%
+\contentsline {subsubsection}{\numberline {8.15.3.13}processTransaction()}{73}{subsubsection.8.15.3.13}%
+\contentsline {subsubsection}{\numberline {8.15.3.14}routingOption()}{73}{subsubsection.8.15.3.14}%
+\contentsline {subsubsection}{\numberline {8.15.3.15}routingParameter()}{74}{subsubsection.8.15.3.15}%
+\contentsline {subsubsection}{\numberline {8.15.3.16}setRoutingOption()}{74}{subsubsection.8.15.3.16}%
+\contentsline {subsubsection}{\numberline {8.15.3.17}setRoutingParameter()}{74}{subsubsection.8.15.3.17}%
+\contentsline {subsubsection}{\numberline {8.15.3.18}setRoutingPenalty()}{75}{subsubsection.8.15.3.18}%
+\contentsline {subsubsection}{\numberline {8.15.3.19}setTopologyAddon()}{75}{subsubsection.8.15.3.19}%
+\contentsline {subsubsection}{\numberline {8.15.3.20}setTransactionUse()}{76}{subsubsection.8.15.3.20}%
+\contentsline {subsubsection}{\numberline {8.15.3.21}shouldContinueTransactionWithProgress()}{76}{subsubsection.8.15.3.21}%
+\contentsline {subsubsection}{\numberline {8.15.3.22}transactionUse()}{77}{subsubsection.8.15.3.22}%
+\contentsline {section}{\numberline {8.16}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Shape\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Connection\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pin Class Reference}{77}{section.8.16}%
+\contentsline {subsection}{\numberline {8.16.1}Detailed Description}{78}{subsection.8.16.1}%
+\contentsline {subsection}{\numberline {8.16.2}Constructor \& Destructor Documentation}{78}{subsection.8.16.2}%
+\contentsline {subsubsection}{\numberline {8.16.2.1}ShapeConnectionPin()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{78}{subsubsection.8.16.2.1}%
+\contentsline {subsubsection}{\numberline {8.16.2.2}ShapeConnectionPin()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{79}{subsubsection.8.16.2.2}%
+\contentsline {subsection}{\numberline {8.16.3}Member Function Documentation}{80}{subsection.8.16.3}%
+\contentsline {subsubsection}{\numberline {8.16.3.1}directions()}{80}{subsubsection.8.16.3.1}%
+\contentsline {subsubsection}{\numberline {8.16.3.2}isExclusive()}{80}{subsubsection.8.16.3.2}%
+\contentsline {subsubsection}{\numberline {8.16.3.3}position()}{80}{subsubsection.8.16.3.3}%
+\contentsline {subsubsection}{\numberline {8.16.3.4}setConnectionCost()}{80}{subsubsection.8.16.3.4}%
+\contentsline {subsubsection}{\numberline {8.16.3.5}setExclusive()}{81}{subsubsection.8.16.3.5}%
+\contentsline {section}{\numberline {8.17}Avoid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Shape\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Class Reference}{81}{section.8.17}%
+\contentsline {subsection}{\numberline {8.17.1}Detailed Description}{82}{subsection.8.17.1}%
+\contentsline {subsection}{\numberline {8.17.2}Constructor \& Destructor Documentation}{82}{subsection.8.17.2}%
+\contentsline {subsubsection}{\numberline {8.17.2.1}ShapeRef()}{82}{subsubsection.8.17.2.1}%
+\contentsline {subsubsection}{\numberline {8.17.2.2}$\sim $ShapeRef()}{83}{subsubsection.8.17.2.2}%
+\contentsline {subsection}{\numberline {8.17.3}Member Function Documentation}{83}{subsection.8.17.3}%
+\contentsline {subsubsection}{\numberline {8.17.3.1}id()}{83}{subsubsection.8.17.3.1}%
+\contentsline {subsubsection}{\numberline {8.17.3.2}polygon()}{83}{subsubsection.8.17.3.2}%
+\contentsline {subsubsection}{\numberline {8.17.3.3}router()}{83}{subsubsection.8.17.3.3}%
+\contentsline {subsubsection}{\numberline {8.17.3.4}transformConnectionPinPositions()}{83}{subsubsection.8.17.3.4}%
+\contentsline {chapter}{\numberline {9}File Documentation}{85}{chapter.9}%
+\contentsline {section}{\numberline {9.1}connectionpin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{85}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Detailed Description}{85}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}connector.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{86}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Detailed Description}{86}{subsection.9.2.1}%
+\contentsline {section}{\numberline {9.3}connend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{86}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Detailed Description}{87}{subsection.9.3.1}%
+\contentsline {section}{\numberline {9.4}geomtypes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{87}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Detailed Description}{88}{subsection.9.4.1}%
+\contentsline {section}{\numberline {9.5}hyperedge.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{88}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Detailed Description}{89}{subsection.9.5.1}%
+\contentsline {section}{\numberline {9.6}junction.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}Detailed Description}{89}{subsection.9.6.1}%
+\contentsline {section}{\numberline {9.7}libavoid.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Detailed Description}{90}{subsection.9.7.1}%
+\contentsline {section}{\numberline {9.8}obstacle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{90}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}Detailed Description}{90}{subsection.9.8.1}%
+\contentsline {section}{\numberline {9.9}router.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{90}{section.9.9}%
+\contentsline {subsection}{\numberline {9.9.1}Detailed Description}{91}{subsection.9.9.1}%
+\contentsline {section}{\numberline {9.10}shape.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{91}{section.9.10}%
+\contentsline {subsection}{\numberline {9.10.1}Detailed Description}{92}{subsection.9.10.1}%
+\contentsline {section}{\numberline {9.11}viscluster.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{92}{section.9.11}%
+\contentsline {subsection}{\numberline {9.11.1}Detailed Description}{92}{subsection.9.11.1}%
+\contentsline {chapter}{Index}{93}{section*.56}%

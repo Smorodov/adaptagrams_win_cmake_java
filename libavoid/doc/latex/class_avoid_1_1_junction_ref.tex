@@ -1,0 +1,217 @@
+\hypertarget{class_avoid_1_1_junction_ref}{}\doxysection{Avoid\+::Junction\+Ref Class Reference}
+\label{class_avoid_1_1_junction_ref}\index{Avoid::JunctionRef@{Avoid::JunctionRef}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} class represents a fixed or free-\/floating point that connectors can be attached to. ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$junction.\+h$>$}
+
+
+
+Inherits Avoid\+::\+Obstacle.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_junction_ref_a6b8f78290d978f0176beb952a161f3d4}{Junction\+Ref}} (\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$router, \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{class_avoid_1_1_junction_ref_af66cab7216d077ac124674c7c5f08e05}{position}}, const unsigned int id=0)
+\begin{DoxyCompactList}\small\item\em Junction reference constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_avoid_1_1_junction_ref_a59f907070398e40cd0993f7ee4cc690c}{$\sim$\+Junction\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Junction reference destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_junction_ref_ae90a769de2de4f9c6515b6a3f5a0de0c}{remove\+Junction\+And\+Merge\+Connectors}} (void)
+\begin{DoxyCompactList}\small\item\em Removes a junction that has only two connectors attached to it and merges them into a single connector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{class_avoid_1_1_junction_ref_af66cab7216d077ac124674c7c5f08e05}{position}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the position of this junction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_junction_ref_a31135497c6f50f19e09478ef9f44f170}{set\+Position\+Fixed}} (bool fixed)
+\begin{DoxyCompactList}\small\item\em Sets whether the junction has a fixed position and therefore can\textquotesingle{}t be moved by the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} during routing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_junction_ref_afedd45d8a3e85dc8afd43dbcbb06bd45}{position\+Fixed}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns whether this junction has a fixed position (that can\textquotesingle{}t be moved by the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} during routing). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_point}{Point}} \mbox{\hyperlink{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}{recommended\+Position}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a recommended position for the junction based on improving hyperedge routes. This value will be set during routing when the improve\+Hyperedge\+Routes\+Moving\+Junctions router option is set (the default). \end{DoxyCompactList}\item 
+unsigned int {\bfseries id} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the ID of this obstacle. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& {\bfseries polygon} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a reference to the polygon boundary of this obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ {\bfseries router} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the router scene this obstacle is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} class represents a fixed or free-\/floating point that connectors can be attached to. ~\newline
+ 
+
+A \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} represents a junction between multiple connectors, or could be used to specify an intermediate point that a single connector must route through. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_a6b8f78290d978f0176beb952a161f3d4}\label{class_avoid_1_1_junction_ref_a6b8f78290d978f0176beb952a161f3d4}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!JunctionRef@{JunctionRef}}
+\index{JunctionRef@{JunctionRef}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{JunctionRef()}{JunctionRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Junction\+Ref\+::\+Junction\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$}]{router,  }\item[{\mbox{\hyperlink{class_avoid_1_1_point}{Point}}}]{position,  }\item[{const unsigned int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Junction reference constructor. 
+
+Creates a junction object reference, and adds it to the router scene. This junction will be considered to be an obstacle. This will cause connectors intersecting the newly added junction to be marked as needing to be rerouted.
+
+If the router is using transactions, then changes will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+The junction can be moved with \mbox{\hyperlink{class_avoid_1_1_router_a08021cac275575c7795e2005e5eadb9a}{Router\+::move\+Junction()}} and removed from the scene and freed with \mbox{\hyperlink{class_avoid_1_1_router_a5b044531d3dc81fa76819e55917924b0}{Router\+::delete\+Junction()}}.
+
+libavoid expects junctions to have sensible positions (i.\+e., for junctions to be positioned outside of shapes). When routing it will simplify hyperedges by moving junctions while preserving hyperedge topology, i.\+e., not altering the sides of shapes the hyperedge routes around.
+
+If you don\textquotesingle{}t have sensible positions for junctions or want to disregard the junction position and reroute the entire hyperedge considering only the endpoints, then this can be achieved by registering the hyperedge with the \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} class obtained by calling the \mbox{\hyperlink{class_avoid_1_1_router_a3fc66cd795e86d921da1e8d9cb8a5c21}{Router\+::hyperedge\+Rerouter()}} method.
+
+When the improve\+Hyperedge\+Routes\+Moving\+Junctions router option is set (the default) the junction position is a suggestion used for initial routing, but subsequent hyperedge path improvement may suggest new junction positions for the updated routings. This position can be accessed via the \mbox{\hyperlink{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}{recommended\+Position()}} method.
+
+When the improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions router option is set (not the default) junctions and connectors can be added or removed to further improve hyperedges, see also \mbox{\hyperlink{class_avoid_1_1_router_a20a8a79a5726d9a487864381630a9a90}{Router\+::new\+And\+Deleted\+Object\+Lists\+From\+Hyperedge\+Improvement()}}.
+
+\begin{DoxyNote}{Note}
+Regarding IDs\+: You can let libavoid manually handle IDs by not specifying them. Alternatively, you can specify all IDs yourself, but you must be careful to makes sure that each object in the scene (shape, connector, cluster, etc.) is given a unique, positive ID. This uniqueness is checked if assertions are enabled, but if not and there are clashes then strange things can happen.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em router} & The router scene to place the junction into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em position} & A \mbox{\hyperlink{class_avoid_1_1_point}{Point}} representing the position of the junction. \\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & Optionally, a positive integer ID unique among all objects. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_a59f907070398e40cd0993f7ee4cc690c}\label{class_avoid_1_1_junction_ref_a59f907070398e40cd0993f7ee4cc690c}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!````~JunctionRef@{$\sim$JunctionRef}}
+\index{````~JunctionRef@{$\sim$JunctionRef}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{$\sim$JunctionRef()}{~JunctionRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Junction\+Ref\+::$\sim$\+Junction\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Junction reference destructor. 
+
+Do not call this yourself, instead call \mbox{\hyperlink{class_avoid_1_1_router_a5b044531d3dc81fa76819e55917924b0}{Router\+::delete\+Junction()}}. Ownership of this object belongs to the router scene. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}\label{class_avoid_1_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!id@{id}}
+\index{id@{id}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Obstacle\+::id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Returns the ID of this obstacle. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the obstacle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_obstacle_afc55e05fdf93309a1714b02bb81a23f2}\label{class_avoid_1_1_obstacle_afc55e05fdf93309a1714b02bb81a23f2}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!polygon@{polygon}}
+\index{polygon@{polygon}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& Avoid\+::\+Obstacle\+::polygon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Returns a reference to the polygon boundary of this obstacle. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the polygon boundary of the obstacle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_af66cab7216d077ac124674c7c5f08e05}\label{class_avoid_1_1_junction_ref_af66cab7216d077ac124674c7c5f08e05}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!position@{position}}
+\index{position@{position}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_point}{Point}} Avoid\+::\+Junction\+Ref\+::position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the position of this junction. 
+
+\begin{DoxyReturn}{Returns}
+A point representing the position of this junction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_afedd45d8a3e85dc8afd43dbcbb06bd45}\label{class_avoid_1_1_junction_ref_afedd45d8a3e85dc8afd43dbcbb06bd45}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!positionFixed@{positionFixed}}
+\index{positionFixed@{positionFixed}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{positionFixed()}{positionFixed()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Junction\+Ref\+::position\+Fixed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether this junction has a fixed position (that can\textquotesingle{}t be moved by the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} during routing). 
+
+\begin{DoxyReturn}{Returns}
+A point representing the position of this junction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}\label{class_avoid_1_1_junction_ref_a5b376e38102c5e4c9b625be21a9e46d5}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!recommendedPosition@{recommendedPosition}}
+\index{recommendedPosition@{recommendedPosition}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{recommendedPosition()}{recommendedPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_point}{Point}} Avoid\+::\+Junction\+Ref\+::recommended\+Position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a recommended position for the junction based on improving hyperedge routes. This value will be set during routing when the improve\+Hyperedge\+Routes\+Moving\+Junctions router option is set (the default). 
+
+\begin{DoxyReturn}{Returns}
+A point indicating the ideal position for this junction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_ae90a769de2de4f9c6515b6a3f5a0de0c}\label{class_avoid_1_1_junction_ref_ae90a769de2de4f9c6515b6a3f5a0de0c}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!removeJunctionAndMergeConnectors@{removeJunctionAndMergeConnectors}}
+\index{removeJunctionAndMergeConnectors@{removeJunctionAndMergeConnectors}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{removeJunctionAndMergeConnectors()}{removeJunctionAndMergeConnectors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$ Avoid\+::\+Junction\+Ref\+::remove\+Junction\+And\+Merge\+Connectors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Removes a junction that has only two connectors attached to it and merges them into a single connector. 
+
+The junction and one of the connectors will be removed from the router scene and the connector deleted. A pointer to the remaining (merged) connector will be returned by this method.
+
+Currently this method does not delete and free the Junction itself. The user needs to do this after the transaction has been processed by the router.
+
+If there are more than two connectors attached to the junction then nothing will be changed and this method will return nullptr.
+
+\begin{DoxyReturn}{Returns}
+The merged connector, or nullptr if the junction was not removed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a9}\label{class_avoid_1_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a9}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!router@{router}}
+\index{router@{router}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{router()}{router()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ Avoid\+::\+Obstacle\+::router (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Returns a pointer to the router scene this obstacle is in. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the router scene for this obstacle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_junction_ref_a31135497c6f50f19e09478ef9f44f170}\label{class_avoid_1_1_junction_ref_a31135497c6f50f19e09478ef9f44f170}} 
+\index{Avoid::JunctionRef@{Avoid::JunctionRef}!setPositionFixed@{setPositionFixed}}
+\index{setPositionFixed@{setPositionFixed}!Avoid::JunctionRef@{Avoid::JunctionRef}}
+\doxysubsubsection{\texorpdfstring{setPositionFixed()}{setPositionFixed()}}
+{\footnotesize\ttfamily void Avoid\+::\+Junction\+Ref\+::set\+Position\+Fixed (\begin{DoxyParamCaption}\item[{bool}]{fixed }\end{DoxyParamCaption})}
+
+
+
+Sets whether the junction has a fixed position and therefore can\textquotesingle{}t be moved by the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} during routing. 
+
+This property is ignored for hyperedge improvement if the option improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions is set and when it would lead to confusing hyperedge topology, such as two overlapping junctions with a zero length connector between them or an unnecessary junction bridging two connectors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em fixed} & Boolean indicating whether the junction position should be marked as fixed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{junction_8h}{junction.\+h}}\item 
+junction.\+cpp\end{DoxyCompactItemize}

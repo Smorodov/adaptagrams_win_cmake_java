@@ -1,0 +1,38 @@
+\hypertarget{hyperedge_8h}{}\doxysection{hyperedge.\+h File Reference}
+\label{hyperedge_8h}\index{hyperedge.h@{hyperedge.h}}
+
+
+Contains the interface for the Hyperedge\+Rerouter class.  
+
+
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}libavoid/dllexport.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Avoid\+::\+Hyperedge\+New\+And\+Deleted\+Object\+Lists}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{struct_avoid_1_1_hyperedge_new_and_deleted_object_lists}{Hyperedge\+New\+And\+Deleted\+Object\+Lists}} class stores lists of objects created and deleted during hyperedge improvement. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Avoid\+::\+Hyperedge\+Rerouter}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_hyperedge_rerouter}{Hyperedge\+Rerouter}} class is a convenience object that can be used to register hyperedges to be rerouted, improving the placement of their junctions and connector paths. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_avoid}{Avoid}}
+\begin{DoxyCompactList}\small\item\em libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}\label{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}} 
+typedef std\+::list$<$ Conn\+End $>$ \mbox{\hyperlink{namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648}{Avoid\+::\+Conn\+End\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}\label{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}} 
+typedef std\+::list$<$ Junction\+Ref $\ast$ $>$ \mbox{\hyperlink{namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791}{Avoid\+::\+Junction\+Ref\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the interface for the Hyperedge\+Rerouter class. 
+

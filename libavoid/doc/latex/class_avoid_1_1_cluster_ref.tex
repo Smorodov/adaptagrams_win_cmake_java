@@ -1,0 +1,147 @@
+\hypertarget{class_avoid_1_1_cluster_ref}{}\doxysection{Avoid\+::Cluster\+Ref Class Reference}
+\label{class_avoid_1_1_cluster_ref}\index{Avoid::ClusterRef@{Avoid::ClusterRef}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_cluster_ref}{Cluster\+Ref}} class represents a cluster object.  
+
+
+
+
+{\ttfamily \#include $<$viscluster.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_cluster_ref_a9bf803c42a2296fe13ac0fd43d435cd5}{Cluster\+Ref}} (\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$\mbox{\hyperlink{class_avoid_1_1_cluster_ref_a71039f677ccc38feffd46ab73825cd87}{router}}, \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&poly, const unsigned int \mbox{\hyperlink{class_avoid_1_1_cluster_ref_a7a25b0c34cdad039906693265a9caac8}{id}}=0)
+\begin{DoxyCompactList}\small\item\em Cluster reference constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_a1114f92b3f18803642ffb9f6564a999d}\label{class_avoid_1_1_cluster_ref_a1114f92b3f18803642ffb9f6564a999d}} 
+\mbox{\hyperlink{class_avoid_1_1_cluster_ref_a1114f92b3f18803642ffb9f6564a999d}{$\sim$\+Cluster\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Cluster reference destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_cluster_ref_a8bdf3a48e06ae25ae25121e781522f5f}{set\+New\+Poly}} (\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&poly)
+\begin{DoxyCompactList}\small\item\em Update the polygon boundary for this cluster. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_avoid_1_1_cluster_ref_a7a25b0c34cdad039906693265a9caac8}{id}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the ID of this cluster. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_referencing_polygon}{Referencing\+Polygon}} \& \mbox{\hyperlink{class_avoid_1_1_cluster_ref_acd1fa20b079253d53d27abf50d2a8933}{polygon}} (void)
+\begin{DoxyCompactList}\small\item\em Returns a reference to the polygon boundary of this cluster. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& \mbox{\hyperlink{class_avoid_1_1_cluster_ref_af7877b59ea4cb2939047f785382f8008}{rectangular\+Polygon}} (void)
+\begin{DoxyCompactList}\small\item\em Returns a reference to the rectangular boundary of this cluster. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_cluster_ref_a71039f677ccc38feffd46ab73825cd87}{router}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the router scene this cluster is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_cluster_ref}{Cluster\+Ref}} class represents a cluster object. 
+
+Cluster are boundaries around groups of shape objects. Ideally, only connectors with one endpoint inside the cluster and one endpoint outside the cluster will cross the cluster boundary. Connectors that begin and end inside a cluster will not route outside it, and connectors that begin and end outside the cluster will not enter the cluster.
+
+\begin{DoxyNote}{Note}
+While the functionality of this class works, it is currently experimental you will likely suffer a large performance hit when using it. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_a9bf803c42a2296fe13ac0fd43d435cd5}\label{class_avoid_1_1_cluster_ref_a9bf803c42a2296fe13ac0fd43d435cd5}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!ClusterRef@{ClusterRef}}
+\index{ClusterRef@{ClusterRef}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{ClusterRef()}{ClusterRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Cluster\+Ref\+::\+Cluster\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$}]{router,  }\item[{\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&}]{poly,  }\item[{const unsigned int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Cluster reference constructor. 
+
+Creates a cluster object reference, but does not yet place it into the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} scene. You can add or remove the cluster to/from the scene with Router\+::add\+Cluster() and Router\+::del\+Cluster(). The cluster can effectively be moved with \mbox{\hyperlink{class_avoid_1_1_cluster_ref_a8bdf3a48e06ae25ae25121e781522f5f}{Cluster\+Ref\+::set\+New\+Poly()}} method.
+
+The poly argument should be used to specify a polygon boundary. The rectangular boundary will be automatically generated from this. The polygon boundary could be a convex hull consisting of points from the boundaries of shapes.
+
+\begin{DoxyNote}{Note}
+Regarding IDs\+: You can let libavoid manually handle IDs by not specifying them. Alternatively, you can specify all IDs yourself, but you must be careful to makes sure that each object in the scene (shape, connector, cluster, etc) is given a unique, positive ID. This uniqueness is checked if assertions are enabled, but if not and there are clashes then strange things can happen.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em router} & The router scene to place the cluster into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em poly} & A \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} representing the boundary of the cluster. \\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & Optionally, a positive integer ID unique among all objects. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_a7a25b0c34cdad039906693265a9caac8}\label{class_avoid_1_1_cluster_ref_a7a25b0c34cdad039906693265a9caac8}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!id@{id}}
+\index{id@{id}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Cluster\+Ref\+::id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the ID of this cluster. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the cluster. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_acd1fa20b079253d53d27abf50d2a8933}\label{class_avoid_1_1_cluster_ref_acd1fa20b079253d53d27abf50d2a8933}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!polygon@{polygon}}
+\index{polygon@{polygon}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_referencing_polygon}{Referencing\+Polygon}} \& Avoid\+::\+Cluster\+Ref\+::polygon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the polygon boundary of this cluster. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the polygon boundary of the cluster. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_af7877b59ea4cb2939047f785382f8008}\label{class_avoid_1_1_cluster_ref_af7877b59ea4cb2939047f785382f8008}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!rectangularPolygon@{rectangularPolygon}}
+\index{rectangularPolygon@{rectangularPolygon}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{rectangularPolygon()}{rectangularPolygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& Avoid\+::\+Cluster\+Ref\+::rectangular\+Polygon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the rectangular boundary of this cluster. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the rectangular boundary of the cluster. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_a71039f677ccc38feffd46ab73825cd87}\label{class_avoid_1_1_cluster_ref_a71039f677ccc38feffd46ab73825cd87}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!router@{router}}
+\index{router@{router}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{router()}{router()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ Avoid\+::\+Cluster\+Ref\+::router (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the router scene this cluster is in. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the router scene for this cluster. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_cluster_ref_a8bdf3a48e06ae25ae25121e781522f5f}\label{class_avoid_1_1_cluster_ref_a8bdf3a48e06ae25ae25121e781522f5f}} 
+\index{Avoid::ClusterRef@{Avoid::ClusterRef}!setNewPoly@{setNewPoly}}
+\index{setNewPoly@{setNewPoly}!Avoid::ClusterRef@{Avoid::ClusterRef}}
+\doxysubsubsection{\texorpdfstring{setNewPoly()}{setNewPoly()}}
+{\footnotesize\ttfamily void Avoid\+::\+Cluster\+Ref\+::set\+New\+Poly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&}]{poly }\end{DoxyParamCaption})}
+
+
+
+Update the polygon boundary for this cluster. 
+
+You should specify a polygon boundary. The rectangular one will be generated automatically from this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em poly} & A \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} representing the boundary of the cluster. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{viscluster_8h}{viscluster.\+h}}\item 
+viscluster.\+cpp\end{DoxyCompactItemize}

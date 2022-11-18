@@ -1,0 +1,2107 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.17)  16 OCT 2022 11:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./refman.tex
+(refman.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22> (Z:\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(Z:\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (Z:\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(Z:\MiKTeX\tex/latex/tools\array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+
+(Z:\MiKTeX\tex/latex/tools\array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks16
+\extratabsurround=\skip49
+\backup@length=\skip50
+))
+(Z:\MiKTeX\tex/latex/base\fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (doxygen.sty
+Package: doxygen 
+ (Z:\MiKTeX\tex/latex/base\alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+)
+(Z:\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count192
+\calc@Bcount=\count193
+\calc@Adimen=\dimen141
+\calc@Bdimen=\dimen142
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count194
+\calc@Cskip=\skip53
+) (Z:\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count195
+\float@exts=\toks17
+\float@box=\box50
+\@float@everytoks=\toks18
+\@floatcapt=\box51
+)
+(Z:\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks19
+\verbatim@line=\toks20
+\verbatim@in@stream=\read2
+) (Z:\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(Z:\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(Z:\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+(Z:\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks21
+\minrowclearance=\skip54
+\rownum=\count196
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count197
+\LTcapwidth=\dimen143
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count198
+\LT@rows=\count199
+\c@LT@tables=\count266
+\c@LT@chunks=\count267
+\LT@p@ftn=\toks22
+)
+(tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+ (Z:\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count268
+\@vwid@loff=\dimen144
+\@vwid@roff=\dimen145
+)
+\c@taburow=\count269
+\tabu@nbcols=\count270
+\tabu@cnt=\count271
+\tabu@Xcol=\count272
+\tabu@alloc=\count273
+\tabu@nested=\count274
+\tabu@target=\dimen146
+\tabu@spreadtarget=\dimen147
+\tabu@naturalX=\dimen148
+\tabucolX=\dimen149
+\tabu@Xsum=\dimen150
+\extrarowdepth=\dimen151
+\abovetabulinesep=\dimen152
+\belowtabulinesep=\dimen153
+\tabustrutrule=\dimen154
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box57
+\tabu@arstrutbox=\box58
+\tabu@hleads=\box59
+\tabu@vleads=\box60
+\tabu@cellskip=\skip59
+)
+(Z:\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
+
+(Z:\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\FV@CodeLineNo=\count275
+\FV@InFile=\read3
+\FV@TabBox=\box61
+\c@FancyVerbLine=\count276
+\FV@StepNumber=\count277
+\FV@OutFile=\write3
+)
+(Z:\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count278
+\TX@ftn=\toks26
+)
+(Z:\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count279
+\mult@box=\box62
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count280
+\c@collectmore=\count281
+\doublecol@number=\count282
+\multicoltolerance=\count283
+\multicolpretolerance=\count284
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box63
+\last@line=\box64
+\maxbalancingoverflow=\dimen165
+\mult@rightbox=\box65
+\mult@grightbox=\box66
+\mult@firstbox=\box67
+\mult@gfirstbox=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count285
+\c@columnbadness=\count286
+\c@finalcolumnbadness=\count287
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count288
+)
+(Z:\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count289
+\multirow@dima=\skip63
+\bigstrutjot=\dimen169
+)
+(Z:\MiKTeX\tex/latex/hanging\hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip64
+\h@ngfstopwd=\skip65
+\h@ngquotewd=\skip66
+\h@ngdquotewd=\skip67
+\h@ngquerywd=\skip68
+\h@ngexclwd=\skip69
+\h@ngcolonwd=\skip70
+\h@ngscolonwd=\skip71
+)
+(Z:\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (Z:\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (Z:\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(Z:\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(Z:\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(Z:\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count290
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(Z:\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(Z:\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(Z:\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(Z:\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(Z:\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(Z:\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(Z:\MiKTeX\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box107
+)
+\tc@llx=\dimen172
+\tc@lly=\dimen173
+\tc@urx=\dimen174
+\tc@ury=\dimen175
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(Z:\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen176
+\adjbox@Height=\dimen177
+\adjbox@Depth=\dimen178
+\adjbox@Totalheight=\dimen179
+\adjbox@pwidth=\dimen180
+\adjbox@pheight=\dimen181
+\adjbox@pdepth=\dimen182
+\adjbox@ptotalheight=\dimen183
+
+(Z:\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count291
+))
+(Z:\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(Z:\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(Z:\MiKTeX\tex/latex/stackengine\stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+
+(Z:\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count292
+)
+(Z:\MiKTeX\tex/latex/listofitems\listofitems.sty
+(Z:\MiKTeX\tex/generic/listofitems\listofitems.tex
+\loi_cnt_foreach_nest=\count293
+\loi_nestcnt=\count294
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count295
+\@boxshift=\skip72
+\stack@tmplength=\skip73
+\temp@stkl=\skip74
+\@stackedboxwidth=\skip75
+\@addedbox=\box108
+\@anchorbox=\box109
+\@insetbox=\box110
+\se@backgroundbox=\box111
+\stackedbox=\box112
+\@centerbox=\box113
+\c@ROWcellindex@=\count296
+)
+(Z:\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box114
+\UL@hyphenbox=\box115
+\UL@skip=\skip76
+\UL@hook=\toks30
+\UL@height=\dimen184
+\UL@pe=\count297
+\UL@pixel=\dimen185
+\ULC@box=\box116
+Package: ulem 2019/11/18
+\ULdepth=\dimen186
+)
+\xrefbox=\box117
+\xreflength=\skip77
+\CodeWidthChar=\skip78
+\CodeHeightChar=\skip79
+\DoxyCodeWidth=\skip80
+) (Z:\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
+)
+(Z:\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (Z:\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(Z:\MiKTeX\tex/latex/wasysym\wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(Z:\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (Z:\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (Z:\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(Z:\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(Z:\MiKTeX\tex/latex/sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (Z:\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(Z:\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen187
+\Gm@wd@mp=\dimen188
+\Gm@odd@mp=\dimen189
+\Gm@even@mp=\dimen190
+\Gm@layoutwidth=\dimen191
+\Gm@layoutheight=\dimen192
+\Gm@layouthoffset=\dimen193
+\Gm@layoutvoffset=\dimen194
+\Gm@dimlist=\toks33
+
+(Z:\MiKTeX\tex/latex/geometry\geometry.cfg))
+(Z:\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip81
+\f@nch@O@elh=\skip82
+\f@nch@O@erh=\skip83
+\f@nch@O@olh=\skip84
+\f@nch@O@orh=\skip85
+\f@nch@O@elf=\skip86
+\f@nch@O@erf=\skip87
+\f@nch@O@olf=\skip88
+\f@nch@O@orf=\skip89
+)
+(Z:\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip90
+\bibsep=\skip91
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count301
+)
+(Z:\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip92
+\cftbeforetoctitleskip=\skip93
+\cftaftertoctitleskip=\skip94
+\cftbeforepartskip=\skip95
+\cftpartnumwidth=\skip96
+\cftpartindent=\skip97
+\cftbeforechapskip=\skip98
+\cftchapindent=\skip99
+\cftchapnumwidth=\skip100
+\cftbeforesecskip=\skip101
+\cftsecindent=\skip102
+\cftsecnumwidth=\skip103
+\cftbeforesubsecskip=\skip104
+\cftsubsecindent=\skip105
+\cftsubsecnumwidth=\skip106
+\cftbeforesubsubsecskip=\skip107
+\cftsubsubsecindent=\skip108
+\cftsubsubsecnumwidth=\skip109
+\cftbeforeparaskip=\skip110
+\cftparaindent=\skip111
+\cftparanumwidth=\skip112
+\cftbeforesubparaskip=\skip113
+\cftsubparaindent=\skip114
+\cftsubparanumwidth=\skip115
+\cftbeforeloftitleskip=\skip116
+\cftafterloftitleskip=\skip117
+\cftbeforefigskip=\skip118
+\cftfigindent=\skip119
+\cftfignumwidth=\skip120
+\c@lofdepth=\count302
+\c@lotdepth=\count303
+\cftbeforelottitleskip=\skip121
+\cftafterlottitleskip=\skip122
+\cftbeforetabskip=\skip123
+\cfttabindent=\skip124
+\cfttabnumwidth=\skip125
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+(Z:\MiKTeX\tex/latex/newunicodechar\newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+)
+
+Package newunicodechar Warning: Redefining Unicode character on input line 115.
+
+
+
+Package newunicodechar Warning: Redefining Unicode character on input line 116.
+
+
+(Z:\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(Z:\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(Z:\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(Z:\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(Z:\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(Z:\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(Z:\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(Z:\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(Z:\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(Z:\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(Z:\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen195
+\Hy@linkcounter=\count304
+\Hy@pagecounter=\count305
+
+(Z:\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(Z:\MiKTeX\tex/latex/hyperref\hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(Z:\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(Z:\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count306
+
+(Z:\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing ON on input line 4210.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+
+(Z:\MiKTeX\tex/latex/hyperref\backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
+
+(Z:\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(Z:\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(Z:\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(Z:\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+\c@Hy@tempcnt=\count307
+
+(Z:\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen196
+ (Z:\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count308
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing ON on input line 6089.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(Z:\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count309
+\c@Item=\count310
+\c@Hfootnote=\count311
+
+
+LaTeX Warning: Command \LT@p@ftntext  has changed.
+               Check if current package is valid.
+
+)
+Package hyperref Info: Driver: hpdftex.
+ (Z:\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
+\Hy@SectionHShift=\skip126
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
+Package hyperref Info: Option `unicode' set `true' on input line 134.
+
+(Z:\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(Z:\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen199
+\captionmargin=\dimen256
+\caption@leftmargin=\dimen257
+\caption@rightmargin=\dimen258
+\caption@width=\dimen259
+\caption@indent=\dimen260
+\caption@parindent=\dimen261
+\caption@hangindent=\dimen262
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count314
+\c@continuedfloat=\count315
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(Z:\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (Z:\MiKTeX\tex/latex/etoc\etoc.sty
+Package: etoc 2022/08/30 v1.09f Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks34
+\c@etoc@tocid=\count316
+\c@etoc@tocdepth=\count317
+\etoc@framed@titlebox=\box118
+\etoc@framed@contentsbox=\box119
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+9.
+ (Z:\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 149.
+
+(Z:\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count318
+\l__pdf_internal_box=\box120
+) (refman.aux
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c
+1174ab2aac' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb
+71a9b42630' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_aae0e8e58b2f358ec3f203a5e6485c660
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a477d0e8e93509d7955d1f4b4ca0abb0d
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a2f9e9c8c78407eefbde944e663d9711e
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a30bdb2e917bb74f0221e6ed06fe7b087
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a79759c6c918f319bb3b16fd57880ac8b
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_aa97018b23c72d42f28f32173a94ecff9
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_ab2772d0cf1d0aad817a9814e20fce5ab
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c
+1174ab2aac' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a35ab2aa804cc40ae127e0641e254d268
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb
+71a9b42630' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a207d87cc233b29e60e0ba10ff4a690b0
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a2d3a0deb96bbff214b7035e481f0f0e8
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a532dd54af4b94b80ba357de07d083fac
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_a3ca461da90925fe54b7ea54a6156d171
+' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_a8eed22074d9e8f1b406b0c
+1174ab2aac' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_polygon_interface_af10740857ee9fd5f9dedfb
+71a9b42630' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac
+9' multiply defined.
+
+
+LaTeX Warning: Label `class_avoid_1_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a
+9' multiply defined.
+
+
+LaTeX Warning: Label `namespace_avoid_a987d8722cf94d3ab74702878f17c3d83' multip
+ly defined.
+
+
+LaTeX Warning: Label `namespace_avoid_afda003ad24493d39bfc62e665beedaa8' multip
+ly defined.
+
+
+LaTeX Warning: Label `namespace_avoid_a6fc132301ed3552d26d872199656459e' multip
+ly defined.
+
+
+LaTeX Warning: Label `namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c' multip
+ly defined.
+
+
+LaTeX Warning: Label `namespace_avoid_a3c69d2bf610b9cc59991204ac75a2648' multip
+ly defined.
+
+
+LaTeX Warning: Label `namespace_avoid_a4bc6e47f1fc469ab4dafab6055cb5791' multip
+ly defined.
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+ (Z:\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count319
+\scratchdimen=\dimen263
+\scratchbox=\box121
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen264
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks36
+) (Z:\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(Z:\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 149.
+(Z:\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(Z:\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(Z:\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count325
+)
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
+ (refman.out)
+(refman.out)
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+Package backref Info: ** backref set up for natbib ** on input line 149.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\Etoc@tf=\read4
+Package hyperref Info: Option `pageanchor' set `false' on input line 156.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 156.
+
+Package hyperref Info: Option `unicode' set `true' on input line 156.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 161.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 163.
+ [1
+
+
+{C:/Users/Andrey/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 169.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169
+.
+ (Z:\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169
+.
+
+(Z:\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+9.
+ (Z:\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 169.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 169.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
+9.
+
+(Z:\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [1] [2] [3] [4] [5] [6]
+Package hyperref Info: Option `pageanchor' set `true' on input line 171.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 174.
+(index.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+1.
+ (Z:\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 11.
+ [1
+
+
+]) [2]
+Chapter 2.
+(libavoid_example.tex
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+) [4]
+Chapter 3.
+(namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [5
+
+] [6
+
+]
+Chapter 4.
+(hierarchy.tex) [7] [8
+
+]
+Chapter 5.
+(annotated.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+ []  
+ []
+
+) [9] [10
+
+]
+Chapter 6.
+(files.tex
+
+LaTeX Warning: Reference `actioninfo_8h' on page 11 undefined on input line 3.
+
+
+LaTeX Warning: Reference `assertions_8h' on page 11 undefined on input line 4.
+
+
+LaTeX Warning: Reference `debug_8h' on page 11 undefined on input line 8.
+
+
+LaTeX Warning: Reference `debughandler_8h' on page 11 undefined on input line 9
+.
+
+
+LaTeX Warning: Reference `dllexport_8h' on page 11 undefined on input line 10.
+
+
+LaTeX Warning: Reference `geometry_8h' on page 11 undefined on input line 11.
+
+
+LaTeX Warning: Reference `graph_8h' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Reference `hyperedgeimprover_8h' on page 11 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `hyperedgetree_8h' on page 11 undefined on input line 
+16.
+
+
+LaTeX Warning: Reference `makepath_8h' on page 11 undefined on input line 19.
+
+
+LaTeX Warning: Reference `mtst_8h' on page 11 undefined on input line 20.
+
+
+LaTeX Warning: Reference `orthogonal_8h' on page 11 undefined on input line 22.
+
+
+
+LaTeX Warning: Reference `scanline_8h' on page 11 undefined on input line 24.
+
+
+LaTeX Warning: Reference `timer_8h' on page 11 undefined on input line 26.
+
+
+LaTeX Warning: Reference `vertices_8h' on page 11 undefined on input line 27.
+
+
+LaTeX Warning: Reference `visibility_8h' on page 11 undefined on input line 29.
+
+
+
+LaTeX Warning: Reference `vpsc_8h' on page 11 undefined on input line 30.
+
+[11]) [12]
+Chapter 7.
+(namespace_avoid.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+[13
+
+]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 73.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 73.
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--110
+[] \T1/phv/m/n/10 = 0 , [] ,
+ []
+
+
+Overfull \hbox (26.03308pt too wide) in paragraph at lines 111--122
+[] \T1/phv/m/n/10 , [] , []
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) detected at line 10
+[][][]
+ []
+
+
+Overfull \hbox (32.89682pt too wide) in paragraph at lines 21--22
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][][]
+ []
+
+
+Overfull \hbox (55.41043pt too wide) in paragraph at lines 26--27
+[]  
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+
+Overfull \hbox (50.11308pt too wide) in paragraph at lines 66--67
+[]\T1/phv/m/n/10 .  
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) detected at line 2
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+[18] [19]
+Overfull \vbox (25.67004pt too high) has occurred while \output is active []
+
+
+[20])
+Chapter 8.
+(class_avoid_1_1_box.tex) (class_avoid_1_1_checkpoint.tex [21
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 28.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 29.
+
+Overfull \vbox (28.07837pt too high) has occurred while \output is active []
+
+
+[22]) (class_avoid_1_1_cluster_ref.tex
+Underfull \hbox (badness 10000) detected at line 37
+[][][]
+ []
+
+[23]
+Underfull \hbox (badness 10000) detected at line 57
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 109
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 122
+[][][]
+ []
+
+[25]) (class_avoid_1_1_conn_end.tex [26]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 62.
+ [27] [28]
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 154
+[][][]
+ []
+
+[29]
+Underfull \hbox (badness 10000) detected at line 169
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 182
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 197
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 210
+[][][]
+ []
+
+) (class_avoid_1_1_conn_ref.tex [30] [31]
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+[32]
+Underfull \hbox (badness 10000) detected at line 143
+[][][]
+ []
+
+[33]
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 176
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 189
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 202
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 219
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 247
+[][][]
+ []
+
+[35]
+Underfull \hbox (badness 10000) detected at line 260
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 273
+[][][]
+ []
+
+[36] [37]
+Underfull \hbox (badness 10000) detected at line 344
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 347
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 364
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 372
+[][][]
+ []
+
+[38] [39]
+Underfull \hbox (badness 10000) detected at line 440
+[][][]
+ []
+
+) (class_avoid_1_1_edge.tex)
+(struct_avoid_1_1_hyperedge_new_and_deleted_object_lists.tex
+Overfull \hbox (111.75645pt too wide) in paragraph at lines 35--36
+[]\T1/phv/m/n/10 After hy-per-edge im-prove-ment, this in-for-ma-tion can be pr
+o-duced by call-ing the []
+ []
+
+
+Overfull \hbox (30.87456pt too wide) in paragraph at lines 37--38
+[]\T1/phv/m/n/10 After hy-per-edge rerout-ing, this in-for-ma-tion can be pro-d
+uced by call-ing the []
+ []
+
+[40]) (class_avoid_1_1_hyperedge_rerouter.tex
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) detected at line 48
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+[42]
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+) (class_avoid_1_1_junction_ref.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 63--64
+[]\T1/phv/m/n/10 The junc-tion can be moved with [] and re-moved from the scene
+ and freed with
+ []
+
+[44]
+Underfull \hbox (badness 2884) in paragraph at lines 71--72
+[]\T1/phv/m/n/10 When the improve[]Hyperedge[]Routes[]Moving[]Adding[]And[]Dele
+ting[]Junctions router op-tion is set (not the de-
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 71--72
+\T1/phv/m/n/10 fault) junc-tions and con-nec-tors can be added or re-moved to f
+ur-ther im-prove hy-per-edges, see also
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+[45]
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 134
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 147
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 160
+[][][]
+ []
+
+[46]
+Underfull \hbox (badness 10000) detected at line 179
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+[47]) (class_avoid_1_1_point.tex [48]
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 93
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 124
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+[50]
+Underfull \hbox (badness 10000) detected at line 150
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+) (class_avoid_1_1_polygon.tex
+
+pdfTeX warning: pdflatex (file ./class_avoid_1_1_polygon.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+ <./class_avoid_1_1_polygon.pdf>
+<class_avoid_1_1_polygon.pdf, id=2302, 501.875pt x 389.455pt>
+File: class_avoid_1_1_polygon.pdf Graphic file (type pdf)
+<use class_avoid_1_1_polygon.pdf>
+Package pdftex.def Info: class_avoid_1_1_polygon.pdf  used on input line 15.
+(pdftex.def)             Requested size: 109.99164pt x 85.35826pt.
+ [51]
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+[52] [53]
+Underfull \hbox (badness 10000) detected at line 142
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 164
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 167
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 187
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 217
+[][][]
+ []
+
+[55] [56]
+Underfull \hbox (badness 10000) detected at line 258
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+) (class_avoid_1_1_polygon_interface.tex
+
+pdfTeX warning: pdflatex (file ./class_avoid_1_1_polygon_interface.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./class_avoid_1_1_polygon_interface.pdf>
+<class_avoid_1_1_polygon_interface.pdf, id=2411, 501.875pt x 173.64874pt>
+File: class_avoid_1_1_polygon_interface.pdf Graphic file (type pdf)
+<use class_avoid_1_1_polygon_interface.pdf>
+Package pdftex.def Info: class_avoid_1_1_polygon_interface.pdf  used on input l
+ine 15.
+(pdftex.def)             Requested size: 246.70967pt x 85.35826pt.
+ [57]
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 ...erface_a8eed22074d9e8f1b406b0c1174ab2aac}}
+                                                   [58]
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 ...erface_af10740857ee9fd5f9dedfb71a9b42630}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+) (class_avoid_1_1_rectangle.tex
+
+pdfTeX warning: pdflatex (file ./class_avoid_1_1_rectangle.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+ <./class_avoid_1_1_rectangle.pdf>
+<class_avoid_1_1_rectangle.pdf, id=2457, 501.875pt x 389.455pt>
+File: class_avoid_1_1_rectangle.pdf Graphic file (type pdf)
+<use class_avoid_1_1_rectangle.pdf>
+Package pdftex.def Info: class_avoid_1_1_rectangle.pdf  used on input line 15.
+(pdftex.def)             Requested size: 109.99164pt x 85.35826pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_aae0e8e58b2f358ec3f203a5e6485c660}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.25 ...olygon_aae0e8e58b2f358ec3f203a5e6485c660}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a477d0e8e93509d7955d1f4b4ca0abb0d}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.28 ...olygon_a477d0e8e93509d7955d1f4b4ca0abb0d}}
+                                                   [59]
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a2f9e9c8c78407eefbde944e663d9711e}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.31 ...olygon_a2f9e9c8c78407eefbde944e663d9711e}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a30bdb2e917bb74f0221e6ed06fe7b087}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.34 ...olygon_a30bdb2e917bb74f0221e6ed06fe7b087}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a79759c6c918f319bb3b16fd57880ac8b}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.54 ...olygon_a79759c6c918f319bb3b16fd57880ac8b}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_aa97018b23c72d42f28f32173a94ecff9}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.57 ...olygon_aa97018b23c72d42f28f32173a94ecff9}}
+                                                   [60]
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_ab2772d0cf1d0aad817a9814e20fce5ab}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.107 ...lygon_ab2772d0cf1d0aad817a9814e20fce5ab}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 ...rface_a8eed22074d9e8f1b406b0c1174ab2aac}}
+                                                   [61]
+Underfull \hbox (badness 10000) detected at line 136
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a35ab2aa804cc40ae127e0641e254d268}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.139 ...lygon_a35ab2aa804cc40ae127e0641e254d268}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 ...rface_af10740857ee9fd5f9dedfb71a9b42630}}
+                                                   [62]
+Underfull \hbox (badness 10000) detected at line 181
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a207d87cc233b29e60e0ba10ff4a690b0}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.184 ...lygon_a207d87cc233b29e60e0ba10ff4a690b0}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a2d3a0deb96bbff214b7035e481f0f0e8}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.201 ...lygon_a2d3a0deb96bbff214b7035e481f0f0e8}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 211
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a532dd54af4b94b80ba357de07d083fac}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.214 ...lygon_a532dd54af4b94b80ba357de07d083fac}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_a3ca461da90925fe54b7ea54a6156d171}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.234 ...lygon_a3ca461da90925fe54b7ea54a6156d171}}
+                                                   [63]
+Underfull \hbox (badness 10000) detected at line 252
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+) (class_avoid_1_1_referencing_polygon.tex
+
+pdfTeX warning: pdflatex (file ./class_avoid_1_1_referencing_polygon.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./class_avoid_1_1_referencing_polygon.pdf>
+<class_avoid_1_1_referencing_polygon.pdf, id=2544, 501.875pt x 230.8625pt>
+File: class_avoid_1_1_referencing_polygon.pdf Graphic file (type pdf)
+<use class_avoid_1_1_referencing_polygon.pdf>
+Package pdftex.def Info: class_avoid_1_1_referencing_polygon.pdf  used on input
+ line 15.
+(pdftex.def)             Requested size: 123.70709pt x 56.9055pt.
+ [64]
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_a8eed22074d9e8f1b406b0c1174ab2aac}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 ...erface_a8eed22074d9e8f1b406b0c1174ab2aac}}
+                                                   [65]
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_polygon_interface_af10740857ee9fd5f9dedfb71a9b42630}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 ...erface_af10740857ee9fd5f9dedfb71a9b42630}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+) (class_avoid_1_1_router.tex [66] [67]
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+[68]
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+[69] [70] [71]
+Underfull \hbox (badness 10000) detected at line 278
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 293
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 296
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 316
+[][][]
+ []
+
+[72]
+Underfull \hbox (badness 10000) detected at line 350
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 353
+[][][]
+ []
+
+[73]
+Underfull \hbox (badness 10000) detected at line 371
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 389
+[][][]
+ []
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 445
+[][][]
+ []
+
+[75]
+Underfull \hbox (badness 10000) detected at line 501
+[][][]
+ []
+
+
+Overfull \vbox (30.18436pt too high) has occurred while \output is active []
+
+
+[76]
+Underfull \hbox (badness 10000) detected at line 515
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 528
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 531
+[][][]
+ []
+
+) (class_avoid_1_1_shape_connection_pin.tex [77]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+[78] [79]
+Underfull \hbox (badness 10000) detected at line 134
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 147
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 160
+[][][]
+ []
+
+[80]) (class_avoid_1_1_shape_ref.tex [81]
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
+
+[82]
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.84 ...stacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 94
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 107
+[][][]
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{class_avoid_1
+_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a9}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.110 ...tacle_a44c50a6dd66bbf0e81191f867f0452a9}}
+                                                  
+Underfull \hbox (badness 10000) detected at line 120
+[][][]
+ []
+
+[83]) [84]
+Chapter 9.
+(connectionpin_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+) (connector_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+[85
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_a987d8722cf94d3ab74702878f17c3d83}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.30 ..._avoid_a987d8722cf94d3ab74702878f17c3d83}}
+                                                  ) (connend_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+
+ []
+
+[86]
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_afda003ad24493d39bfc62e665beedaa8}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.27 ..._avoid_afda003ad24493d39bfc62e665beedaa8}}
+                                                  ) (geomtypes_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+[87]
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_a6fc132301ed3552d26d872199656459e}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.37 ..._avoid_a6fc132301ed3552d26d872199656459e}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_afaa0d7df841c3bace9f3342dab6bc07c}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.40 ..._avoid_afaa0d7df841c3bace9f3342dab6bc07c}}
+                                                  ) (hyperedge_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_a3c69d2bf610b9cc59991204ac75a2648}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.28 ..._avoid_a3c69d2bf610b9cc59991204ac75a2648}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{namespace_avo
+id_a4bc6e47f1fc469ab4dafab6055cb5791}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.31 ..._avoid_a4bc6e47f1fc469ab4dafab6055cb5791}}
+                                                  ) (junction_8h.tex [88]
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+) (libavoid_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--21
+
+ []
+
+) (obstacle_8h.tex [89]
+Underfull \hbox (badness 10000) in paragraph at lines 8--13
+
+ []
+
+) (router_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--20
+
+ []
+
+[90]
+Overfull \hbox (43.98042pt too wide) in paragraph at lines 37--51
+[] \T1/phv/m/n/10 , [] , [] , []
+ []
+
+
+Overfull \hbox (50.97928pt too wide) in paragraph at lines 52--63
+[] \T1/phv/m/n/10 , []
+ []
+
+
+Overfull \hbox (44.47182pt too wide) in paragraph at lines 64--75
+[] \T1/phv/m/n/10 = 1 , []
+ []
+
+
+Overfull \hbox (106.8155pt too wide) in paragraph at lines 64--75
+[] \T1/phv/m/n/10 , [] , []
+ []
+
+) (shape_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
+
+ []
+
+[91]
+Overfull \hbox (26.26773pt too wide) in paragraph at lines 27--35
+[] \T1/phv/m/n/10 = 0 , [] = 1 , []
+ []
+
+) (viscluster_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+) [92] (refman.ind
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+[]| \T1/phv/m/n/10 im-prove-Hy-per-edgeR-outes-Movin-gAddin-gAnd-Delet-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[]| \T1/phv/m/n/10 nud-ge-Orthog-o-nalSeg-mentsCon-nect-ed-ToShapes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+[]| \T1/phv/m/n/10 Trans-ac-tion-Phase-Orthog-o-nalVis-i-bil-i-ty-Graph-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+[]| \T1/phv/m/n/10 Trans-ac-tion-Phase-Orthog-o-nalVis-i-bil-i-ty-Graph-ScanY,
+ []
+
+[93
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+[]| \T1/phv/m/n/10 newAnd-Delete-dOb-jectLists-FromHy-per-edgeIm-
+ []
+
+[94]
+Overfull \hbox (25.29683pt too wide) in paragraph at lines 314--315
+[]\T1/phv/m/n/10 improveHyperedgeRoutesMovingAddingAndDeletingJunctions 
+ []
+
+[95] [96] [97]) (refman.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 187DC3AE895E5A395D238F3E6E16D799;49107.
+ ) 
+Here is how much of TeX's memory you used:
+ 18750 strings out of 478659
+ 317864 string characters out of 2862402
+ 666566 words of memory out of 3000000
+ 35768 multiletter control sequences out of 15000+600000
+ 465281 words of font info for 101 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,16n,117p,828b,680s stack positions out of 5000i,500n,10000p,200000b,80000s
+{Z:/MiKTeX/fonts/enc/dvips/base/8r.enc}<Z:/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><Z:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><Z:/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><Z:/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><Z:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><Z:/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><Z:/MiKTeX/fonts/type1/urw/courier/ucrb8
+a.pfb><Z:/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><Z:/MiKTeX/fonts/type1/urw/
+courier/ucrro8a.pfb><Z:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><Z:/MiKTeX/f
+onts/type1/urw/helvetic/uhvb8ac.pfb><Z:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.
+pfb><Z:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (105 pages, 870157 bytes).
+PDF statistics:
+ 3641 PDF objects out of 4296 (max. 8388607)
+ 690 named destinations out of 1000 (max. 500000)
+ 1869 words of extra memory for PDF output out of 10000 (max. 10000000)
+

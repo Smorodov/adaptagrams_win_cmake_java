@@ -1,0 +1,143 @@
+\hypertarget{class_avoid_1_1_shape_ref}{}\doxysection{Avoid\+::Shape\+Ref Class Reference}
+\label{class_avoid_1_1_shape_ref}\index{Avoid::ShapeRef@{Avoid::ShapeRef}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} class represents a shape object.  
+
+
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+
+
+Inherits Avoid\+::\+Obstacle.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_shape_ref_ac8e8b31a3185d57b9225fa0224bd4774}{Shape\+Ref}} (\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$router, \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&poly, const unsigned int id=0)
+\begin{DoxyCompactList}\small\item\em Shape reference constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_avoid_1_1_shape_ref_a2665c1e25099e177842b5772286c4961}{$\sim$\+Shape\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Shape reference destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& \mbox{\hyperlink{class_avoid_1_1_shape_ref_aa0a5e8382c7674933e09207bc6e47564}{polygon}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a reference to the polygon boundary of this shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_shape_ref_a27cc39cd041b6358705481f1f00066bf}{transform\+Connection\+Pin\+Positions}} (\mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}{Shape\+Transformation\+Type}} transform)
+\begin{DoxyCompactList}\small\item\em Adjusts all of the shape\textquotesingle{}s connection pin positions and visibility directions for a given transformation type. \end{DoxyCompactList}\item 
+unsigned int {\bfseries id} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the ID of this obstacle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ {\bfseries router} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the router scene this obstacle is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} class represents a shape object. 
+
+Shapes are obstacles that connectors must be routed around. They can be placed into a \mbox{\hyperlink{class_avoid_1_1_router}{Router}} scene and can be repositioned or resized (via \mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{Router\+::move\+Shape()}}).
+
+Usually, it is expected that you would create a \mbox{\hyperlink{class_avoid_1_1_shape_ref}{Shape\+Ref}} for each shape in your diagram and keep that reference in your own shape class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_shape_ref_ac8e8b31a3185d57b9225fa0224bd4774}\label{class_avoid_1_1_shape_ref_ac8e8b31a3185d57b9225fa0224bd4774}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!ShapeRef@{ShapeRef}}
+\index{ShapeRef@{ShapeRef}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{ShapeRef()}{ShapeRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Shape\+Ref\+::\+Shape\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$}]{router,  }\item[{\mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \&}]{poly,  }\item[{const unsigned int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Shape reference constructor. 
+
+Creates a shape object reference, and adds it to the router scene. This shape will be considered to be an obstacle. This will cause connectors intersecting the newly added shape to be marked as needing to be rerouted.
+
+If the router is using transactions, then changes will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+The shape can be moved with \mbox{\hyperlink{class_avoid_1_1_router_a766c0dd498c38822cf9ea7c77af28b3d}{Router\+::move\+Shape()}} and removed from the scene and freed with \mbox{\hyperlink{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}{Router\+::delete\+Shape()}}.
+
+The poly argument will usually be the boundary of the shape in your application with additional buffer of several pixels on each side. Specifying such a buffer results in connectors leaving a small amount of space around shapes, rather than touching them on the corners or edges.
+
+\begin{DoxyNote}{Note}
+Regarding IDs\+: You can let libavoid manually handle IDs by not specifying them. Alternatively, you can specify all IDs yourself, but you must be careful to makes sure that each object in the scene (shape, connector, cluster, etc) is given a unique, positive ID. This uniqueness is checked if assertions are enabled, but if not and there are clashes then strange things can happen.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em router} & The router scene to place the shape into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em poly} & A \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} representing the boundary of the shape. \\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & Optionally, a positive integer ID unique among all objects. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_shape_ref_a2665c1e25099e177842b5772286c4961}\label{class_avoid_1_1_shape_ref_a2665c1e25099e177842b5772286c4961}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!````~ShapeRef@{$\sim$ShapeRef}}
+\index{````~ShapeRef@{$\sim$ShapeRef}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{$\sim$ShapeRef()}{~ShapeRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Shape\+Ref\+::$\sim$\+Shape\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shape reference destructor. 
+
+Do not call this yourself, instead call \mbox{\hyperlink{class_avoid_1_1_router_a1f91cdcf5dc6ca0ec278e7943f8f21a5}{Router\+::delete\+Shape()}}. Ownership of this object belongs to the router scene. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}\label{class_avoid_1_1_obstacle_a18859cfc4e60c1b2ca28f28dbe8eeac9}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!id@{id}}
+\index{id@{id}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Obstacle\+::id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Returns the ID of this obstacle. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the obstacle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_shape_ref_aa0a5e8382c7674933e09207bc6e47564}\label{class_avoid_1_1_shape_ref_aa0a5e8382c7674933e09207bc6e47564}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!polygon@{polygon}}
+\index{polygon@{polygon}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& Avoid\+::\+Shape\+Ref\+::polygon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a reference to the polygon boundary of this shape. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the polygon boundary of the shape. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a9}\label{class_avoid_1_1_obstacle_a44c50a6dd66bbf0e81191f867f0452a9}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!router@{router}}
+\index{router@{router}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{router()}{router()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ Avoid\+::\+Obstacle\+::router (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Returns a pointer to the router scene this obstacle is in. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the router scene for this obstacle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_shape_ref_a27cc39cd041b6358705481f1f00066bf}\label{class_avoid_1_1_shape_ref_a27cc39cd041b6358705481f1f00066bf}} 
+\index{Avoid::ShapeRef@{Avoid::ShapeRef}!transformConnectionPinPositions@{transformConnectionPinPositions}}
+\index{transformConnectionPinPositions@{transformConnectionPinPositions}!Avoid::ShapeRef@{Avoid::ShapeRef}}
+\doxysubsubsection{\texorpdfstring{transformConnectionPinPositions()}{transformConnectionPinPositions()}}
+{\footnotesize\ttfamily void Avoid\+::\+Shape\+Ref\+::transform\+Connection\+Pin\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_avoid_a0bc7f2f62fe47be102d34ddd330982a4}{Shape\+Transformation\+Type}}}]{transform }\end{DoxyParamCaption})}
+
+
+
+Adjusts all of the shape\textquotesingle{}s connection pin positions and visibility directions for a given transformation type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em transform} & A Shape\+Transformation\+Type specifying the type of transform to be applied to all connection pins for the shape. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{shape_8h}{shape.\+h}}\item 
+shape.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\hypertarget{connend_8h}{}\doxysection{connend.\+h File Reference}
+\label{connend_8h}\index{connend.h@{connend.h}}
+
+
+Contains the interface for the Conn\+End class.  
+
+
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include \char`\"{}libavoid/dllexport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/geometry.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_avoid_1_1_conn_end}{Avoid\+::\+Conn\+End}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} class represents different possible endpoints for connectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_avoid}{Avoid}}
+\begin{DoxyCompactList}\small\item\em libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}\label{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}} 
+typedef unsigned int \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Avoid\+::\+Conn\+Dir\+Flags}}
+\begin{DoxyCompactList}\small\item\em One or more \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610}{Avoid\+::\+Conn\+Dir\+Flag}} \{  \}
+\begin{DoxyCompactList}\small\item\em Flags that can be passed to the Conn\+End constructor to specify which sides of a shape this point should have visibility to if it is located within the shape\textquotesingle{}s area. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131d}{Avoid\+::\+Conn\+End\+Type}} \{ \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da0a5b6d736ebc76deeea7e1be4e309c01}{Avoid\+::\+Conn\+End\+Point}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da945c3a16730623718dc65bfaf45158b6}{Avoid\+::\+Conn\+End\+Shape\+Pin}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131da198159ff5701e24c4fe76c2c4f96f565}{Avoid\+::\+Conn\+End\+Junction}}
+, \mbox{\hyperlink{namespace_avoid_abd32237d22b750befd61c34e54fe131dae1f4eb772f36973edf49bf8dd269bed6}{Avoid\+::\+Conn\+End\+Empty}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types that describe the kind a connection that a Conn\+End represents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the interface for the Conn\+End class. 
+

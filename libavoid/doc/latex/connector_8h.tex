@@ -1,0 +1,42 @@
+\hypertarget{connector_8h}{}\doxysection{connector.\+h File Reference}
+\label{connector_8h}\index{connector.h@{connector.h}}
+
+
+Contains the interface for the Conn\+Ref class.  
+
+
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}libavoid/dllexport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/vertices.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/geometry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/connend.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Avoid\+::\+Checkpoint}}
+\begin{DoxyCompactList}\small\item\em A checkpoint is a point that the route for a particular connector must visit. They may optionally be given an arrival/departure direction. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Avoid\+::\+Conn\+Ref}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} class represents a connector object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_avoid}{Avoid}}
+\begin{DoxyCompactList}\small\item\em libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}\label{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}} 
+typedef std\+::list$<$ Conn\+Ref $\ast$ $>$ \mbox{\hyperlink{namespace_avoid_a987d8722cf94d3ab74702878f17c3d83}{Avoid\+::\+Conn\+Ref\+List}}
+\begin{DoxyCompactList}\small\item\em A list of \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Avoid\+::\+Conn\+Type}} \{  \}
+\begin{DoxyCompactList}\small\item\em Describes the type of routing that is performed for each connector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the interface for the Conn\+Ref class. 
+

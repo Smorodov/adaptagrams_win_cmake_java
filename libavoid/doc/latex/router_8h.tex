@@ -1,0 +1,80 @@
+\hypertarget{router_8h}{}\doxysection{router.\+h File Reference}
+\label{router_8h}\index{router.h@{router.h}}
+
+
+Contains the interface for the Router class.  
+
+
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}libavoid/dllexport.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/connector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/vertices.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/graph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/hyperedge.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/actioninfo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavoid/hyperedgeimprover.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_avoid_1_1_router}{Avoid\+::\+Router}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_avoid_1_1_router}{Router}} class represents a libavoid router instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_avoid}{Avoid}}
+\begin{DoxyCompactList}\small\item\em libavoid\+: Object-\/avoiding orthogonal and polyline connector routing library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4}{Avoid\+::\+Router\+Flag}} \{ \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4abd8248b5a3102d2b5b50c4010397de63}{Avoid\+::\+Poly\+Line\+Routing}} = 1
+, \mbox{\hyperlink{namespace_avoid_a8b398574e5b64951b7f23a36a1cdfcf4a4b104d4d6ef8bcf22994808b936e83ff}{Avoid\+::\+Orthogonal\+Routing}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Flags that can be passed to the router during initialisation to specify options. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19}{Avoid\+::\+Routing\+Parameter}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19ad518475ff7cdd46b69468ae09560c9f6}{Avoid\+::segment\+Penalty}} = 0
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a9419cfef2c9150715e52de573580ce5e}{Avoid\+::angle\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a1441b8b9a3aaa75e5b9116a54c1d654b}{Avoid\+::crossing\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a310f9eb2c2d36b367ade5bd9284090c0}{Avoid\+::cluster\+Crossing\+Penalty}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a586e41e5033600acebea92d51af69871}{Avoid\+::fixed\+Shared\+Path\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4b063b8410394390341c5d5866091202}{Avoid\+::port\+Direction\+Penalty}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19adb1bf659e4e53b830554ff43ee5dd7f2}{Avoid\+::shape\+Buffer\+Distance}}
+, \mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19aefdad4d50aa10139e27c4ea73f31b2a4}{Avoid\+::ideal\+Nudging\+Distance}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a8a0154ae39129e7737d98e5a83daed19a4ade3cc526dda153d7a329c7f2a0cc92}{Avoid\+::reverse\+Direction\+Penalty}}
+, {\bfseries last\+Routing\+Parameter\+Marker}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing parameters and penalties that can be used to tailor the style and improve the quality of the connector routes produced. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05}{Avoid\+::\+Routing\+Option}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05af7be85399d751dd52483038192cfaba2}{Avoid\+::nudge\+Orthogonal\+Segments\+Connected\+To\+Shapes}} = 0
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a8133196457c90f8beb426355d72dbb51}{Avoid\+::improve\+Hyperedge\+Routes\+Moving\+Junctions}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ad4f62b81f47664a07a8e9157ea172b8d}{Avoid\+::penalise\+Orthogonal\+Shared\+Paths\+At\+Conn\+Ends}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05ab661599396825a766e97d19282e5f8dc}{Avoid\+::nudge\+Orthogonal\+Touching\+Colinear\+Segments}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05a358b48c2806c8919cae0cadb8b68fb14}{Avoid\+::perform\+Unifying\+Nudging\+Preprocessing\+Step}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05aa99292188fdbba00ff2e2eddc3aca7d9}{Avoid\+::improve\+Hyperedge\+Routes\+Moving\+Adding\+And\+Deleting\+Junctions}}
+, \mbox{\hyperlink{namespace_avoid_abc707ccbd6a0a7c29c124162c864ca05abb9b97f0edc1dd472c1a38633a340c1f}{Avoid\+::nudge\+Shared\+Paths\+With\+Common\+End\+Point}}
+, {\bfseries last\+Routing\+Option\+Marker}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing options that can be enabled. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900}{Avoid\+::\+Transaction\+Phases}} \{ \newline
+\mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a6e6c618550dfb4189e972c04eab0fd2f}{Avoid\+::\+Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanX}} = 1
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ae58b279b1507eaf99725f48b166148ad}{Avoid\+::\+Transaction\+Phase\+Orthogonal\+Visibility\+Graph\+ScanY}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a731dba9027bca13433b02685e68e3cb7}{Avoid\+::\+Transaction\+Phase\+Route\+Search}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900aa67f6a9252fddb988a65b28ae44d8ba4}{Avoid\+::\+Transaction\+Phase\+Crossing\+Detection}}
+, \newline
+\mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900aca08c787ef7a1b8756536abe9f84b1a1}{Avoid\+::\+Transaction\+Phase\+Reroute\+Search}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900af310cff5fa057d7866dae07ace1bc4e1}{Avoid\+::\+Transaction\+Phase\+Orthogonal\+NudgingX}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900a3e14bfb1bb6ccfee54bd91ff74100a22}{Avoid\+::\+Transaction\+Phase\+Orthogonal\+NudgingY}}
+, \mbox{\hyperlink{namespace_avoid_a399b5bb139fe211539f86543bae26900ac71dd55249bb26f39432aeea8dceb281}{Avoid\+::\+Transaction\+Phase\+Completed}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of routing phases reported by Router\+::should\+Continue\+Transaction\+With\+Progress(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the interface for the Router class. 
+

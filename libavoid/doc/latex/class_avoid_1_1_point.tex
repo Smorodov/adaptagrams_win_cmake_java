@@ -1,0 +1,179 @@
+\hypertarget{class_avoid_1_1_point}{}\doxysection{Avoid\+::Point Class Reference}
+\label{class_avoid_1_1_point}\index{Avoid::Point@{Avoid::Point}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_point}{Point}} class defines a point in the plane.  
+
+
+
+
+{\ttfamily \#include $<$geomtypes.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_avoid_1_1_point_ae9d18351a3597db1f19029439b783215}\label{class_avoid_1_1_point_ae9d18351a3597db1f19029439b783215}} 
+\mbox{\hyperlink{class_avoid_1_1_point_ae9d18351a3597db1f19029439b783215}{Point}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_point_a2b34571acf03d3d2b6a9ff970eeeeb10}{Point}} (const double xv, const double yv)
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_point_adf71a3cc94174b5682291899ba48d7fc}{operator==}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Comparison operator. Returns true if at same position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_point_a95f495294436c6e718bc2c758200a180}{equals}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&rhs, double epsilon=0.\+0001) const
+\begin{DoxyCompactList}\small\item\em Comparison operator. Returns true if at same position, or at effectively the same position for a given value of epsilson. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_point_a761ee09bd00ba4a724af1664ae669c82}{operator!=}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Comparison operator. Returns true if at different positions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_point_a378d6ba6a38dc965c1819296d53cf7d6}{operator$<$}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Comparison operator. Returns true if less-\/then rhs point. \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{class_avoid_1_1_point_a8972311e6ea4f8bf8c8cbe3f0200a8b7}{operator\mbox{[}$\,$\mbox{]}}} (const size\+\_\+t dimension)
+\begin{DoxyCompactList}\small\item\em Returns the x or y value of the point, given the dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_avoid_1_1_point_ae5f6929ae6c39393e4409485461c3fe3}\label{class_avoid_1_1_point_ae5f6929ae6c39393e4409485461c3fe3}} 
+double \mbox{\hyperlink{class_avoid_1_1_point_ae5f6929ae6c39393e4409485461c3fe3}{x}}
+\begin{DoxyCompactList}\small\item\em The x position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_point_a518b9e1306fb14416e457ed23b9b8cee}\label{class_avoid_1_1_point_a518b9e1306fb14416e457ed23b9b8cee}} 
+double \mbox{\hyperlink{class_avoid_1_1_point_a518b9e1306fb14416e457ed23b9b8cee}{y}}
+\begin{DoxyCompactList}\small\item\em The y position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_point_af52c4c52a1931bcce39ae57fa8062e87}\label{class_avoid_1_1_point_af52c4c52a1931bcce39ae57fa8062e87}} 
+unsigned int \mbox{\hyperlink{class_avoid_1_1_point_af52c4c52a1931bcce39ae57fa8062e87}{id}}
+\begin{DoxyCompactList}\small\item\em The ID associated with this point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avoid_1_1_point_a36dbb62822048b750bdf44f069cd5af6}\label{class_avoid_1_1_point_a36dbb62822048b750bdf44f069cd5af6}} 
+unsigned short \mbox{\hyperlink{class_avoid_1_1_point_a36dbb62822048b750bdf44f069cd5af6}{vn}}
+\begin{DoxyCompactList}\small\item\em The vertex number associated with this point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_point}{Point}} class defines a point in the plane. 
+
+Points consist of an x and y value. They may also have an ID and vertex number associated with them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_point_a2b34571acf03d3d2b6a9ff970eeeeb10}\label{class_avoid_1_1_point_a2b34571acf03d3d2b6a9ff970eeeeb10}} 
+\index{Avoid::Point@{Avoid::Point}!Point@{Point}}
+\index{Point@{Point}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Avoid\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{const double}]{xv,  }\item[{const double}]{yv }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xv} & The x position of the point. \\
+\hline
+\mbox{\texttt{ in}}  & {\em yv} & The y position of the point. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_point_a95f495294436c6e718bc2c758200a180}\label{class_avoid_1_1_point_a95f495294436c6e718bc2c758200a180}} 
+\index{Avoid::Point@{Avoid::Point}!equals@{equals}}
+\index{equals@{equals}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Point\+::equals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{rhs,  }\item[{double}]{epsilon = {\ttfamily 0.0001} }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator. Returns true if at same position, or at effectively the same position for a given value of epsilson. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rhs} & The point to compare with this one. \\
+\hline
+\mbox{\texttt{ in}}  & {\em epsilon} & Value of epsilon to use during comparison. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the comparison. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_point_adf71a3cc94174b5682291899ba48d7fc}{operator==()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_point_a761ee09bd00ba4a724af1664ae669c82}\label{class_avoid_1_1_point_a761ee09bd00ba4a724af1664ae669c82}} 
+\index{Avoid::Point@{Avoid::Point}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Point\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator. Returns true if at different positions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rhs} & The point to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the comparison. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_point_a378d6ba6a38dc965c1819296d53cf7d6}\label{class_avoid_1_1_point_a378d6ba6a38dc965c1819296d53cf7d6}} 
+\index{Avoid::Point@{Avoid::Point}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Point\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator. Returns true if less-\/then rhs point. 
+
+\begin{DoxyNote}{Note}
+This operator is not particularly useful, but is defined to allow std\+::set$<$\+Point$>$.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rhs} & The point to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the comparison. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_point_adf71a3cc94174b5682291899ba48d7fc}\label{class_avoid_1_1_point_adf71a3cc94174b5682291899ba48d7fc}} 
+\index{Avoid::Point@{Avoid::Point}!operator==@{operator==}}
+\index{operator==@{operator==}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator. Returns true if at same position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rhs} & The point to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the comparison. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_point_a95f495294436c6e718bc2c758200a180}{equals()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_point_a8972311e6ea4f8bf8c8cbe3f0200a8b7}\label{class_avoid_1_1_point_a8972311e6ea4f8bf8c8cbe3f0200a8b7}} 
+\index{Avoid::Point@{Avoid::Point}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Avoid::Point@{Avoid::Point}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily double \& Avoid\+::\+Point\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{dimension }\end{DoxyParamCaption})}
+
+
+
+Returns the x or y value of the point, given the dimension. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dimension} & The dimension\+: 0 for x, 1 for y. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The component of the point in that dimension. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{geomtypes_8h}{geomtypes.\+h}}\item 
+geomtypes.\+cpp\end{DoxyCompactItemize}

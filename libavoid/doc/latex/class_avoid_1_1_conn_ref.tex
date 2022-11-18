@@ -1,0 +1,448 @@
+\hypertarget{class_avoid_1_1_conn_ref}{}\doxysection{Avoid\+::Conn\+Ref Class Reference}
+\label{class_avoid_1_1_conn_ref}\index{Avoid::ConnRef@{Avoid::ConnRef}}
+
+
+The \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} class represents a connector object.  
+
+
+
+
+{\ttfamily \#include $<$connector.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_a2e08b9bb04ccf383700487932f13c980}{Conn\+Ref}} (\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$\mbox{\hyperlink{class_avoid_1_1_conn_ref_ace9257a67e94c7899c75af0362e5836f}{router}}, const unsigned int \mbox{\hyperlink{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}{id}}=0)
+\begin{DoxyCompactList}\small\item\em Constructs a connector with no endpoints specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_aa469b1767d12e1fa4971004225a0abcd}{Conn\+Ref}} (\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$\mbox{\hyperlink{class_avoid_1_1_conn_ref_ace9257a67e94c7899c75af0362e5836f}{router}}, const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&src, const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&dst, const unsigned int \mbox{\hyperlink{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}{id}}=0)
+\begin{DoxyCompactList}\small\item\em Constructs a connector with endpoints specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_ac12f46fe3ea2f98e687f5a942d0cd51e}{$\sim$\+Conn\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Connector reference destuctor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_ae66e8c90dc191951fc0f64acc4c06d7c}{set\+Endpoints}} (const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&src\+Point, const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&dst\+Point)
+\begin{DoxyCompactList}\small\item\em Sets both a new source and destination endpoint for this connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a45ab41f9847a610ba17a326cd05cb266}{set\+Source\+Endpoint}} (const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&src\+Point)
+\begin{DoxyCompactList}\small\item\em Sets just a new source endpoint for this connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a7b216c9aa42811f1f2786adbda84f02e}{set\+Dest\+Endpoint}} (const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&dst\+Point)
+\begin{DoxyCompactList}\small\item\em Sets just a new destination endpoint for this connector. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}{id}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the ID of this connector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ \mbox{\hyperlink{class_avoid_1_1_conn_ref_ace9257a67e94c7899c75af0362e5836f}{router}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the router scene this connector is in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_conn_ref_a6bf1308dc90317be00acf1fc01c1d276}{needs\+Repaint}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns an indication of whether this connector has a new route and thus needs to be repainted. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}} \& \mbox{\hyperlink{class_avoid_1_1_conn_ref_a0d90245fbe772d30723bd578efa3a45d}{route}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns a reference to the current raw \char`\"{}debug\char`\"{} route for the connector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}} \& \mbox{\hyperlink{class_avoid_1_1_conn_ref_ab7462cd69bd1d2c4dd318119558b4a94}{display\+Route}} (void)
+\begin{DoxyCompactList}\small\item\em Returns a reference to the current display version of the route for the connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a9d1a26643759adbb84f350285ce42d64}{set\+Callback}} (void($\ast$cb)(void $\ast$), void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Sets a callback function that will called to indicate that the connector needs rerouting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Conn\+Type}} \mbox{\hyperlink{class_avoid_1_1_conn_ref_a2689d4fde1f3489976324abb04bcab72}{routing\+Type}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the type of routing performed for this connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_acfb2eb95a4bfa94fa04081a0bb015583}{set\+Routing\+Type}} (\mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Conn\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Sets the type of routing to be performed for this connector. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$, \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$ $>$ \mbox{\hyperlink{class_avoid_1_1_conn_ref_a372f58a93c0296814de8d4a3075ad5e4}{split\+At\+Segment}} (const size\+\_\+t segmentN)
+\begin{DoxyCompactList}\small\item\em Splits a connector in the centre of the segment\+Nth segment and creates a junction point there as well as a second connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a7fc22448cc52a1b060f62bcc00d1bb93}{set\+Routing\+Checkpoints}} (const std\+::vector$<$ \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Checkpoint}} $>$ \&checkpoints)
+\begin{DoxyCompactList}\small\item\em Allows the user to specify a set of checkpoints that this connector will route via. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Checkpoint}} $>$ \mbox{\hyperlink{class_avoid_1_1_conn_ref_a38586487d88c4b98a7c5c1a2df6d1c95}{routing\+Checkpoints}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns the current set of routing checkpoints for this connector. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}, \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} $>$ \mbox{\hyperlink{class_avoid_1_1_conn_ref_abb7f970e8bee1ccf69a0d5521ca1f177}{endpoint\+Conn\+Ends}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns Conn\+Ends specifying what this connector is attached to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a392eeffe4cdd76267b0d1bb654562382}{set\+Fixed\+Route}} (const \mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}} \&\mbox{\hyperlink{class_avoid_1_1_conn_ref_a0d90245fbe772d30723bd578efa3a45d}{route}})
+\begin{DoxyCompactList}\small\item\em Sets a fixed user-\/specified route for this connector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_ab3bea9ff902f7b2faf8be50f8aa82f90}{set\+Fixed\+Existing\+Route}} (void)
+\begin{DoxyCompactList}\small\item\em Sets a fixed existing route for this connector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_avoid_1_1_conn_ref_a5e6c783ffb50b315769f1a0c29597136}{has\+Fixed\+Route}} (void) const
+\begin{DoxyCompactList}\small\item\em Returns whether the connector route is marked as fixed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avoid_1_1_conn_ref_a95b8b54df72eb1da45e8a854a3276e4a}{clear\+Fixed\+Route}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the connector to being automatically routed if it was marked as fixed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} class represents a connector object. 
+
+Connectors are a (possible multi-\/segment) line between two points. They are routed intelligently so as not to overlap any of the shape objects in the \mbox{\hyperlink{class_avoid_1_1_router}{Router}} scene.
+
+Routing penalties can be applied, resulting in more aesthetically pleasing connector paths with fewer segments or less severe bend-\/points.
+
+You can set a function to be called when the connector has been rerouted and needs to be redrawn. Alternatively, you can query the connector\textquotesingle{}s \mbox{\hyperlink{class_avoid_1_1_conn_ref_a6bf1308dc90317be00acf1fc01c1d276}{needs\+Repaint()}} function to determine this manually.
+
+Usually, it is expected that you would create a \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} for each connector in your diagram and keep that reference in your own connector class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a2e08b9bb04ccf383700487932f13c980}\label{class_avoid_1_1_conn_ref_a2e08b9bb04ccf383700487932f13c980}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!ConnRef@{ConnRef}}
+\index{ConnRef@{ConnRef}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{ConnRef()}{ConnRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+Ref\+::\+Conn\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$}]{router,  }\item[{const unsigned int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructs a connector with no endpoints specified. 
+
+The constructor requires a valid \mbox{\hyperlink{class_avoid_1_1_router}{Router}} instance. This router will take ownership of the connector. Hence, you should not call the destructor yourself, but should instead call \mbox{\hyperlink{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}{Router\+::delete\+Connector()}} and the router instance will remove and then free the connector\textquotesingle{}s memory.
+
+\begin{DoxyNote}{Note}
+Regarding IDs\+: You can let libavoid manually handle IDs by not specifying them. Alternatively, you can specify all IDs yourself, but you must be careful to makes sure that each object in the scene (shape, connector, cluster, etc) is given a unique, positive ID. This uniqueness is checked if assertions are enabled, but if not and there are clashes then strange things can happen.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em router} & The router scene to place the connector into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & Optionally, a positive integer ID unique among all objects. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_aa469b1767d12e1fa4971004225a0abcd}\label{class_avoid_1_1_conn_ref_aa469b1767d12e1fa4971004225a0abcd}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!ConnRef@{ConnRef}}
+\index{ConnRef@{ConnRef}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{ConnRef()}{ConnRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+Ref\+::\+Conn\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$}]{router,  }\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{src,  }\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{dst,  }\item[{const unsigned int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructs a connector with endpoints specified. 
+
+The constructor requires a valid \mbox{\hyperlink{class_avoid_1_1_router}{Router}} instance. This router will take ownership of the connector. Hence, you should not call the destructor yourself, but should instead call \mbox{\hyperlink{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}{Router\+::delete\+Connector()}} and the router instance will remove and then free the connector\textquotesingle{}s memory.
+
+If an ID is not specified, then one will be assigned to the shape. If assigning an ID yourself, note that it should be a unique positive integer. Also, IDs are given to all objects in a scene, so the same ID cannot be given to a shape and a connector for example.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em router} & The router scene to place the connector into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em id} & A unique positive integer ID for the connector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em src} & The source endpoint of the connector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dst} & The destination endpoint of the connector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_ac12f46fe3ea2f98e687f5a942d0cd51e}\label{class_avoid_1_1_conn_ref_ac12f46fe3ea2f98e687f5a942d0cd51e}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!````~ConnRef@{$\sim$ConnRef}}
+\index{````~ConnRef@{$\sim$ConnRef}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{$\sim$ConnRef()}{~ConnRef()}}
+{\footnotesize\ttfamily Avoid\+::\+Conn\+Ref\+::$\sim$\+Conn\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connector reference destuctor. 
+
+Do not call this yourself, instead call \mbox{\hyperlink{class_avoid_1_1_router_a316f15b3e974c273bb55cfb19b751394}{Router\+::delete\+Connector()}}. Ownership of this object belongs to the router scene. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a95b8b54df72eb1da45e8a854a3276e4a}\label{class_avoid_1_1_conn_ref_a95b8b54df72eb1da45e8a854a3276e4a}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!clearFixedRoute@{clearFixedRoute}}
+\index{clearFixedRoute@{clearFixedRoute}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{clearFixedRoute()}{clearFixedRoute()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::clear\+Fixed\+Route (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns the connector to being automatically routed if it was marked as fixed. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_a392eeffe4cdd76267b0d1bb654562382}{set\+Fixed\+Route()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_ab7462cd69bd1d2c4dd318119558b4a94}\label{class_avoid_1_1_conn_ref_ab7462cd69bd1d2c4dd318119558b4a94}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!displayRoute@{displayRoute}}
+\index{displayRoute@{displayRoute}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{displayRoute()}{displayRoute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_polygon}{Polygon}} \& Avoid\+::\+Conn\+Ref\+::display\+Route (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the current display version of the route for the connector. 
+
+The display version of a route has been simplified to collapse all collinear line segments into single segments. It also has all post-\/processing applied to the route, including centering, curved corners and nudging apart of overlapping segments.
+
+\begin{DoxyReturn}{Returns}
+The Poly\+Line display route for the connector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_abb7f970e8bee1ccf69a0d5521ca1f177}\label{class_avoid_1_1_conn_ref_abb7f970e8bee1ccf69a0d5521ca1f177}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!endpointConnEnds@{endpointConnEnds}}
+\index{endpointConnEnds@{endpointConnEnds}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{endpointConnEnds()}{endpointConnEnds()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}}, \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} $>$ Avoid\+::\+Conn\+Ref\+::endpoint\+Conn\+Ends (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns Conn\+Ends specifying what this connector is attached to. 
+
+This may be useful during hyperedge rerouting. You can check the type and properties of the \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} objects to find out what this connector is attached to. The \mbox{\hyperlink{class_avoid_1_1_conn_end_a9d82874f62afeba20ecaf017d82402a5}{Conn\+End\+::type()}} will be Conn\+End\+Empty if the connector has not had its endpoints initialised.
+
+\begin{DoxyNote}{Note}
+If the router is using transactions, you might get unexpected results if you call this after changing objects but before calling \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}}. In this case changes to Conn\+Ends for the connector may be queued and not yet applied, so you will get old (or empty) values.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+A pair of \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} objects specifying what the connector is attached to. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a5e6c783ffb50b315769f1a0c29597136}\label{class_avoid_1_1_conn_ref_a5e6c783ffb50b315769f1a0c29597136}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!hasFixedRoute@{hasFixedRoute}}
+\index{hasFixedRoute@{hasFixedRoute}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{hasFixedRoute()}{hasFixedRoute()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Conn\+Ref\+::has\+Fixed\+Route (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether the connector route is marked as fixed. 
+
+\begin{DoxyReturn}{Returns}
+True if the connector route is fixed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}\label{class_avoid_1_1_conn_ref_a053841a1fdef00b1e90f20f563e1c259}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!id@{id}}
+\index{id@{id}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned int Avoid\+::\+Conn\+Ref\+::id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the ID of this connector. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the connector. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a6bf1308dc90317be00acf1fc01c1d276}\label{class_avoid_1_1_conn_ref_a6bf1308dc90317be00acf1fc01c1d276}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!needsRepaint@{needsRepaint}}
+\index{needsRepaint@{needsRepaint}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{needsRepaint()}{needsRepaint()}}
+{\footnotesize\ttfamily bool Avoid\+::\+Conn\+Ref\+::needs\+Repaint (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns an indication of whether this connector has a new route and thus needs to be repainted. 
+
+If the connector has been rerouted and need repainting, the ~\newline
+ \mbox{\hyperlink{class_avoid_1_1_conn_ref_ab7462cd69bd1d2c4dd318119558b4a94}{display\+Route()}} method can be called to get a reference to the new route.
+
+\begin{DoxyReturn}{Returns}
+Returns true if the connector requires repainting, or false if it does not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a0d90245fbe772d30723bd578efa3a45d}\label{class_avoid_1_1_conn_ref_a0d90245fbe772d30723bd578efa3a45d}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!route@{route}}
+\index{route@{route}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}} \& Avoid\+::\+Conn\+Ref\+::route (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a reference to the current raw \char`\"{}debug\char`\"{} route for the connector. 
+
+This is a raw \char`\"{}debug\char`\"{} shortest path version of the route, where each line segment in the route may be made up of multiple collinear line segments. It also has no post-\/processing (i.\+e., centering, nudging apart of overlapping paths, or curving of corners) applied to it. A route to display to the user can be obtained by calling \mbox{\hyperlink{class_avoid_1_1_conn_ref_ab7462cd69bd1d2c4dd318119558b4a94}{display\+Route()}}.
+
+\begin{DoxyReturn}{Returns}
+The Poly\+Line route for the connector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_ace9257a67e94c7899c75af0362e5836f}\label{class_avoid_1_1_conn_ref_ace9257a67e94c7899c75af0362e5836f}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!router@{router}}
+\index{router@{router}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{router()}{router()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_avoid_1_1_router}{Router}} $\ast$ Avoid\+::\+Conn\+Ref\+::router (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a pointer to the router scene this connector is in. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the router scene for this connector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a38586487d88c4b98a7c5c1a2df6d1c95}\label{class_avoid_1_1_conn_ref_a38586487d88c4b98a7c5c1a2df6d1c95}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!routingCheckpoints@{routingCheckpoints}}
+\index{routingCheckpoints@{routingCheckpoints}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{routingCheckpoints()}{routingCheckpoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Checkpoint}} $>$ Avoid\+::\+Conn\+Ref\+::routing\+Checkpoints (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current set of routing checkpoints for this connector. 
+
+\begin{DoxyReturn}{Returns}
+The ordered list of Checkpoints that this connector will route via. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a2689d4fde1f3489976324abb04bcab72}\label{class_avoid_1_1_conn_ref_a2689d4fde1f3489976324abb04bcab72}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!routingType@{routingType}}
+\index{routingType@{routingType}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{routingType()}{routingType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Conn\+Type}} Avoid\+::\+Conn\+Ref\+::routing\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the type of routing performed for this connector. 
+
+\begin{DoxyReturn}{Returns}
+The type of routing performed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a9d1a26643759adbb84f350285ce42d64}\label{class_avoid_1_1_conn_ref_a9d1a26643759adbb84f350285ce42d64}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setCallback()}{setCallback()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Callback (\begin{DoxyParamCaption}\item[{void($\ast$)(void $\ast$)}]{cb,  }\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+
+
+Sets a callback function that will called to indicate that the connector needs rerouting. 
+
+The cb function will be called when shapes are added to, removed from or moved about on the page. The pointer ptr will be passed as an argument to the callback function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & A pointer to the callback function. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ptr} & A generic pointer that will be passed to the callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a7b216c9aa42811f1f2786adbda84f02e}\label{class_avoid_1_1_conn_ref_a7b216c9aa42811f1f2786adbda84f02e}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setDestEndpoint@{setDestEndpoint}}
+\index{setDestEndpoint@{setDestEndpoint}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setDestEndpoint()}{setDestEndpoint()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Dest\+Endpoint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{dst\+Point }\end{DoxyParamCaption})}
+
+
+
+Sets just a new destination endpoint for this connector. 
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dst\+Point} & New destination endpoint for the connector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_ae66e8c90dc191951fc0f64acc4c06d7c}\label{class_avoid_1_1_conn_ref_ae66e8c90dc191951fc0f64acc4c06d7c}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setEndpoints@{setEndpoints}}
+\index{setEndpoints@{setEndpoints}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setEndpoints()}{setEndpoints()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Endpoints (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{src\+Point,  }\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{dst\+Point }\end{DoxyParamCaption})}
+
+
+
+Sets both a new source and destination endpoint for this connector. 
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em src\+Point} & New source endpoint for the connector. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dst\+Point} & New destination endpoint for the connector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_ab3bea9ff902f7b2faf8be50f8aa82f90}\label{class_avoid_1_1_conn_ref_ab3bea9ff902f7b2faf8be50f8aa82f90}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setFixedExistingRoute@{setFixedExistingRoute}}
+\index{setFixedExistingRoute@{setFixedExistingRoute}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setFixedExistingRoute()}{setFixedExistingRoute()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Fixed\+Existing\+Route (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Sets a fixed existing route for this connector. 
+
+libavoid will no longer calculate object-\/avoiding paths for this connector but instead just return the current exisitng route. ~\newline
+ The path of this connector will still be considered for the purpose of nudging and routing other non-\/fixed connectors.
+
+\begin{DoxyNote}{Note}
+The endpoints of this connector will remain at their current positions, even while remaining \textquotesingle{}attached\textquotesingle{} to shapes or junctions that move.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_a392eeffe4cdd76267b0d1bb654562382}{set\+Fixed\+Route()}} 
+
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_a95b8b54df72eb1da45e8a854a3276e4a}{clear\+Fixed\+Route()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a392eeffe4cdd76267b0d1bb654562382}\label{class_avoid_1_1_conn_ref_a392eeffe4cdd76267b0d1bb654562382}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setFixedRoute@{setFixedRoute}}
+\index{setFixedRoute@{setFixedRoute}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setFixedRoute()}{setFixedRoute()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Fixed\+Route (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_avoid_afaa0d7df841c3bace9f3342dab6bc07c}{Poly\+Line}} \&}]{route }\end{DoxyParamCaption})}
+
+
+
+Sets a fixed user-\/specified route for this connector. 
+
+libavoid will no longer calculate object-\/avoiding paths for this connector but instead just return the specified route. The path of this connector will still be considered for the purpose of nudging and routing other non-\/fixed connectors.
+
+\begin{DoxyNote}{Note}
+This will reset the endpoints of the connector to the two ends of the given route, which may cause it to become dettached from any shapes or junctions. You can alternatively call \mbox{\hyperlink{class_avoid_1_1_conn_ref_ab3bea9ff902f7b2faf8be50f8aa82f90}{set\+Fixed\+Existing\+Route()}} for connectors with valid routes in hyperedges that you would like to remain attached.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em route} & The new fixed route for the connector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_ab3bea9ff902f7b2faf8be50f8aa82f90}{set\+Fixed\+Existing\+Route()}} 
+
+\mbox{\hyperlink{class_avoid_1_1_conn_ref_a95b8b54df72eb1da45e8a854a3276e4a}{clear\+Fixed\+Route()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a7fc22448cc52a1b060f62bcc00d1bb93}\label{class_avoid_1_1_conn_ref_a7fc22448cc52a1b060f62bcc00d1bb93}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setRoutingCheckpoints@{setRoutingCheckpoints}}
+\index{setRoutingCheckpoints@{setRoutingCheckpoints}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setRoutingCheckpoints()}{setRoutingCheckpoints()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Routing\+Checkpoints (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_avoid_1_1_checkpoint}{Checkpoint}} $>$ \&}]{checkpoints }\end{DoxyParamCaption})}
+
+
+
+Allows the user to specify a set of checkpoints that this connector will route via. 
+
+When routing, the connector will attempt to visit each of the points in the checkpoints list in order. It will route from the source point to the first checkpoint, to the second checkpoint, etc. If a checkpoint is unreachable because it lies inside an obstacle, then that checkpoint will be skipped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em checkpoints} & An ordered list of Checkpoints that the connector will attempt to route via. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_acfb2eb95a4bfa94fa04081a0bb015583}\label{class_avoid_1_1_conn_ref_acfb2eb95a4bfa94fa04081a0bb015583}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setRoutingType@{setRoutingType}}
+\index{setRoutingType@{setRoutingType}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setRoutingType()}{setRoutingType()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Routing\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_avoid_a2dc870f7d17f81f6833e3bb8e77762c2}{Conn\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of routing to be performed for this connector. 
+
+If a call to this method changes the current type of routing being used for the connector, then it will get rerouted during the next process\+Transaction() call, or immediately if transactions are not being used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of routing to be performed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a45ab41f9847a610ba17a326cd05cb266}\label{class_avoid_1_1_conn_ref_a45ab41f9847a610ba17a326cd05cb266}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!setSourceEndpoint@{setSourceEndpoint}}
+\index{setSourceEndpoint@{setSourceEndpoint}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{setSourceEndpoint()}{setSourceEndpoint()}}
+{\footnotesize\ttfamily void Avoid\+::\+Conn\+Ref\+::set\+Source\+Endpoint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_conn_end}{Conn\+End}} \&}]{src\+Point }\end{DoxyParamCaption})}
+
+
+
+Sets just a new source endpoint for this connector. 
+
+If the router is using transactions, then this action will occur the next time \mbox{\hyperlink{class_avoid_1_1_router_ac4497126d8d4c76a122af565260941fc}{Router\+::process\+Transaction()}} is called. See \mbox{\hyperlink{class_avoid_1_1_router_a74b2908173631381499be763ea0b0dad}{Router\+::set\+Transaction\+Use()}} for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em src\+Point} & New source endpoint for the connector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_conn_ref_a372f58a93c0296814de8d4a3075ad5e4}\label{class_avoid_1_1_conn_ref_a372f58a93c0296814de8d4a3075ad5e4}} 
+\index{Avoid::ConnRef@{Avoid::ConnRef}!splitAtSegment@{splitAtSegment}}
+\index{splitAtSegment@{splitAtSegment}!Avoid::ConnRef@{Avoid::ConnRef}}
+\doxysubsubsection{\texorpdfstring{splitAtSegment()}{splitAtSegment()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} $\ast$, \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}} $\ast$ $>$ Avoid\+::\+Conn\+Ref\+::split\+At\+Segment (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{segmentN }\end{DoxyParamCaption})}
+
+
+
+Splits a connector in the centre of the segment\+Nth segment and creates a junction point there as well as a second connector. 
+
+The new junction and connector will be automatically added to the router scene. A slight preference will be given to the connectors connecting to the junction in the same orientation the line segment already existed in.
+
+\begin{DoxyReturn}{Returns}
+A pair containing pointers to the new \mbox{\hyperlink{class_avoid_1_1_junction_ref}{Junction\+Ref}} and \mbox{\hyperlink{class_avoid_1_1_conn_ref}{Conn\+Ref}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connector_8h}{connector.\+h}}\item 
+connector.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{class_avoid_1_1_checkpoint}{}\doxysection{Avoid\+::Checkpoint Class Reference}
+\label{class_avoid_1_1_checkpoint}\index{Avoid::Checkpoint@{Avoid::Checkpoint}}
+
+
+A checkpoint is a point that the route for a particular connector must visit. They may optionally be given an arrival/departure direction.  
+
+
+
+
+{\ttfamily \#include $<$connector.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avoid_1_1_checkpoint_acc9c24be7c349b6c933621ec117a8fc3}{Checkpoint}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&p)
+\begin{DoxyCompactList}\small\item\em A point that a route must visit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_avoid_1_1_checkpoint_a0d001dd1e2a9497538fd651c4b9d9553}{Checkpoint}} (const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&p, \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} ad, \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}} dd)
+\begin{DoxyCompactList}\small\item\em A point that a route must visit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A checkpoint is a point that the route for a particular connector must visit. They may optionally be given an arrival/departure direction. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avoid_1_1_checkpoint_acc9c24be7c349b6c933621ec117a8fc3}\label{class_avoid_1_1_checkpoint_acc9c24be7c349b6c933621ec117a8fc3}} 
+\index{Avoid::Checkpoint@{Avoid::Checkpoint}!Checkpoint@{Checkpoint}}
+\index{Checkpoint@{Checkpoint}!Avoid::Checkpoint@{Avoid::Checkpoint}}
+\doxysubsubsection{\texorpdfstring{Checkpoint()}{Checkpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Checkpoint\+::\+Checkpoint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A point that a route must visit. 
+
+The connector will be able to enter and leave this checkpoint from any direction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p} & The \mbox{\hyperlink{class_avoid_1_1_point}{Point}} that must be visited. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avoid_1_1_checkpoint_a0d001dd1e2a9497538fd651c4b9d9553}\label{class_avoid_1_1_checkpoint_a0d001dd1e2a9497538fd651c4b9d9553}} 
+\index{Avoid::Checkpoint@{Avoid::Checkpoint}!Checkpoint@{Checkpoint}}
+\index{Checkpoint@{Checkpoint}!Avoid::Checkpoint@{Avoid::Checkpoint}}
+\doxysubsubsection{\texorpdfstring{Checkpoint()}{Checkpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Avoid\+::\+Checkpoint\+::\+Checkpoint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_avoid_1_1_point}{Point}} \&}]{p,  }\item[{\mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}}]{ad,  }\item[{\mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Conn\+Dir\+Flags}}}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A point that a route must visit. 
+
+The connector will be able to enter and leave this checkpoint from the directions specified. Give \mbox{\hyperlink{namespace_avoid_abe35ded63bcd354b31e69f6a5414f610aa35659c58b5d18594722cafd452aabc0}{Avoid\+::\+Conn\+Dir\+All}} to specify all directions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p} & The \mbox{\hyperlink{class_avoid_1_1_point}{Point}} that must be visited. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ad} & \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Avoid\+::\+Conn\+Dir\+Flags}} denoting arrival directions for the connector portion leading up to this checkpoint. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dd} & \mbox{\hyperlink{namespace_avoid_afda003ad24493d39bfc62e665beedaa8}{Avoid\+::\+Conn\+Dir\+Flags}} denoting departure directions for the connector portion leading away from this checkpoint. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connector_8h}{connector.\+h}}\end{DoxyCompactItemize}
